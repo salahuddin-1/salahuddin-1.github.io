@@ -55,7 +55,7 @@ const AppTextField = (props: Props) => {
           fontSize: 14,
           color: theme.colors.workTech,
         }}
-        focusBorderColor="black"
+        focusBorderColor="white"
         borderColor={theme.colors.inputBorderColor}
         variant="flushed"
         placeholder={props.placeholder}

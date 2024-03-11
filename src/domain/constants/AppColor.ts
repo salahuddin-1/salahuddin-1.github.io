@@ -6,4 +6,5 @@ export class AppColor {
   public static OFFWHITE: string = "#F8F8F8";
   public static DARK_GRAY: string = "darkgray";
   public static BLACK_900: string = "#1B1A1A";
+  public static LIGHT_GRAY: string = "#5D5D5D";
 }

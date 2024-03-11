@@ -47,7 +47,7 @@ const theme = extendTheme({
     footer: AppColor.BLACK,
     footerText: AppColor.DARK_GRAY,
     workTech: "#7F7F7F",
-    inputBorderColor: "#ABABAB",
+    inputBorderColor: AppColor.LIGHT_GRAY,
   },
   styles: {
     global: {
