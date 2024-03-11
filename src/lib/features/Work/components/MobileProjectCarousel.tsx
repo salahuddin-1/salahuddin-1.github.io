@@ -7,6 +7,7 @@ import "src/lib/features/Work/components/style.css";
 import { Box, Image, useBreakpointValue } from "@chakra-ui/react";
 import iconChevronRight from "@assets/icon_chevron_right.svg";
 import iconChevronLeft from "@assets/icon_chevron_left.svg";
+import { AppColor } from "src/domain/constants/AppColor";
 
 interface Props {
   images: WorkStackImageProps[];
@@ -59,9 +60,9 @@ const _IconLeft = (props: _IconProps) => {
 
 const _Image = (props: _ImageProps) => {
   const border = useBreakpointValue({
-    base: "5px solid black",
-    sm: "6px solid black",
-    md: "7px solid black",
+    base: `5px solid ${AppColor.BLACK_900}`,
+    sm: `6px solid ${AppColor.BLACK_900}`,
+    md: `7px solid ${AppColor.BLACK_900}`,
   });
 
   const borderRadius = useBreakpointValue({

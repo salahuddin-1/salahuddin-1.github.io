@@ -1,6 +1,6 @@
 import { Image, ResponsiveValue } from "@chakra-ui/react";
 import { AppConstants } from "src/domain/constants/AppConstants";
-import logo from "@assets/ourolink_logo.png";
+import logo from "@assets/salahuddin_logo.png";
 import { RoutePaths } from "src/lib/navigation/route_paths";
 import { Link } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const LogoImage = (props: Props) => {
         }}
         cursor="pointer"
         src={logo}
-        bg="white"
+        bg=""
         alt={AppConstants.LOGO_ALT_TEXT}
         height={props.height}
       />
