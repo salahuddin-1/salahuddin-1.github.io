@@ -66,7 +66,7 @@ const RecentWorkProjectDetails = (props: RecentWorkProjectDetailsProps) => {
           // paddingY="7%"
           paddingBottom="8%"
           width="100%"
-          boxShadow="0px 2px 10px rgba(0, 0, 0, 0.3)"
+          boxShadow="0px 2px 10px rgba(255, 255, 255, 0.4)"
           bg={props.projectDetails?.backgroundColor}
           borderRadius={{
             // RESPONSIVE

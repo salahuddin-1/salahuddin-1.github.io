@@ -43,6 +43,7 @@ import imageRummozAdmin1 from "@assets/projects/rummoz_admin_1.png";
 import imageRummozAdmin2 from "@assets/projects/rummoz_admin_2.png";
 import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import React from "react";
+import { AppColor } from "src/domain/constants/AppColor";
 
 export default [
   // RUUMOZ KITCHEN
@@ -50,6 +51,7 @@ export default [
     projectName: "Rummo'z Kitchen",
     deviceType: DeviceTypeEnum.MOBILE,
     slug: "rummoz-kitchen",
+    backgroundColor: AppColor.BLACK_900,
     description:
       "Introducing an application that can automate a cloud kitchen process, from order management to delivery, Rummo’z Kitchen is a perfect software solution for Independent Cloud kitchen owners. It provides a subscription based ecosystem where the User subscribes for food delivery at door step for monthly basis.",
     techStack: [
@@ -82,6 +84,7 @@ export default [
     projectName: "Rummo'z Kitchen's Admin Portal",
     deviceType: DeviceTypeEnum.DESKTOP,
     slug: "rummoz-kitchen-admin-portal",
+    backgroundColor: AppColor.BLACK_900,
     description:
       "This admin panel is used for managing Rummo’z kitchen application, right from updating menu to getting insights of the user. The owner will have the different options like 1. Add Discount Coupon 2. Set Offers 3. Manage Subscription",
     techStack: [],
@@ -134,7 +137,7 @@ export default [
     projectName: "Feed",
     deviceType: DeviceTypeEnum.MOBILE,
     slug: "feed",
-    backgroundColor: "",
+    backgroundColor: AppColor.BLACK_900,
     description:
       "A social application for universities where students can keep track of each other's academic advancement, it creates a sense of competition in students while building a strong community over campus. Connect with your campus community like never before, exploring and networking with peers and faculty. Stay updated on essential college functions, from attendance to notices. 'Feed' isn't just an app; it's your gateway to a richer, more connected campus life. Experience college networking redefined!",
     techStack: [
@@ -261,7 +264,7 @@ export default [
     projectName: "Hanzaib Collection",
     deviceType: DeviceTypeEnum.MOBILE,
     slug: "hanzaib-collection",
-    backgroundColor: "",
+    backgroundColor: "white",
     description:
       "Experience culinary convenience with our Food Kitchen App. Seamlessly browse, order, and savor delicious meals with a user-friendly interface that enhances your dining journey. Elevate your food experience – anytime, anywhere",
     techStack: ["flutter", "cloud firestore"],
