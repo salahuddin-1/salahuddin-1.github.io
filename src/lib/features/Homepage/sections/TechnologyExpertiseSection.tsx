@@ -60,11 +60,11 @@ const _Technology = (props: TechStackLayoutProps) => {
       width={props.width}
       src={props.src}
       objectFit="contain"
-      bg="white"
+      bg="black"
       borderRadius="50%"
       position="absolute"
-      border="1px solid black"
-      boxShadow="-8px 13px 5px 0px rgba(0,0,0,0.25)"
+      border="1px solid white"
+      boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.35)"
     />
   );
 };

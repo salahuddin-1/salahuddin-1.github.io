@@ -134,8 +134,8 @@ const NavBar = () => {
       <HStack className="navbar-container" justify="space-between">
         <LogoImage
           height={{
-            base: "25px",
-            md: "35px",
+            base: "35px",
+            md: "45px",
           }}
         />
 

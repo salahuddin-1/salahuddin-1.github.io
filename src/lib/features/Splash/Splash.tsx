@@ -25,15 +25,13 @@ const Splash = () => {
         <Box pos="relative" bg="">
           <LogoImage
             height={{
-              base: "30px",
-              sm: "30px",
-              md: "35px",
-              lg: "45px",
-              xl: "45px",
+              base: "40px",
+              md: "45px",
+              lg: "55px",
             }}
           />
           <motion.div
-            initial={{ left: "30%" }}
+            initial={{ left: "20%" }}
             animate={{ left: "100%" }}
             transition={{
               duration: 2,
@@ -46,9 +44,9 @@ const Splash = () => {
               top: 0,
               height: "100%",
               position: "absolute",
-              background: "white",
-              width: "10px",
-              opacity: 0.8,
+              background: "black",
+              opacity: 0.6,
+              width: "15px",
             }}
           ></motion.div>
         </Box>
