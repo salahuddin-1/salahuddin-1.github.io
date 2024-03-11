@@ -124,7 +124,7 @@ export const Footer = () => {
       >
         {/* Footer Copywrite Text */}
         <Text color={theme.colors.footerText} fontSize={12}>
-          © 2023 Ourolink
+          © 2023 Salahuddin Shaikh
         </Text>
       </GridItem>
     </Grid>

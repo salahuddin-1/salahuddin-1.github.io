@@ -39,13 +39,13 @@ const config: ThemeConfig = {
 const theme = extendTheme({
   config,
   colors: {
-    primary: AppColor.WHITE,
-    secondary: AppColor.BLACK,
+    primary: AppColor.BLACK,
+    secondary: AppColor.WHITE,
     accent: AppColor.DARK_BLUE,
     tableDivider: AppColor.GRAY_300,
-    footer: AppColor.OFFWHITE,
     appDivider: "#c1c1c1",
-    footerText: "#4F4F4F",
+    footer: AppColor.BLACK,
+    footerText: AppColor.DARK_GRAY,
     workTech: "#7F7F7F",
     inputBorderColor: "#ABABAB",
   },

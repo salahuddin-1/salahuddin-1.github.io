@@ -58,6 +58,7 @@ const ScrollToTopButton: React.FC = () => {
                 md: "40px",
                 lg: "50px",
               }}
+              color="white"
               alt="Icon arrow up"
               src={iconArrowUp}
             />

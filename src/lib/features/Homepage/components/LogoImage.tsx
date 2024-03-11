@@ -20,6 +20,7 @@ const LogoImage = (props: Props) => {
         }}
         cursor="pointer"
         src={logo}
+        bg="white"
         alt={AppConstants.LOGO_ALT_TEXT}
         height={props.height}
       />
