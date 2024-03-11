@@ -23,7 +23,7 @@ const AppMaterialButton = (props: Props) => {
       paddingX="25px"
       paddingY="10px"
       backgroundColor={theme.colors.accent}
-      textColor={theme.colors.primary}
+      textColor={theme.colors.secondary}
       borderRadius="6px"
       boxSizing="border-box"
       fontWeight={600}

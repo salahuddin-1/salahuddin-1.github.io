@@ -121,7 +121,7 @@ const _DesktopSideComponents = () => {
 const NavBar = () => {
   return (
     <Box
-      bg="rgba(255, 255, 255, 0.4)"
+      bg="rgba(0, 0, 0, 0.7)"
       width="100%"
       pos="fixed"
       // bg="white"
