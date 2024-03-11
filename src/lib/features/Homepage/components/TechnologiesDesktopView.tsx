@@ -3,6 +3,7 @@ import { CustomTheme } from "src/theme";
 import iconCaretUp from "@assets/icon_caret_up.png";
 import techStack from "@datautils/tech_stack";
 import { TechnologiesProps } from "../sections/TechnologyExpertiseSection";
+import { AppColor } from "src/domain/constants/AppColor";
 
 interface TechItemProps {
   text: string;
@@ -28,7 +29,7 @@ const _TechItem = ({ onClick, text, isSelected = false }: TechItemProps) => {
       >
         <Text
           fontSize={fontSize}
-          color={theme.colors.primary}
+          color={theme.colors.secondary}
           fontWeight="bold"
         >
           {text}
@@ -43,12 +44,12 @@ const _TechItem = ({ onClick, text, isSelected = false }: TechItemProps) => {
       cursor="pointer"
       borderWidth="1px"
       borderStyle="solid"
-      borderColor="black"
+      borderColor={theme.colors.secondary}
       borderRadius={5}
       textAlign="center"
       paddingX={paddingX}
       paddingY={paddingY}
-      bg="white"
+      backgroundColor={AppColor.BLACK_900}
     >
       <Text fontSize={fontSize} fontWeight="bold">
         {text}
@@ -62,6 +63,8 @@ interface Props {
 }
 
 const TechnologiesDesktopView = ({ techProps }: Props) => {
+  const theme = useTheme<CustomTheme>();
+
   // ITERATE THROUGH TECH STACK AND CREATE A LIST OF TECH ITEMS
   const techItems = techStack.map((tech, index) => {
     return (
@@ -83,7 +86,7 @@ const TechnologiesDesktopView = ({ techProps }: Props) => {
         <Box
           borderRadius={5}
           marginX="auto"
-          bg="black"
+          bg={theme.colors.secondary}
           height="100%"
           width="5px"
         ></Box>
@@ -114,14 +117,20 @@ const TechnologiesDesktopView = ({ techProps }: Props) => {
 
       {/* Caret Image */}
       <Flex flexDir="column" bg="">
-        <Image width={120} marginX="auto" src={iconCaretUp}></Image>
+        <Image
+          bg="red"
+          color="white"
+          width={120}
+          marginX="auto"
+          src={iconCaretUp}
+        ></Image>
         <Box height="10px"></Box>
         <Box
           marginX="auto"
           borderRadius="2px"
           width="165px"
           height="10px"
-          bg="black"
+          bg={theme.colors.secondary}
         ></Box>
       </Flex>
     </Flex>

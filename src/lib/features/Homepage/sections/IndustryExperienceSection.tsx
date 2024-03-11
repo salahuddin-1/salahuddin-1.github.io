@@ -92,7 +92,7 @@ const _ListItem = ({ industryExp }: _ListItemProps) => {
             lg: "55px", // RESPONSIVE
           }}
           // bg="teal"
-          bg="white"
+          bg=""
           alignItems="end"
           paddingBottom={{
             base: "7px",
@@ -114,7 +114,7 @@ const _ListItem = ({ industryExp }: _ListItemProps) => {
               lg: "16px",
               xl: "18px", // RESPONSIVE
             }}
-            textColor="black"
+            textColor="white"
           >
             {industryExp.industry}
           </Text>

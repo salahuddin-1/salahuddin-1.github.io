@@ -11,6 +11,7 @@ import { CustomTheme } from "src/theme";
 import techStack from "@datautils/tech_stack";
 import { ReactElement } from "react";
 import { TechnologiesProps } from "../sections/TechnologyExpertiseSection";
+import { AppColor } from "src/domain/constants/AppColor";
 
 interface TechItemProps {
   text: string;
@@ -40,7 +41,7 @@ const _TechItem = ({ onClick, text, isSelected = false }: TechItemProps) => {
         bg={theme.colors.accent}
       >
         <Text
-          color={theme.colors.primary}
+          color={theme.colors.secondary}
           fontSize={fontSize}
           fontWeight="bold"
         >
@@ -57,11 +58,12 @@ const _TechItem = ({ onClick, text, isSelected = false }: TechItemProps) => {
       cursor="pointer"
       borderWidth="1px"
       borderStyle="solid"
-      borderColor="black"
+      borderColor={theme.colors.secondary}
       borderRadius={5}
       textAlign="center"
       paddingX={paddingX}
-      bg="white"
+      bg={AppColor.BLACK_900}
+      color={theme.colors.secondary}
     >
       <Text fontSize={fontSize} fontWeight="bold">
         {text}
@@ -181,9 +183,9 @@ const TechnologiesMobileView = ({ techProps }: Props) => {
             flex={1}
             borderTopRightRadius={5}
             borderBottomRightRadius={5}
-            borderBottom="2px solid black"
-            borderRight="2px solid black"
-            borderTop="2px solid black"
+            borderBottom="2px solid white"
+            borderRight="2px solid white"
+            borderTop="2px solid white"
             // bg="yellowgreen"
           ></Box>
 
@@ -191,8 +193,8 @@ const TechnologiesMobileView = ({ techProps }: Props) => {
             <Box
               flex={1}
               borderBottomLeftRadius={5}
-              borderBottom="2px solid black"
-              borderLeft="2px solid black"
+              borderBottom="2px solid white"
+              borderLeft="2px solid white"
               // bg="tomato"
             ></Box>
           )}
@@ -229,7 +231,7 @@ const TechnologiesMobileView = ({ techProps }: Props) => {
               <Image
                 marginY="2px"
                 width="25px"
-                bg=""
+                bg="pink"
                 src={iconCaretRight}
               ></Image>
             </Flex>

@@ -6,6 +6,7 @@ import { RoutePaths } from "src/lib/navigation/route_paths";
 import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvider";
 import { RecentWorkNavParams } from "../../RecentWork/RecentWork";
 import { CustomTheme } from "src/theme";
+import { AppColor } from "src/domain/constants/AppColor";
 
 export interface SingleProject {
   projectName: string;
@@ -85,7 +86,7 @@ const SingleProjectSkeleton = ({ project }: Props) => {
       borderWidth={0.1}
       borderColor="#4F4F4F"
       borderStyle="solid"
-      backgroundColor="#1B1A1A"
+      backgroundColor={AppColor.BLACK_900}
       textAlign="center"
       paddingX={4}
       paddingTop={4}
