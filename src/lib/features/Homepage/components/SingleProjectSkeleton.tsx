@@ -1,10 +1,11 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text, useTheme } from "@chakra-ui/react";
 import "@fontsource/poppins/300.css";
 import icon_north_east from "@assets/icon_north_east.png";
 import { useNavigate } from "react-router-dom";
 import { RoutePaths } from "src/lib/navigation/route_paths";
 import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvider";
 import { RecentWorkNavParams } from "../../RecentWork/RecentWork";
+import { CustomTheme } from "src/theme";
 
 export interface SingleProject {
   projectName: string;
@@ -30,6 +31,8 @@ const ProjectImage = ({ project }: Props) => {
 };
 
 const ProjectDetails = ({ project }: Props) => {
+  const theme = useTheme<CustomTheme>();
+
   return (
     <Box justifyContent="space-between" flexDirection="row" display="flex">
       <Box alignItems="start" flexDirection="column" display="flex">
@@ -82,7 +85,7 @@ const SingleProjectSkeleton = ({ project }: Props) => {
       borderWidth={0.1}
       borderColor="#4F4F4F"
       borderStyle="solid"
-      backgroundColor="#F8F8F8"
+      backgroundColor="#1B1A1A"
       textAlign="center"
       paddingX={4}
       paddingTop={4}
