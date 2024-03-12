@@ -1,7 +1,8 @@
 import iconFlutter from "@assets/icon_flutter_logo.svg";
 import iconReactNative from "@assets/icon_react_logo.svg";
 import iconFirebase from "@assets/icon_firebase_logo.svg";
-import iconAwsAmplify from "@assets/icon_aws_amplify.svg";
+import iconNestJs from "@assets/icon_nestjs_logo.svg";
+import iconSupabase from "@assets/icon_supabase_logo.svg";
 import { TechStackEnum } from "src/domain/enums/tech_stack_enum";
 import { TechStackProps } from "./tech_stack_props";
 
@@ -67,16 +68,37 @@ export default [
   },
 
   {
-    src: iconAwsAmplify,
+    src: iconNestJs,
     type: TechStackEnum.MOBILE,
     typeString: "Mobile",
-    slug: "awsAmplify",
+    slug: "nestJs",
     layoutProps: {
-      src: iconAwsAmplify,
+      src: iconNestJs,
       minWidth: "110px",
       padding: "3%",
       top: "55%",
       left: "15%",
+
+      width: {
+        base: "20%",
+        lg: "25%",
+        xl: "17%",
+        "2xl": "12%",
+      },
+    },
+  },
+
+  {
+    src: iconSupabase,
+    type: TechStackEnum.MOBILE,
+    typeString: "Mobile",
+    slug: "supabase",
+    layoutProps: {
+      src: iconSupabase,
+      minWidth: "110px",
+      padding: "3%",
+      top: "55%",
+      left: "40%",
 
       width: {
         base: "20%",
