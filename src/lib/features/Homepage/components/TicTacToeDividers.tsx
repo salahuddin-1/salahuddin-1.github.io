@@ -22,8 +22,8 @@ const TicTacToeDividers = (props: Props) => {
       base: 4,
       md: 7,
       lg: 4,
-      xl: 6,
-      "2xl": 9,
+      xl: 8,
+      "2xl": 12,
     }) ?? 0;
 
   const noOfHDividers =
@@ -51,7 +51,7 @@ const TicTacToeDividers = (props: Props) => {
         <Box
           key={index}
           width="1px"
-          bg={theme.colors.appDivider}
+          bg={theme.colors.tableDivider}
           marginTop={topMargin}
           marginBottom={bottomMargin}
         ></Box>

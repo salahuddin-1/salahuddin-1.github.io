@@ -64,7 +64,7 @@ const _Technology = (props: TechStackLayoutProps) => {
       borderRadius="50%"
       position="absolute"
       border="1px solid white"
-      boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.35)"
+      boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.25)"
     />
   );
 };
@@ -172,13 +172,13 @@ const TechnologyExpertiseSection = () => {
           lg: "row",
         }}
       >
-        <_Technologies
+        {/* <_Technologies
           selectedTechStack={currentTech}
           onTechStackSelected={onTechStackSelected}
-        />
+        /> */}
 
         {/* Spacing */}
-        <Box
+        {/* <Box
           width={{
             lg: "80px",
           }}
@@ -186,7 +186,7 @@ const TechnologyExpertiseSection = () => {
             base: "100px",
             lg: "0px",
           }}
-        />
+        /> */}
 
         <Box position="relative" flex={2} bg="">
           <Box>

@@ -42,7 +42,7 @@ const theme = extendTheme({
     primary: AppColor.BLACK,
     secondary: AppColor.WHITE,
     accent: AppColor.DARK_BLUE,
-    tableDivider: AppColor.GRAY_300,
+    tableDivider: AppColor.LIGHT_GRAY,
     appDivider: "#c1c1c1",
     footer: AppColor.BLACK,
     footerText: AppColor.DARK_GRAY,
