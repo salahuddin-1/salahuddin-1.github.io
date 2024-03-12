@@ -1,6 +1,6 @@
-import iconFlutter from "@assets/icon_flutter.svg";
-import iconReactNative from "@assets/icon_react_native.png";
-import iconFirebase from "@assets/icon_firebase.png";
+import iconFlutter from "@assets/icon_flutter_logo.svg";
+import iconReactNative from "@assets/icon_react_logo.svg";
+import iconFirebase from "@assets/icon_firebase_logo.svg";
 import iconAwsAmplify from "@assets/icon_aws_amplify.svg";
 import { TechStackEnum } from "src/domain/enums/tech_stack_enum";
 import { TechStackProps } from "./tech_stack_props";

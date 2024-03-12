@@ -1,8 +1,10 @@
 import {
   Box,
   Flex,
+  HStack,
   Image,
   ResponsiveValue,
+  Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { ReactElement, useState } from "react";
@@ -49,23 +51,52 @@ const _Technologies = (props: TechnologiesProps): ReactElement => {
 
 const _Technology = (props: TechStackLayoutProps) => {
   return (
-    <Image
+    <Box
       top={props.top}
       left={props.left}
       right={props.right}
       bottom={props.bottom}
-      padding={props.padding}
-      minWidth={props.minWidth}
-      aspectRatio={1 / 1}
-      width={props.width}
-      src={props.src}
-      objectFit="contain"
-      bg="black"
-      borderRadius="50%"
       position="absolute"
+      height="200px"
+      width="200px"
+      bg="black"
       border="1px solid white"
       boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.25)"
-    />
+      borderRadius="50%"
+      padding={props.padding}
+      overflow="hidden"
+    >
+      <HStack height="100%" width="100%" bg="">
+        <Image
+          height="50px"
+          src={props.src}
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+            objectFit: "contain",
+          }}
+        />
+        <Text fontSize="25px">Flutter</Text>
+      </HStack>
+    </Box>
+    // <Box top={props.top} style={{ borderRadius: "50%", overflow: "hidden" }}>
+    //   <Image
+    //     top={props.top}
+    //     left={props.left}
+    //     right={props.right}
+    //     bottom={props.bottom}
+    //     padding={props.padding}
+    //     minWidth={props.minWidth}
+    //     aspectRatio={1 / 1}
+    //     width={props.width}
+    //     src={props.src}
+    //     objectFit="contain"
+    //     bg="black"
+    //     position="absolute"
+    //     border="1px solid white"
+    //     boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.25)"
+    //   />
+    // </Box>
   );
 };
 
