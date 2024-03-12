@@ -6,6 +6,7 @@ import {
   useTheme,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
+import { AppColor } from "src/domain/constants/AppColor";
 import {
   getNextMargin,
   getPrevMargin,
@@ -51,7 +52,8 @@ const TicTacToeDividers = (props: Props) => {
         <Box
           key={index}
           width="1px"
-          bg={theme.colors.tableDivider}
+          // bg={theme.colors.tableDivider}
+          bg={AppColor.LIGHT_GRAY_100}
           marginTop={topMargin}
           marginBottom={bottomMargin}
         ></Box>
@@ -70,7 +72,8 @@ const TicTacToeDividers = (props: Props) => {
         <Box
           key={index}
           height="1px"
-          bg={theme.colors.tableDivider}
+          // bg={theme.colors.tableDivider}
+          bg={AppColor.LIGHT_GRAY_100}
           marginLeft={leftMargin}
           marginRight={rightMargin}
         ></Box>
