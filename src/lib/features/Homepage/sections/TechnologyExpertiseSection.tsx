@@ -5,6 +5,7 @@ import {
   Image,
   ResponsiveValue,
   Text,
+  VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { ReactElement, useState } from "react";
@@ -27,6 +28,7 @@ export interface TechStackLayoutProps {
   width: ResponsiveValue<number | (string & {})>;
   minWidth: ResponsiveValue<number | (string & {})>;
   padding: ResponsiveValue<number | (string & {})>;
+  height: ResponsiveValue<number | (string & {})>;
 }
 
 export interface TechnologiesProps {
@@ -55,20 +57,8 @@ const _Technology = (props: TechStackLayoutProps) => {
       right={props.right}
       bottom={props.bottom}
       position="absolute"
-      width={{
-        base: "70px",
-        sm: "90px",
-        md: "120px",
-        lg: "180px",
-        "2xl": "220px",
-      }}
-      height={{
-        base: "70px",
-        sm: "90px",
-        md: "120px",
-        lg: "180px",
-        "2xl": "220px",
-      }}
+      width={props.width}
+      height={props.height}
       bg="black"
       border="1px solid white"
       boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.25)"
@@ -76,7 +66,7 @@ const _Technology = (props: TechStackLayoutProps) => {
       padding={props.padding}
       overflow="hidden"
     >
-      <HStack justifyContent="center" height="100%" width="100%" bg="">
+      <VStack justifyContent="center" height="100%" width="100%" bg="">
         <Image
           height={{
             base: "20px",
@@ -93,6 +83,7 @@ const _Technology = (props: TechStackLayoutProps) => {
           }}
         />
         <Text
+          // fontSize="80%"
           fontSize={{
             base: "10px",
             sm: "14px",
@@ -103,7 +94,7 @@ const _Technology = (props: TechStackLayoutProps) => {
         >
           {props.name}
         </Text>
-      </HStack>
+      </VStack>
     </Box>
     // <Box top={props.top} style={{ borderRadius: "50%", overflow: "hidden" }}>
     //   <HStack height="100%" width="100%" bg="">
@@ -153,6 +144,7 @@ const TechnologyExpertiseSection = () => {
   const mobileTechStackMappedComponent = mobileTechStack.map((tech, i) => {
     return (
       <_Technology
+        height={tech.layoutProps.height}
         key={i}
         width={tech.layoutProps.width}
         minWidth={tech.layoutProps.minWidth}

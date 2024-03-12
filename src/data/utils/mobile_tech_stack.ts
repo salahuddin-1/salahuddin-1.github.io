@@ -6,6 +6,14 @@ import iconSupabase from "@assets/icon_supabase_logo.svg";
 import { TechStackEnum } from "src/domain/enums/tech_stack_enum";
 import { TechStackProps } from "./tech_stack_props";
 
+const size = {
+  base: "80px",
+  sm: "90px",
+  md: "120px",
+  lg: "180px",
+  "2xl": "220px",
+};
+
 export default [
   {
     src: iconFlutter,
@@ -20,12 +28,8 @@ export default [
       padding: "3%",
       top: "10%",
       left: "15%",
-      width: {
-        base: "23%",
-        lg: "18%",
-        xl: "13%",
-        "2xl": "10%",
-      },
+      width: size,
+      height: size,
     },
   },
 
@@ -42,12 +46,8 @@ export default [
       padding: "3%",
       top: "22%",
       right: "15%",
-      width: {
-        base: "15%",
-        lg: "20%",
-        xl: "13%",
-        "2xl": "11%",
-      },
+      width: size,
+      height: size,
     },
   },
 
@@ -60,16 +60,12 @@ export default [
     layoutProps: {
       name: "Firebase",
       src: iconFirebase,
-      bottom: "10%",
+      bottom: "6%",
       right: "15%",
       minWidth: "90px",
-      padding: "1%",
-      width: {
-        base: "23%",
-        lg: "28%",
-        xl: "20%",
-        "2xl": "16%",
-      },
+      padding: "5%",
+      width: size,
+      height: size,
     },
   },
 
@@ -84,15 +80,10 @@ export default [
       src: iconNestJs,
       minWidth: "110px",
       padding: "3%",
-      top: "65%",
+      top: "67%",
       left: "10%",
-
-      width: {
-        base: "20%",
-        lg: "25%",
-        xl: "17%",
-        "2xl": "12%",
-      },
+      width: size,
+      height: size,
     },
   },
 
@@ -107,14 +98,21 @@ export default [
       src: iconSupabase,
       minWidth: "110px",
       padding: "3%",
-      top: "40%",
+      top: "44%",
       left: "35%",
-
       width: {
-        base: "20%",
-        lg: "25%",
-        xl: "17%",
-        "2xl": "12%",
+        base: "90px",
+        sm: "120px",
+        md: "150px",
+        lg: "180px",
+        "2xl": "220px",
+      },
+      height: {
+        base: "90px",
+        sm: "120px",
+        md: "150px",
+        lg: "180px",
+        "2xl": "220px",
       },
     },
   },
