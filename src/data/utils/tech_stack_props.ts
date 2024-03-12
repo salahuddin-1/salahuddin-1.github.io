@@ -6,5 +6,6 @@ export interface TechStackProps {
   type: TechStackEnum;
   typeString: string;
   slug: string;
+  name: string;
   layoutProps: TechStackLayoutProps;
 }

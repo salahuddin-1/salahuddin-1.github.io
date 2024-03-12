@@ -12,12 +12,14 @@ export default [
     type: TechStackEnum.MOBILE,
     typeString: "Mobile",
     slug: "flutter",
+    name: "Flutter",
     layoutProps: {
+      name: "Flutter",
       src: iconFlutter,
       minWidth: "90px",
       padding: "3%",
       top: "10%",
-      left: "20%",
+      left: "15%",
       width: {
         base: "23%",
         lg: "18%",
@@ -31,13 +33,15 @@ export default [
     src: iconReactNative,
     type: TechStackEnum.MOBILE,
     typeString: "Mobile",
-    slug: "reactnative",
+    slug: "react",
+    name: "React",
     layoutProps: {
+      name: "React",
       src: iconReactNative,
       minWidth: "60px",
       padding: "3%",
-      top: "25%",
-      right: "25%",
+      top: "22%",
+      right: "15%",
       width: {
         base: "15%",
         lg: "20%",
@@ -52,7 +56,9 @@ export default [
     type: TechStackEnum.MOBILE,
     typeString: "Mobile",
     slug: "firebase",
+    name: "Firebase",
     layoutProps: {
+      name: "Firebase",
       src: iconFirebase,
       bottom: "10%",
       right: "15%",
@@ -72,12 +78,14 @@ export default [
     type: TechStackEnum.MOBILE,
     typeString: "Mobile",
     slug: "nestJs",
+    name: "NestJS",
     layoutProps: {
+      name: "NestJS",
       src: iconNestJs,
       minWidth: "110px",
       padding: "3%",
-      top: "55%",
-      left: "15%",
+      top: "65%",
+      left: "10%",
 
       width: {
         base: "20%",
@@ -93,12 +101,14 @@ export default [
     type: TechStackEnum.MOBILE,
     typeString: "Mobile",
     slug: "supabase",
+    name: "Supabase",
     layoutProps: {
+      name: "Supabase",
       src: iconSupabase,
       minWidth: "110px",
       padding: "3%",
-      top: "55%",
-      left: "40%",
+      top: "40%",
+      left: "35%",
 
       width: {
         base: "20%",
