@@ -142,6 +142,7 @@ const TechnologyExpertiseSection = () => {
   // });
 
   const mobileTechStackMappedComponent = mobileTechStack.map((tech, i) => {
+    console.log(tech.name, i);
     return (
       <_Technology
         height={tech.layoutProps.height}

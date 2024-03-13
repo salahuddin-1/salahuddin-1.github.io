@@ -52,6 +52,36 @@ export default [
   },
 
   {
+    src: iconSupabase,
+    type: TechStackEnum.MOBILE,
+    typeString: "Mobile",
+    slug: "supabase",
+    name: "Supabase",
+    layoutProps: {
+      name: "Supabase",
+      src: iconSupabase,
+      minWidth: "110px",
+      padding: "3%",
+      bottom: "6%",
+      right: "15%",
+      width: {
+        base: "90px",
+        sm: "120px",
+        md: "150px",
+        lg: "180px",
+        "2xl": "220px",
+      },
+      height: {
+        base: "90px",
+        sm: "120px",
+        md: "150px",
+        lg: "180px",
+        "2xl": "220px",
+      },
+    },
+  },
+
+  {
     src: iconFirebase,
     type: TechStackEnum.MOBILE,
     typeString: "Mobile",
@@ -60,8 +90,9 @@ export default [
     layoutProps: {
       name: "Firebase",
       src: iconFirebase,
-      bottom: "6%",
-      right: "15%",
+
+      top: "44%",
+      left: "35%",
       minWidth: "90px",
       padding: "5%",
       width: size,
@@ -84,36 +115,6 @@ export default [
       left: "10%",
       width: size,
       height: size,
-    },
-  },
-
-  {
-    src: iconSupabase,
-    type: TechStackEnum.MOBILE,
-    typeString: "Mobile",
-    slug: "supabase",
-    name: "Supabase",
-    layoutProps: {
-      name: "Supabase",
-      src: iconSupabase,
-      minWidth: "110px",
-      padding: "3%",
-      top: "44%",
-      left: "35%",
-      width: {
-        base: "90px",
-        sm: "120px",
-        md: "150px",
-        lg: "180px",
-        "2xl": "220px",
-      },
-      height: {
-        base: "90px",
-        sm: "120px",
-        md: "150px",
-        lg: "180px",
-        "2xl": "220px",
-      },
     },
   },
 ] as TechStackProps[];

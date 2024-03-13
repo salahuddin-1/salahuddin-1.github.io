@@ -46,9 +46,8 @@ const FooterSocialAccounts = () => {
   return (
     <Box justifyContent="space-between" width="120px" bg="" display="flex">
       {listOfSocialAccounts.map((item, index) => (
-        <Link to={item.hrefLink} target="_blank">
+        <Link key={index} to={item.hrefLink} target="_blank">
           <Image
-            key={index}
             cursor="pointer"
             onClick={item.onClick}
             alt={item.alt}
