@@ -1,4 +1,4 @@
-import { Box, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Image, useBreakpointValue } from "@chakra-ui/react";
 import AppPageHeading from "../../../ui/components/AppPageHeading";
 import AppMaterialButton from "../../../ui/components/AppMaterialButton";
 import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvider";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { RoutePaths } from "src/lib/navigation/route_paths";
 import AnimateOnLoad from "@components/AnimateOnLoad";
 import LottieHeroAnimation from "../components/LottieHeroAnimation";
+import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 
 const HeroSection = () => {
   const viewModel = useHomepageViewModel();
@@ -73,6 +74,7 @@ const HeroSection = () => {
 
       <AnimateOnLoad duration={1} delay={0.75} translateY={100}>
         <Box flex="1" display="flex" justifyContent="center" backgroundColor="">
+          {/* <Image src={ticTacToeimage}></Image> */}
           {/* <HeroImage /> */}
 
           <LottieHeroAnimation width={lottieWidth} />

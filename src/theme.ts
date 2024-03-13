@@ -41,7 +41,7 @@ const theme = extendTheme({
   colors: {
     primary: AppColor.BLACK,
     secondary: AppColor.WHITE,
-    accent: AppColor.DARK_BLUE,
+    accent: AppColor.ACCENT,
     tableDivider: AppColor.LIGHT_GRAY,
     appDivider: "#c1c1c1",
     footer: AppColor.BLACK,

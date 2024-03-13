@@ -23,10 +23,10 @@ const AppMaterialButton = (props: Props) => {
       paddingX="25px"
       paddingY="10px"
       backgroundColor={theme.colors.accent}
-      textColor={theme.colors.secondary}
+      textColor={theme.colors.primary}
       borderRadius="6px"
       boxSizing="border-box"
-      fontWeight={600}
+      fontWeight={500}
       fontSize="13px"
       as="button"
       cursor={props.isDisabled ? "not-allowed" : "pointer"}
