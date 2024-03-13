@@ -71,7 +71,7 @@ const HeroSection = () => {
       </Box>
 
       <Box height="75px" />
-      <Box width="75px" />
+      <Box marginX="75px" width="0.05px" height="inherit" bg="white"></Box>
 
       {/* Profile Image and Designation */}
       <Box
