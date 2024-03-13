@@ -1,8 +1,9 @@
 import { Box, Image } from "@chakra-ui/react";
 import { AppConstants } from "src/domain/constants/AppConstants";
 import icon_facebook from "@assets/icon_facebook.png";
-import icon_instagram from "@assets/icon_instagram.png";
-import iconLinkedIn from "@assets/icon_linkedin.png";
+import icon_instagram from "@assets/icon_instagram.svg";
+import iconLinkedIn from "@assets/icon_linkedin.svg";
+import iconGithub from "@assets/icon_github.svg";
 
 interface SocialAccounts {
   type: string;
@@ -23,7 +24,7 @@ const FooterSocialAccounts = () => {
       type: "facebook",
       onClick: () => {},
       alt: AppConstants.FACEBOOK_ALT_TEXT,
-      src: icon_facebook,
+      src: iconGithub,
     },
     {
       type: "linkedin",
@@ -34,7 +35,7 @@ const FooterSocialAccounts = () => {
   ];
 
   return (
-    <Box justifyContent="space-between" width={20} bg="" display="flex">
+    <Box justifyContent="space-between" width="22px" bg="red" display="flex">
       {listOfSocialAccounts.map((item, index) => (
         <Image
           key={index}
@@ -42,7 +43,7 @@ const FooterSocialAccounts = () => {
           onClick={item.onClick}
           alt={item.alt}
           src={item.src}
-          height={7}
+          color="red"
         />
       ))}
     </Box>

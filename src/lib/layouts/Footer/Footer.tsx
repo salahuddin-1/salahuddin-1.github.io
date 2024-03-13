@@ -75,7 +75,7 @@ export const Footer = () => {
       >
         {/* TODO */}
         {/* Logo of Social Accounts like Facebook, Instagram, LinkedIn */}
-        {/* <FooterSocialAccounts /> */}
+        <FooterSocialAccounts />
       </GridItem>
 
       <GridItem
