@@ -6,8 +6,8 @@ export class AppConstants {
   public static FACEBOOK_ALT_TEXT: string = "Facebook Icon Alt Text";
   public static TWITTER_ALT_TEXT: string = "Twitter Icon Alt Text";
   public static LINKEDIN_ALT_TEXT: string = "LinkedIn Icon Alt Text";
-  public static CONTACT_US_PHONE: string = "+91 91674 10616";
-  public static CONTACT_US_EMAIL: string = "ourolink@proton.me";
+  public static CONTACT_US_PHONE: string = "+91 8898911744";
+  public static CONTACT_US_EMAIL: string = "salahuddinshaikh16@gmail.com";
 
   // Firebase Collections
   public static CONTACT_US_COLLECTION: string = "contactUs";
