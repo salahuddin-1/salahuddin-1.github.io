@@ -15,27 +15,29 @@ interface SocialAccounts {
 const FooterSocialAccounts = () => {
   const listOfSocialAccounts: SocialAccounts[] = [
     {
-      type: "instagram",
-      onClick: () => {},
-      alt: AppConstants.INSTAGRAM_ALT_TEXT,
-      src: icon_instagram,
-    },
-    {
-      type: "facebook",
-      onClick: () => {},
-      alt: AppConstants.FACEBOOK_ALT_TEXT,
-      src: iconGithub,
-    },
-    {
       type: "linkedin",
       onClick: () => {},
       alt: AppConstants.LINKEDIN_ALT_TEXT,
       src: iconLinkedIn,
     },
+
+    {
+      type: "github",
+      onClick: () => {},
+      alt: "Github Icon Alt Text",
+      src: iconGithub,
+    },
+
+    {
+      type: "instagram",
+      onClick: () => {},
+      alt: "Instagram Icon Alt Text",
+      src: icon_instagram,
+    },
   ];
 
   return (
-    <Box justifyContent="space-between" width="22px" bg="red" display="flex">
+    <Box justifyContent="space-between" width="120px" bg="" display="flex">
       {listOfSocialAccounts.map((item, index) => (
         <Image
           key={index}
@@ -43,6 +45,7 @@ const FooterSocialAccounts = () => {
           onClick={item.onClick}
           alt={item.alt}
           src={item.src}
+          width="25px"
           color="red"
         />
       ))}
