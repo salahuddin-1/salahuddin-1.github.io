@@ -84,25 +84,8 @@ const HeroSection = () => {
       >
         {/* <AnimateOnLoad duration={1} delay={0.75} translateY={100}> */}
         <Image src={ticTacToeimage}></Image>
-        {/* </AnimateOnLoad> */}
-
         <_ProfileImage />
-
-        {/* <Box
-          borderRadius="50%"
-          top="30px"
-          right="30px"
-          position="absolute"
-          boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.25)"
-          border="1px solid white"
-          // boxSize="25%"
-          // aspectRatio={1 / 1}
-          height="10vw"
-          width="10vw"
-          bg="red"
-        >
-          <img src={profilePhotoHero}></img>
-        </Box> */}
+        {/* </AnimateOnLoad> */}
       </Box>
     </Box>
   );

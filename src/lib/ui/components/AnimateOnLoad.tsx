@@ -1,3 +1,4 @@
+import { ResponsiveValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -6,6 +7,8 @@ interface Props {
   delay?: number;
   translateX?: number;
   translateY?: number;
+  top?: ResponsiveValue<number | (string & {})>;
+  right?: ResponsiveValue<number | (string & {})>;
 }
 
 const AnimateOnLoad = ({
@@ -14,6 +17,8 @@ const AnimateOnLoad = ({
   delay,
   translateX,
   translateY = 0,
+  top,
+  right,
 }: Props) => {
   return (
     <motion.div
@@ -22,7 +27,11 @@ const AnimateOnLoad = ({
         translateX: translateX,
         translateY: translateY,
       }}
-      animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+      animate={{
+        opacity: 1,
+        translateX: 0,
+        translateY: 0,
+      }}
       transition={{ duration: duration, delay: delay }}
     >
       {children}
