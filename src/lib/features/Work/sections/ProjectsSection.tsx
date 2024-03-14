@@ -191,9 +191,9 @@ const ProjectsSection: React.FC = () => {
       }
 
       return useBreakpointValue({
-        base: "200px",
-        md: "250px",
-        lg: "300px",
+        base: "100px",
+        md: "120px",
+        lg: "180px",
       });
     };
 
@@ -266,16 +266,18 @@ const ProjectsSection: React.FC = () => {
           </Box>
         </AnimateOnLoad>
 
-        <Box height="50px" />
+        {/* <Box height="50px" /> */}
 
-        <AnimateOnLoad delay={0.2} translateY={animationOnLoadProps.translateY}>
+        {/* <AnimateOnLoad delay={0.2} translateY={animationOnLoadProps.translateY}>
           <Flex bg="" flexWrap="wrap">
-            {/* TECH STACK USED */}
+            // TECH STACK USED
             {techStackList(item.techStack)}
           </Flex>
-        </AnimateOnLoad>
+        </AnimateOnLoad> */}
 
-        {item.techStack.length !== 0 && <Box height="40px" />}
+        {/* {item.techStack.length !== 0 && <Box height="40px" />} */}
+
+        <Box height="40px" />
 
         {/* DESCRIPTION */}
         <AnimateOnLoad delay={0.3} translateY={animationOnLoadProps.translateY}>
