@@ -7,13 +7,13 @@ import { getFirestore } from "firebase/firestore/lite";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDh4JmUuqhhfvg8uEr5vTLWfkS9aCXtLr8",
-  authDomain: "ourolink-website-portfolio.firebaseapp.com",
-  projectId: "ourolink-website-portfolio",
-  storageBucket: "ourolink-website-portfolio.appspot.com",
-  messagingSenderId: "736338334851",
-  appId: "1:736338334851:web:ce7db1737ce64274d6b7b6",
-  measurementId: "G-PMGC3015FB",
+  apiKey: "AIzaSyD1Pc4HmqWDOogeuyHnKImJNv23pi14k0g",
+  authDomain: "salahuddin-website-portfolio.firebaseapp.com",
+  projectId: "salahuddin-website-portfolio",
+  storageBucket: "salahuddin-website-portfolio.appspot.com",
+  messagingSenderId: "147579451867",
+  appId: "1:147579451867:web:128de77e40b2ec1ff1cffe",
+  measurementId: "G-M5XC1LTCMY",
 };
 
 // Initialize Firebase
