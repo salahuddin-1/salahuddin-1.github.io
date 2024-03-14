@@ -38,6 +38,20 @@ import mandi1 from "@assets/projects/mandi_1.jpg";
 import mandi2 from "@assets/projects/mandi_2.jpg";
 import mandi3 from "@assets/projects/mandi_3.jpg";
 
+// CAPITAL BANK
+import capital1 from "@assets/projects/capital_1.png";
+import capital2 from "@assets/projects/capital_2.png";
+import capital3 from "@assets/projects/capital_3.png";
+
+// PRABODHAM
+import prabodham1 from "@assets/projects/prabodham_1.jpg";
+import prabodham2 from "@assets/projects/prabodham_2.jpg";
+import prabodham3 from "@assets/projects/prabodham_3.jpg";
+
+// GAME HUB
+import gamehub1 from "@assets/projects/gamehub_1.png";
+import gamehub2 from "@assets/projects/gamehub_2.png";
+
 // RUMMOZ KITCHEN ADMIN PORTAL
 import imageRummozAdmin1 from "@assets/projects/rummoz_admin_1.png";
 import imageRummozAdmin2 from "@assets/projects/rummoz_admin_2.png";
@@ -96,6 +110,80 @@ export default [
       {
         src: imageRummozAdmin2,
         alt: "Rummo'z Kitchen Admin Portal 2",
+      },
+    ],
+    ref: React.createRef(),
+  },
+
+  // CAPITAL BANK
+  {
+    projectName: "Capital Bank of Jordan",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "capital-bank-of-jordan",
+    backgroundColor: "#27323E",
+    description:
+      "I worked on the 'Capital Bank of Jordan' application on the Mobile App side, utilizing Flutter and employing Clean Architecture + MVVM as the project's framework. I laid the foundation for the app and developed various key features. My contribution to Capital Bank of Jordan focused solely on the frontend, accounting for approximately 70% of the app's widgets. I established the foundation for the app, designing and customizing every button, text field, and color for reusability.",
+    techStack: ["flutter"],
+    images: [
+      {
+        src: capital1,
+        alt: "Capital Bank 1",
+      },
+      {
+        src: capital2,
+        alt: "Capital Bank 2",
+      },
+      {
+        src: capital3,
+        alt: "Capital Bank 3",
+      },
+    ],
+    ref: React.createRef(),
+  },
+
+  // PRABODHAM
+  {
+    projectName: "Prabodham",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "prabodham",
+    backgroundColor: "#FFFFFF",
+    description:
+      "The goal was to develop an E-commerce Direct-to-Consumer (D2C) cross-platform app for Android and iOS, enabling end users to purchase skincare products from the client, Prabodham. In this project, I took on the role of UI/UX designer and developer, utilizing Flutter to create the app's user interface. Additionally, I served as the team lead, overseeing a team of two members. Together, we successfully developed an MVP for the client, encompassing all essential modules and features.",
+    techStack: ["flutter"],
+    images: [
+      {
+        src: prabodham1,
+        alt: "Prabodham 1",
+      },
+      {
+        src: prabodham2,
+        alt: "Prabodham 2",
+      },
+      {
+        src: prabodham3,
+        alt: "Prabodham 3",
+      },
+    ],
+    ref: React.createRef(),
+  },
+
+  // GAME HUB
+  {
+    projectName: "Game Hub",
+    deviceType: DeviceTypeEnum.DESKTOP,
+    slug: "game-hub",
+    backgroundColor: AppColor.BLACK_900,
+    description:
+      "I had the privilege of developing the GameHub website as a project for a client during their third year of Computer Science. Built using React and TypeScript, GameHub is a dynamic platform tailored for gaming enthusiasts.",
+    techStack: ["react", "typescript"],
+    images: [
+      {
+        src: gamehub1,
+        alt: "Game Hub 1",
+      },
+      {
+        src: gamehub2,
+        alt: "Game Hub 2",
       },
     ],
     ref: React.createRef(),
