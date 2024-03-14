@@ -54,15 +54,15 @@ const FooterLegals = () => {
       <FooterVSpace />
       <FooterVSpace />
 
-      <FooterHeading>For sales</FooterHeading>
+      <FooterHeading>Drop me an email</FooterHeading>
       <FooterVSpace />
       <FooterText>{AppConstants.CONTACT_US_EMAIL}</FooterText>
       <FooterVSpace />
       <FooterVSpace />
 
-      <FooterHeading>For jobs</FooterHeading>
+      <FooterHeading>Give me a ring or Whatsapp</FooterHeading>
       <FooterVSpace />
-      <FooterText>{AppConstants.CONTACT_US_EMAIL}</FooterText>
+      <FooterText>{AppConstants.CONTACT_US_PHONE}</FooterText>
     </>
   );
 };
