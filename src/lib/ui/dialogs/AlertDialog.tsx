@@ -1,6 +1,7 @@
-import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import AppMaterialButton from "../components/AppMaterialButton";
 import Modal from "react-modal";
+import { AppColor } from "src/domain/constants/AppColor";
 
 Modal.setAppElement("#root");
 
@@ -21,6 +22,7 @@ const customStyles: Modal.Styles = {
     padding: "20px 30px",
     transform: "translate(-50%, -50%)",
     borderRadius: "10px",
+    backgroundColor: AppColor.BLACK,
   },
 };
 
