@@ -9,4 +9,5 @@ export class AppColor {
   public static LIGHT_GRAY: string = "#5D5D5D";
   public static LIGHT_GRAY_100: string = "#424242";
   public static ACCENT: string = "#5AC8FA";
+  public static BLACK_700: string = "#393939";
 }

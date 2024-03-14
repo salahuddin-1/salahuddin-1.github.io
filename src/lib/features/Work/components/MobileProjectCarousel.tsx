@@ -60,9 +60,9 @@ const _IconLeft = (props: _IconProps) => {
 
 const _Image = (props: _ImageProps) => {
   const border = useBreakpointValue({
-    base: `5px solid ${AppColor.BLACK_900}`,
-    sm: `6px solid ${AppColor.BLACK_900}`,
-    md: `7px solid ${AppColor.BLACK_900}`,
+    base: `6px solid ${AppColor.BLACK_700}`,
+    sm: `7px solid ${AppColor.BLACK_700}`,
+    md: `8px solid ${AppColor.BLACK_700}`,
   });
 
   const borderRadius = useBreakpointValue({
