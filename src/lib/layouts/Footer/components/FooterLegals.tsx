@@ -12,7 +12,7 @@ const FooterLegals = () => {
 
   const listOfLegals: FooterTextButtonProps[] = [
     {
-      label: "Contact us",
+      label: "Get in touch",
       onClick: () => {
         navigate(RoutePaths.CONTACT_US);
       },
