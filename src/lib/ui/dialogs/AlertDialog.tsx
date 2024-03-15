@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import AppMaterialButton from "../components/AppMaterialButton";
 import Modal from "react-modal";
 import { AppColor } from "src/domain/constants/AppColor";
@@ -13,19 +13,6 @@ interface AppAlertDialogProps {
   alt: string;
 }
 
-const customStyles: Modal.Styles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    padding: "20px 30px",
-    transform: "translate(-50%, -50%)",
-    borderRadius: "10px",
-    backgroundColor: AppColor.BLACK,
-  },
-};
-
 const AppAlertDialog: React.FC<AppAlertDialogProps> = ({
   isOpen,
   onClose,
@@ -33,6 +20,21 @@ const AppAlertDialog: React.FC<AppAlertDialogProps> = ({
   src,
   alt,
 }) => {
+  const right = useBreakpointValue({ base: "-30%", md: "auto" });
+
+  const customStyles: Modal.Styles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: right,
+      bottom: "auto",
+      padding: "20px 30px",
+      transform: "translate(-50%, -50%)",
+      borderRadius: "10px",
+      backgroundColor: AppColor.BLACK,
+    },
+  };
+
   return (
     <Modal
       style={customStyles}
