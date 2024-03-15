@@ -41,7 +41,9 @@ const HeroSection = () => {
           delay={animationOnLoadProps.delay()}
           translateY={animationOnLoadProps.translateY}
         >
-          <AppPageHeading>Paint your ideas in pixels</AppPageHeading>
+          <AppPageHeading>
+            Transform Your Ideas into User-friendly Mobile Experiences
+          </AppPageHeading>
         </AnimateOnLoad>
 
         <Box height="30px" />
@@ -50,13 +52,29 @@ const HeroSection = () => {
           delay={animationOnLoadProps.delay()}
           translateY={animationOnLoadProps.translateY}
         >
-          <AppPageSubheading>
-            We help small-to-medium companies and agencies build highly scalable
-            softwares and help them do more in less time
+          <AppPageSubheading fontSize={17} letterSpacing={0}>
+            Need a mobile app for Android and iOS? Or a web app for all
+            browsers? A custom software system?
+          </AppPageSubheading>
+
+          <Box height="40px" />
+
+          <AppPageSubheading fontSize={17} letterSpacing={0}>
+            As a Mobile App Developer Expert, I solve business problems with
+            software. I help traditional businesses go online by building
+            customized mobile apps tailored to their needs.
+          </AppPageSubheading>
+
+          <Box height="40px" />
+
+          <AppPageSubheading fontSize={17} letterSpacing={0}>
+            Let me guide you in developing high-quality, robust, scalable, and
+            secure mobile apps with a user-centric design approach, putting the
+            end-user first.
           </AppPageSubheading>
         </AnimateOnLoad>
 
-        <Box height="25px" />
+        <Box height="35px" />
 
         <AnimateOnLoad
           delay={animationOnLoadProps.delay()}
