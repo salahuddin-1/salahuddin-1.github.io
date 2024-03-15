@@ -57,7 +57,7 @@ const _MobileSideComponents = () => {
           <Box width="20px"></Box>
         </Show>
 
-        {/*  Drawer only visible on Mobile devices */}
+        {/* Drawer only visible on Mobile devices */}
         <Sidebar
           isOpen={isSideBarOpen}
           onClose={() => {
