@@ -50,7 +50,7 @@ const OurWorkSection = () => {
 
   return (
     <>
-      <AppSectionHeading>Our Work</AppSectionHeading>
+      <AppSectionHeading>My Portfolio</AppSectionHeading>
 
       <SectionHeadingSpacing />
 

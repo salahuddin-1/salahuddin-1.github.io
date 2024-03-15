@@ -60,7 +60,7 @@ const FooterLegals = () => {
       <FooterVSpace />
       <FooterVSpace />
 
-      <FooterHeading>Give me a ring or Whatsapp</FooterHeading>
+      <FooterHeading>Give me a ring or whatsapp</FooterHeading>
       <FooterVSpace />
       <FooterText>{AppConstants.CONTACT_US_PHONE}</FooterText>
     </>

@@ -29,7 +29,7 @@ const Homepage = () => {
       <EngineeringServicesSection />
       <SectionSpacing />
 
-      {/* OUR WORK SECTION */}
+      {/* MY PORTFOLIO SECTION */}
       <OurWorkSection />
       <SectionSpacing />
 

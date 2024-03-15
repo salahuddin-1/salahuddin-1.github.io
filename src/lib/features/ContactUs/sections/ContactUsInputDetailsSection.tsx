@@ -253,7 +253,7 @@ const _TextFields = (props: TextFieldProps) => {
         <AppTextField
           register={props.register("message")}
           error={props.errors.message}
-          label="How can we help you?"
+          label="How can I help you?"
           placeholder="Leave a message"
         />
       </AnimateOnLoad>
@@ -390,7 +390,7 @@ const ContactUsInputDetailsSection = () => {
         src={iconCheck}
         isOpen={isSuccessDialogOpen}
         onClose={() => handleOpenSuccessDialog(false)}
-        message="Thank you for contacting us. We will get back to you soon."
+        message="Thank you for your interest. I will get back to you soon."
       />
       <Flex flexDir="column">
         <Flex

@@ -17,7 +17,7 @@ const EngineeringServicesSection = () => {
   return (
     <Box ref={engineeringServicesRef}>
       <AnimateOnLoad delay={1} translateY={50}>
-        <AppSectionHeading>Things we can engineer for you</AppSectionHeading>
+        <AppSectionHeading>Things I can engineer for you</AppSectionHeading>
       </AnimateOnLoad>
 
       <SectionHeadingSpacing />

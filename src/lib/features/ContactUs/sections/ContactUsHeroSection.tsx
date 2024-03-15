@@ -19,7 +19,7 @@ const ContactUsHeroSection = () => {
         translateY={animationOnLoadProps.translateY}
       >
         <Text textColor={theme.colors.workTech} fontSize={12} fontWeight="600">
-          Contact Us
+          Get in touch
         </Text>
       </AnimateOnLoad>
 
@@ -41,8 +41,8 @@ const ContactUsHeroSection = () => {
         translateY={animationOnLoadProps.translateY}
       >
         <AppPageSubheading>
-          Take the first step by filling out our project formbelow, and someone
-          from our team will reach backto you within 2 business days.
+          Take the first step by filling out the form below, and I'll reach back
+          to you within 2 business days.
         </AppPageSubheading>
       </AnimateOnLoad>
     </Flex>

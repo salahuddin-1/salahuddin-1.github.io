@@ -64,7 +64,7 @@ const HeroSection = () => {
         >
           <Link to={RoutePaths.WORK}>
             <AppMaterialButton onClick={() => {}}>
-              View our portfolio
+              View my portfolio
             </AppMaterialButton>
           </Link>
         </AnimateOnLoad>

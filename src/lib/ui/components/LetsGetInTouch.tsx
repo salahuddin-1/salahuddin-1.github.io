@@ -10,14 +10,14 @@ const LetsGetInTouch = () => {
   return (
     <Flex flexDir="column">
       <Text fontSize="30px" fontWeight="500">
-        Curious about the impact our service can make on your business?
+        Curious about the impact my services can make for you?
       </Text>
 
       <Box height="30px"></Box>
 
       <AppPageSubheading>
-        Connect with us to discover how our Software Solutions enhance
-        businesses.
+        Connect with me to explore how my software solutions can digitize your
+        business.
       </AppPageSubheading>
 
       <Box height="60px"></Box>

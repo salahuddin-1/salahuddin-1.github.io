@@ -5,7 +5,7 @@ import FooterVSpace from "./FooterVSpace";
 const FooterAboutUs = () => {
   return (
     <>
-      <FooterHeading>About us</FooterHeading>
+      <FooterHeading>About me</FooterHeading>
 
       <FooterVSpace />
 

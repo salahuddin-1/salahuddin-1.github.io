@@ -213,7 +213,7 @@ const TechnologyExpertiseSection = () => {
 
   return (
     <Box>
-      <AppSectionHeading>Our Technology Expertise</AppSectionHeading>
+      <AppSectionHeading>My Technology Expertise</AppSectionHeading>
       <SectionHeadingSpacing />
 
       <Flex

@@ -11,14 +11,14 @@ const WorkHeroSection = () => {
   return (
     <Flex flexDirection="column">
       <AnimateOnLoad delay={animationOnLoadProps.delay()} translateY={50}>
-        <AppPageHeading>Our Work</AppPageHeading>
+        <AppPageHeading>My Portfolio</AppPageHeading>
       </AnimateOnLoad>
       <Box height="30px" />
 
       <AnimateOnLoad delay={animationOnLoadProps.delay()} translateY={50}>
         <AppPageSubheading>
-          We build beautiful apps with a focus on stunning UI, satisfying UX,
-          and client delight
+          I create visually appealing and user-friendly mobile apps that satisfy
+          clients.
         </AppPageSubheading>
       </AnimateOnLoad>
     </Flex>

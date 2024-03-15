@@ -21,7 +21,7 @@ interface HamburguerIconButtonProps {
 const _ContactUsButton = () => {
   return (
     <Link to={RoutePaths.CONTACT_US}>
-      <AppMaterialButton onClick={() => {}}>Contact us</AppMaterialButton>
+      <AppMaterialButton onClick={() => {}}>Get in touch</AppMaterialButton>
     </Link>
   );
 };
@@ -104,13 +104,13 @@ const _DesktopSideComponents = () => {
       >
         {/* Work Page */}
 
-        <TextButton onClick={onClickWork}>Work</TextButton>
+        <TextButton onClick={onClickWork}>Portfolio</TextButton>
 
         {/* Services Page */}
-        <TextButton onClick={onClickServices}>Services</TextButton>
+        <TextButton onClick={onClickServices}>Skills</TextButton>
 
         {/* About Us Page */}
-        <TextButton onClick={onClickAboutUs}>About us</TextButton>
+        <TextButton onClick={onClickAboutUs}>About me</TextButton>
 
         <_ContactUsButton />
       </HStack>
