@@ -1,9 +1,9 @@
 {
+  "homepage": "https://salahuddin-1.github.io/salahuddin-1.github.io",
   "name": "salahuddin-website-portfolio",
   "private": true,
   "version": "2.0.0",
   "type": "module",
-  "homepage": "https://salahuddin-1.github.io/homepage",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
