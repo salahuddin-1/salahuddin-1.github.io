@@ -4,7 +4,7 @@ import TextButton from "../../ui/components/TextButton";
 import AppMaterialButton from "../../ui/components/AppMaterialButton";
 import AppDivider from "../../ui/components/AppDivider";
 import { AppConstants } from "../../../domain/constants/AppConstants";
-import "./NavBar.css";
+import "src/lib/layouts/NavBar/NavBar.css";
 import LogoImage from "src/lib/features/Homepage/components/LogoImage";
 import { Link, useNavigate } from "react-router-dom";
 import { RoutePaths } from "src/lib/navigation/route_paths";
