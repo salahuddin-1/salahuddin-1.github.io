@@ -75,13 +75,13 @@ const SidebarContent = (props: Props) => {
 
   return (
     <VStack paddingLeft="20px" alignItems="start" justifyContent="space-around">
-      <TextButton onClick={onClickWork}>Work</TextButton>
+      <TextButton onClick={onClickWork}>Portfolio</TextButton>
       <Box height="20px" />
-      <TextButton onClick={onClickServices}>Services</TextButton>
+      <TextButton onClick={onClickServices}>Skills</TextButton>
       <Box height="20px" />
-      <TextButton onClick={onClickAboutUs}>About us</TextButton>
+      <TextButton onClick={onClickAboutUs}>About me</TextButton>
       <Box height="20px" />
-      <TextButton onClick={onClickContactUs}>Contact us</TextButton>
+      <TextButton onClick={onClickContactUs}>Get in touch</TextButton>
     </VStack>
   );
 };
