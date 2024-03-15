@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
-  "homepage": "https://github.com/salahuddin-1/salahuddin-1.github.io",
+  "homepage": "https://salahuddin-1.github.io/homepage",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
