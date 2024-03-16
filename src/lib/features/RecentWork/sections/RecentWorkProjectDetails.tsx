@@ -1,4 +1,12 @@
-import { Flex, useTheme, Text, Box, useMediaQuery } from "@chakra-ui/react";
+import {
+  Flex,
+  useTheme,
+  Text,
+  Box,
+  useMediaQuery,
+  Image,
+  HStack,
+} from "@chakra-ui/react";
 import AnimateOnLoad from "@components/AnimateOnLoad";
 import AppPageSubheading from "@components/AppPageSubheading";
 import { WorkStackProps } from "@datautils/work_stack";
@@ -8,6 +16,9 @@ import { projectImagesList } from "../../Work/sections/ProjectsSection";
 import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import { SectionSpacing } from "@components/SectionSpacing";
 import MobileProjectCarousel from "../../Work/components/MobileProjectCarousel";
+import iconPlayStore from "@assets/icon_playstore.svg";
+import { AppColor } from "src/domain/constants/AppColor";
+import PlaystoreButton from "@components/PlaystoreButton";
 
 interface RecentWorkProjectDetailsProps {
   projectDetails: WorkStackProps | undefined;
@@ -101,6 +112,10 @@ const RecentWorkProjectDetails = (props: RecentWorkProjectDetailsProps) => {
           {props.projectDetails?.description ?? ""}
         </AppPageSubheading>
       </AnimateOnLoad>
+
+      <Box height="50px" />
+
+      <PlaystoreButton />
 
       <Box height="50px" />
 
