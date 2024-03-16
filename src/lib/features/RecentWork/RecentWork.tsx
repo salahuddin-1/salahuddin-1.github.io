@@ -1,15 +1,10 @@
-import workStack, {
-  WorkStackImageProps,
-  WorkStackProps,
-} from "@datautils/work_stack";
+import { WorkStackProps } from "@datautils/work_stack";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import BasePage from "src/lib/base/BasePage";
 import { useRecentWorkViewModel } from "src/lib/providers/RecentWorkViewModelProvider";
 import RecentWorkHeroSection from "./sections/RecentWorkHeroSection";
-import { SectionSpacing } from "@components/SectionSpacing";
-import AnimateOnLoad from "@components/AnimateOnLoad";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import RecentWorkProjectDetails from "./sections/RecentWorkProjectDetails";
 
 export type RecentWorkNavParams = {

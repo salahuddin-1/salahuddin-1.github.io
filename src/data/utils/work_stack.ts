@@ -90,6 +90,8 @@ export default [
         alt: "Rummo'z Kitchen 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.business.rummozkitchen&pcampaignid=web_share",
     ref: React.createRef(),
   },
 
@@ -112,6 +114,8 @@ export default [
         alt: "Rummo'z Kitchen Admin Portal 2",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 
@@ -138,6 +142,8 @@ export default [
         alt: "Capital Bank 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.capital.cbt&hl=en&gl=US",
     ref: React.createRef(),
   },
 
@@ -164,6 +170,8 @@ export default [
         alt: "Prabodham 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.app.prabodham",
     ref: React.createRef(),
   },
 
@@ -186,6 +194,7 @@ export default [
         alt: "Game Hub 2",
       },
     ],
+    playstoreLink: "https://game-hub-mosh-lac.vercel.app/",
     ref: React.createRef(),
   },
 
@@ -217,6 +226,7 @@ export default [
         alt: "Bet All Week 3",
       },
     ],
+    playstoreLink: null,
     ref: React.createRef(),
   },
 
@@ -250,6 +260,7 @@ export default [
         alt: "Feed 3",
       },
     ],
+    playstoreLink: null,
     ref: React.createRef(),
   },
 
@@ -283,6 +294,8 @@ export default [
         alt: "GoChi 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.gochi.salahuddinshaikh",
     ref: React.createRef(),
   },
 
@@ -316,6 +329,8 @@ export default [
         alt: "GoChi Admin Portal 3",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 
@@ -344,6 +359,7 @@ export default [
 
       ,
     ],
+    playstoreLink: null,
     ref: React.createRef(),
   },
 
@@ -370,6 +386,8 @@ export default [
         alt: "Hanzaib 3",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 
@@ -403,6 +421,8 @@ export default [
         alt: "Mandi Market 3",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 ] as WorkStackProps[];
@@ -415,6 +435,8 @@ export interface WorkStackProps {
   images: WorkStackImageProps[];
   backgroundColor?: string;
   deviceType: DeviceTypeEnum;
+  playstoreLink: string;
+  isProjectPrivate?: boolean;
   ref?: React.RefObject<HTMLDivElement>;
 }
 

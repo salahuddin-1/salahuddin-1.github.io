@@ -1,5 +1,6 @@
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import iconPlayStore from "@assets/icon_playstore.svg";
+
 import { AppColor } from "src/domain/constants/AppColor";
 
 const PlaystoreButton = () => {
@@ -8,9 +9,9 @@ const PlaystoreButton = () => {
       bg={AppColor.BLACK}
       display="flex"
       width="fit-content"
-      paddingX="15px"
+      paddingX="18px"
       paddingY="10px"
-      border="1px solid #FFFFFF"
+      border={`1px solid ${AppColor.WHITE}`}
       borderRadius="10px"
       cursor="pointer"
     >
