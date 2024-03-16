@@ -156,7 +156,7 @@ const _ProfileImage = () => {
         aspectRatio={1 / 1}
         objectFit="cover"
         boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.3)"
-        border="1px solid white"
+        border="4px solid white"
       />
 
       <Box height="20px"></Box>
