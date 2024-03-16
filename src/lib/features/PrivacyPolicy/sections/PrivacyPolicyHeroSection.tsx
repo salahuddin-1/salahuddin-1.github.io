@@ -29,12 +29,12 @@ const PrivacyPolicyHeroSection = () => {
 
       {/* The Sub heading of the Hero */}
       <AppPageSubheading>
-        Ourolink (“Company”, “we”, “us”, or “our”) specializes in providing
-        Software as a Service (SaaS) solutions for businesses. This Privacy
-        Policy is applicable to all personal data handled by Ourolink,
-        encompassing data accumulated through our website, our services, and
-        during regular business dealings. Our primary aim in collecting
-        information is to enhance, deliver, and safeguard the services we offer:
+        We specialize in providing Software as a Service (SaaS) solutions for
+        businesses. This Privacy Policy is applicable to all personal data
+        handled by us, encompassing data accumulated through our website, our
+        services, and during regular business dealings. Our primary aim in
+        collecting information is to enhance, deliver, and safeguard the
+        services we offer:
       </AppPageSubheading>
 
       <SectionHeadingSpacing />

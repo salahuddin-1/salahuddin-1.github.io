@@ -29,10 +29,9 @@ const TermsAndConditionsHeroSection = () => {
 
       {/* The Sub heading of the Hero */}
       <AppPageSubheading>
-        Welcome to Ourolink (“Company”, “we”, “us”, or “our”). We provide
-        Software as a Service (SaaS) solutions to businesses, subject to the
-        following Terms and Conditions. By accessing or using our service, you
-        agree to be bound by these terms.
+        We provide Software as a Service (SaaS) solutions to businesses, subject
+        to the following Terms and Conditions. By accessing or using our
+        service, you agree to be bound by these terms.
       </AppPageSubheading>
 
       <SectionHeadingSpacing />
