@@ -111,10 +111,7 @@ const RecentWorkProjectDetails = (props: RecentWorkProjectDetailsProps) => {
           playstoreLink={props.projectDetails?.playstoreLink}
           isProjectPrivate={props.projectDetails?.isProjectPrivate ?? false}
         />
-        {/* <PlaystoreButton hrefLink={props.projectDetails?.playstoreLink ?? ""} /> */}
       </AnimateOnLoad>
-
-      {/* <PlaystoreButtonLocked /> */}
 
       <Box height="50px" />
 
