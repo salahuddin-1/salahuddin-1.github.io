@@ -42,7 +42,7 @@ const HeroSection = () => {
           translateY={animationOnLoadProps.translateY}
         >
           <AppPageHeading>
-            Transform Your Ideas into User-friendly Mobile Experiences
+            Transform Your Ideas into User-friendly Mobile Applications
           </AppPageHeading>
         </AnimateOnLoad>
 
@@ -183,7 +183,7 @@ const _ProfileImage = () => {
         fontSize={fontSizeSubtitle}
         fontWeight="400"
       >
-        Software Engineer
+        Cross-platform Mobile App Developer
       </Text>
     </VStack>
   );
