@@ -88,13 +88,13 @@ const RecentWorkProjectDetails = (props: RecentWorkProjectDetailsProps) => {
 
   return (
     <>
-      <AnimateOnLoad delay={0.2} translateY={animationOnLoadProps.translateY}>
+      {/* <AnimateOnLoad delay={0.2} translateY={animationOnLoadProps.translateY}>
         <Flex bg="" flexWrap="wrap">
-          {/* TECH STACK USED */}
+          TECH STACK USED
           {techStackList(props.projectDetails?.techStack ?? [])}
         </Flex>
-      </AnimateOnLoad>
-      <Box height="50px" />
+      </AnimateOnLoad> */}
+      {/* <Box height="50px" /> */}
 
       <AnimateOnLoad delay={animationOnLoadProps.delay()} translateY={50}>
         <AppPageSubheading>
