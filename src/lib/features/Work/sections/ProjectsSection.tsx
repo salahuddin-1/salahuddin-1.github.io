@@ -290,6 +290,7 @@ const ProjectsSection: React.FC = () => {
           <_ViewOnStoreButton
             playstoreLink={item.playstoreLink}
             isProjectPrivate={item.isProjectPrivate ?? false}
+            deviceType={item.deviceType}
           />
         </AnimateOnLoad>
 
@@ -313,9 +314,15 @@ const _ViewOnStoreButton = (props: _ViewOnStoreButtonProps) => {
     return <Box marginY="50px"></Box>;
   }
 
+  const _getLabel = (): string | undefined => {
+    if (props.deviceType === DeviceTypeEnum.WEB) {
+      return "View Website";
+    }
+  };
+
   return (
     <Box marginY="50px">
-      <PlaystoreButton hrefLink={props.playstoreLink} />
+      <PlaystoreButton hrefLink={props.playstoreLink} label={_getLabel()} />
     </Box>
   );
 };
@@ -323,5 +330,6 @@ const _ViewOnStoreButton = (props: _ViewOnStoreButtonProps) => {
 interface _ViewOnStoreButtonProps {
   playstoreLink: string | undefined | null;
   isProjectPrivate: boolean;
+  deviceType: DeviceTypeEnum;
 }
 export default ProjectsSection;

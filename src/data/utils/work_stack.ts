@@ -178,7 +178,7 @@ export default [
   // GAME HUB
   {
     projectName: "Game Hub",
-    deviceType: DeviceTypeEnum.DESKTOP,
+    deviceType: DeviceTypeEnum.WEB,
     slug: "game-hub",
     backgroundColor: AppColor.BLACK_900,
     description:

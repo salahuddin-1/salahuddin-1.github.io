@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 interface PlaystoreButtonProps {
   hrefLink: string;
+  label?: string;
 }
 
 const PlaystoreButton = (props: PlaystoreButtonProps) => {
@@ -26,7 +27,7 @@ const PlaystoreButton = (props: PlaystoreButtonProps) => {
           {/* <Box width="1px" /> */}
 
           <Text fontSize="12px" fontWeight="">
-            View on Store
+            {props.label ?? "View on Store"}
           </Text>
         </HStack>
       </Box>
