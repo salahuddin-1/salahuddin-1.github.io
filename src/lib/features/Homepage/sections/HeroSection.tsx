@@ -28,7 +28,7 @@ const HeroSection = () => {
       display="flex"
       flexDirection={{
         base: "column",
-        md: "row",
+        lg: "row",
       }}
     >
       <Box
@@ -114,7 +114,6 @@ const _ProfileImage = () => {
   const size = useBreakpointValue({
     base: "30%",
     sm: "25%",
-    md: "45%",
     lg: "35%",
     "2xl": "20%",
   });
@@ -122,7 +121,6 @@ const _ProfileImage = () => {
   const fontSizeTitle = useBreakpointValue({
     base: "20px",
     sm: "35px",
-    md: "20px",
     lg: "35px",
     "2xl": "45px",
   });
@@ -130,7 +128,6 @@ const _ProfileImage = () => {
   const fontSizeSubtitle = useBreakpointValue({
     base: "10px",
     sm: "15px",
-    md: "10px",
     lg: "15px",
     "2xl": "20px",
   });
@@ -139,13 +136,13 @@ const _ProfileImage = () => {
     <VStack
       alignItems={{
         base: "center",
-        md: "end",
+        lg: "end",
       }}
       top={{
-        md: "45px",
+        lg: "45px",
       }}
       right={{
-        md: "35px",
+        lg: "35px",
       }}
       position="absolute"
       bg=""
@@ -167,7 +164,7 @@ const _ProfileImage = () => {
       <Text
         textAlign={{
           base: "center",
-          md: "end",
+          lg: "end",
         }}
         fontSize={fontSizeTitle}
         fontWeight="400"
@@ -178,7 +175,7 @@ const _ProfileImage = () => {
       <Text
         textAlign={{
           base: "center",
-          md: "end",
+          lg: "end",
         }}
         fontSize={fontSizeSubtitle}
         fontWeight="400"
