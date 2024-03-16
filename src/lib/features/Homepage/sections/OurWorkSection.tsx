@@ -33,7 +33,7 @@ const OurWorkSection = () => {
 
     {
       projectName: "Mandi Market",
-      category: "Market Place",
+      category: "Accounting & Finance",
       imageURL: mandi_market_carousel,
       slug: "mandi-market",
       currentIndexOnWorkPage: 3,
