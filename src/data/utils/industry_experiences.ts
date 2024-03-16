@@ -1,66 +1,66 @@
 import iconAccountBal from "@assets/icon_account_balance.png";
-import iconBriefCase from "@assets/icon_briefcase_medical.png";
-import iconSchool from "@assets/icon_school.png";
+import iconBriefCase from "@assets/icon_balance.png";
+import iconSchool from "@assets/icon_reduce_capacity.png";
 import iconShipping from "@assets/icon_shipping.png";
 import iconStethoscope from "@assets/icon_stethoscope.png";
-import iconBarcode from "@assets/icon_barcode.png";
-import iconChart from "@assets/icon_chart.png";
-import iconDomain from "@assets/icon_domain.png";
-import iconFestival from "@assets/icon_festival.png";
+import iconBarcode from "@assets/icon_local_mall.png";
+import iconChart from "@assets/icon_barcode.png";
+import iconChessKnight from "@assets/icon_chess_knight.png";
+import iconFestival from "@assets/icon_restaurant.png";
 import { IndustryExperience } from "./industry_experience_props";
 
 export default [
   {
-    industry: "Financial Services",
-    slug: "financial-services",
+    industry: "Banking & Finance",
+    slug: "banking-and-finance",
     src: iconAccountBal,
   },
 
   {
-    industry: "Healthcare",
-    slug: "healthcare",
+    industry: "Accounting",
+    slug: "accounting",
     src: iconBriefCase,
   },
 
   {
-    industry: "Retail and E-commerce Retail",
-    slug: "retail-and-ecommerce",
+    industry: "E-commerce",
+    slug: "e-commerce",
     src: iconBarcode,
   },
 
   {
-    industry: "Education",
-    slug: "education",
+    industry: "Social Networking",
+    slug: "social-networking",
     src: iconSchool,
   },
 
   {
-    industry: "Logistic Tech",
-    slug: "logistic-tech",
+    industry: "Logistics",
+    slug: "logistics",
     src: iconChart,
   },
 
   {
-    industry: "Hospitality",
-    slug: "hospitality",
-    src: iconStethoscope,
+    industry: "Online Gaming & Betting",
+    slug: "online-gaming-and-betting",
+    src: iconChessKnight,
   },
 
   {
-    industry: "Transportation",
-    slug: "transportation",
-    src: iconShipping,
-  },
-
-  {
-    industry: "Real Estate",
-    slug: "real-estate",
-    src: iconDomain,
-  },
-
-  {
-    industry: "Tourism",
-    slug: "tourism",
+    industry: "Food Tech",
+    slug: "food-tech",
     src: iconFestival,
   },
+
+  // {
+  //   industry: "",
+  //   slug: "",
+  //   src: iconShipping,
+  // },
+
+  // {
+  //   industry: "",
+  //   slug: "",
+  //   src: iconShipping,
+  // },
 ] as IndustryExperience[];

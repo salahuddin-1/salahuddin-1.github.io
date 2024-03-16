@@ -90,6 +90,8 @@ export default [
         alt: "Rummo'z Kitchen 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.business.rummozkitchen&pcampaignid=web_share",
     ref: React.createRef(),
   },
 
@@ -112,6 +114,8 @@ export default [
         alt: "Rummo'z Kitchen Admin Portal 2",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 
@@ -138,6 +142,8 @@ export default [
         alt: "Capital Bank 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.capital.cbt&hl=en&gl=US",
     ref: React.createRef(),
   },
 
@@ -164,13 +170,15 @@ export default [
         alt: "Prabodham 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.app.prabodham",
     ref: React.createRef(),
   },
 
   // GAME HUB
   {
     projectName: "Game Hub",
-    deviceType: DeviceTypeEnum.DESKTOP,
+    deviceType: DeviceTypeEnum.WEB,
     slug: "game-hub",
     backgroundColor: AppColor.BLACK_900,
     description:
@@ -186,6 +194,7 @@ export default [
         alt: "Game Hub 2",
       },
     ],
+    playstoreLink: "https://game-hub-mosh-lac.vercel.app/",
     ref: React.createRef(),
   },
 
@@ -196,7 +205,7 @@ export default [
     slug: "bet-all-week",
     backgroundColor: "#4A148C",
     description:
-      "Imagine a gaming application that will let you earn money on your gut feeling, amazing right? Introducing BetAllWeek an online gaming application where users can play against all odds. State of the art systems with low latency delay, that will take the experience of gaming to the next level.",
+      "The goal was to develop a secure betting application with login and registration functionalities. Additionally, the application needed to display the latest news from various sports categories such as Soccer, Basketball, Baseball, Tennis, etc. The aim was to optimize the betting process and manage cash flow effectively.",
     techStack: [
       "flutter",
       "cloud firestore",
@@ -217,6 +226,7 @@ export default [
         alt: "Bet All Week 3",
       },
     ],
+    playstoreLink: null,
     ref: React.createRef(),
   },
 
@@ -227,7 +237,7 @@ export default [
     slug: "feed",
     backgroundColor: AppColor.BLACK_900,
     description:
-      "A social application for universities where students can keep track of each other's academic advancement, it creates a sense of competition in students while building a strong community over campus. Connect with your campus community like never before, exploring and networking with peers and faculty. Stay updated on essential college functions, from attendance to notices. 'Feed' isn't just an app; it's your gateway to a richer, more connected campus life. Experience college networking redefined!",
+      "This app's primary focus was on user authentication and verification using an innovative algorithm called the 'Banker's Algorithm. The goal was to ensure that only authorized users, including students, teachers, and college staff, could access the app, effectively keeping out unwanted users from outside SLRTCE college community. The application itself functioned as a privatized social networking platform.",
     techStack: [
       "flutter",
       "cloud firestore",
@@ -250,6 +260,7 @@ export default [
         alt: "Feed 3",
       },
     ],
+    playstoreLink: null,
     ref: React.createRef(),
   },
 
@@ -260,7 +271,7 @@ export default [
     slug: "gochi",
     backgroundColor: "#D17673",
     description:
-      "Introducing GoChi – our cutting-edge app now on Google Play! Enjoy easy, safe, and quality meat delivery to your doorstep. Get the freshest halal-certified, chemical-free meats for delightful cooking. Download GoChi for a convenient and premium culinary experience. Your masterpiece meals await!",
+      "The goal was to develop an E-commerce system allowing end users to purchase fresh and halal meat, including goat, chicken, and eggs, through mobile applications. This system comprised three software components: an Android app for end users, an iOS app for end users, and an Android/iOS Admin Portal. The Admin Portal empowered the client to manage all aspects of the products, including pricing, availability, coupons, notifications, and messages, providing comprehensive control through a convenient Android application interface.",
     techStack: [
       "flutter",
       "cloud firestore",
@@ -283,6 +294,8 @@ export default [
         alt: "GoChi 3",
       },
     ],
+    playstoreLink:
+      "https://play.google.com/store/apps/details?id=com.gochi.salahuddinshaikh",
     ref: React.createRef(),
   },
 
@@ -293,7 +306,7 @@ export default [
     slug: "gochi-admin-portal",
     backgroundColor: "#E5AAA9",
     description:
-      "GoChi's simple admin panel, made with Flutter and powered by Firebase, makes gourmet cooking easy! Navigate easily, get updates quickly, and ensure security with fast login. Manage meat orders effortlessly, choosing from tasty mutton, tender chicken, or fresh eggs. GoChi's user-friendly dashboard promises great cooking with convenience and top-quality meats at your fingertips!",
+      "Gochi's Admin Portal empowered the client to manage all aspects of the products, including pricing, availability, coupons, notifications, and messages, providing comprehensive control through a convenient Android application interface.",
     techStack: [
       "flutter",
       "cloud firestore",
@@ -316,6 +329,8 @@ export default [
         alt: "GoChi Admin Portal 3",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 
@@ -326,7 +341,7 @@ export default [
     slug: "knight-9",
     backgroundColor: "#465777",
     description:
-      "Explore the fun world of ‘Knight Nine’! Play in 9-player contests for a small fee, win cash prizes, and show off your skills. It’s easy and safe with a simple interface and secure payments. Download ‘Knight Nine’ now to turn your gaming into rewards and join the ultimate arena where winning pays off!",
+      "The goal was to develop a simple gamification app where users can register, log in, and play a small game of multiple-choice questions (MCQ) to win prizes. The questions would cover various subjects such as English, History, Geography, Civics, etc. The winning user would receive a cash prize.",
     techStack: ["react native", "react", "node js"],
     images: [
       {
@@ -344,6 +359,7 @@ export default [
 
       ,
     ],
+    playstoreLink: null,
     ref: React.createRef(),
   },
 
@@ -354,7 +370,7 @@ export default [
     slug: "hanzaib-collection",
     backgroundColor: "white",
     description:
-      "Experience culinary convenience with our Food Kitchen App. Seamlessly browse, order, and savor delicious meals with a user-friendly interface that enhances your dining journey. Elevate your food experience – anytime, anywhere",
+      "The goal was to develop a logistics app wherein the client could input both the origin and destination addresses. Initially, the from address was fixed but could be modified as needed. Utilizing this data, the app would generate a visually appealing PDF document incorporating the addresses alongside the company's logo, facilitating easy printing for shipment purposes. Additionally, the app featured a history review function to track all previous shipments. Firebase served as the backend for storing the data.",
     techStack: ["flutter", "cloud firestore"],
     images: [
       {
@@ -370,6 +386,8 @@ export default [
         alt: "Hanzaib 3",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 
@@ -380,7 +398,7 @@ export default [
     slug: "mandi-market",
     backgroundColor: "#8DCCCE",
     description:
-      "Experience culinary convenience with our Food Kitchen App. Seamlessly browse, order, and savor delicious meals with a user-friendly interface that enhances your dining journey. Elevate your food experience – anytime, anywhere",
+      "The problem that the butchers' dealers faced was the manual process of calculating transactions. Every time they went to the market, they had to jot down calculations manually in their notebooks. Then, upon returning home, they had to redo all the calculations using a calculator, transcribing everything into their notebooks. However, this manual method posed several risks, including the potential for theft, alteration, and damage of their notebooks. Moreover, the tedious task of maintaining and reconciling the records daily added to their workload.",
     techStack: [
       "flutter",
       "cloud firestore",
@@ -403,6 +421,8 @@ export default [
         alt: "Mandi Market 3",
       },
     ],
+    playstoreLink: null,
+    isProjectPrivate: true,
     ref: React.createRef(),
   },
 ] as WorkStackProps[];
@@ -415,6 +435,8 @@ export interface WorkStackProps {
   images: WorkStackImageProps[];
   backgroundColor?: string;
   deviceType: DeviceTypeEnum;
+  playstoreLink: string;
+  isProjectPrivate?: boolean;
   ref?: React.RefObject<HTMLDivElement>;
 }
 

@@ -8,7 +8,7 @@ import { RoutePaths } from "src/lib/navigation/route_paths";
 import AnimateOnLoad from "@components/AnimateOnLoad";
 import LottieHeroAnimation from "../components/LottieHeroAnimation";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
-import profilePhotoHero from "@assets/profile_photo_hero.jpeg";
+import profilePhotoHero from "@assets/profile_photo_5.jpeg";
 
 const HeroSection = () => {
   const viewModel = useHomepageViewModel();
@@ -28,7 +28,7 @@ const HeroSection = () => {
       display="flex"
       flexDirection={{
         base: "column",
-        md: "row",
+        lg: "row",
       }}
     >
       <Box
@@ -42,7 +42,7 @@ const HeroSection = () => {
           translateY={animationOnLoadProps.translateY}
         >
           <AppPageHeading>
-            Transform Your Ideas into User-friendly Mobile Experiences
+            Transform Your Ideas into User-friendly Mobile Applications
           </AppPageHeading>
         </AnimateOnLoad>
 
@@ -99,6 +99,7 @@ const HeroSection = () => {
         justifyContent="center"
         alignItems="center"
         backgroundColor=""
+        height="100%"
       >
         {/* <AnimateOnLoad duration={1} delay={0.75} translateY={100}> */}
         <Image src={ticTacToeimage}></Image>
@@ -113,7 +114,6 @@ const _ProfileImage = () => {
   const size = useBreakpointValue({
     base: "30%",
     sm: "25%",
-    md: "45%",
     lg: "35%",
     "2xl": "20%",
   });
@@ -121,7 +121,6 @@ const _ProfileImage = () => {
   const fontSizeTitle = useBreakpointValue({
     base: "20px",
     sm: "35px",
-    md: "20px",
     lg: "35px",
     "2xl": "45px",
   });
@@ -129,7 +128,6 @@ const _ProfileImage = () => {
   const fontSizeSubtitle = useBreakpointValue({
     base: "10px",
     sm: "15px",
-    md: "10px",
     lg: "15px",
     "2xl": "20px",
   });
@@ -138,15 +136,16 @@ const _ProfileImage = () => {
     <VStack
       alignItems={{
         base: "center",
-        md: "end",
+        lg: "end",
       }}
       top={{
-        md: "45px",
+        lg: "45px",
       }}
       right={{
-        md: "35px",
+        lg: "35px",
       }}
       position="absolute"
+      bg=""
     >
       <Image
         src={profilePhotoHero}
@@ -157,7 +156,7 @@ const _ProfileImage = () => {
         aspectRatio={1 / 1}
         objectFit="cover"
         boxShadow="-2px 5px 40px 0px rgba(250,250,250,0.3)"
-        border="1px solid white"
+        border="4px solid white"
       />
 
       <Box height="20px"></Box>
@@ -165,7 +164,7 @@ const _ProfileImage = () => {
       <Text
         textAlign={{
           base: "center",
-          md: "end",
+          lg: "end",
         }}
         fontSize={fontSizeTitle}
         fontWeight="400"
@@ -176,12 +175,12 @@ const _ProfileImage = () => {
       <Text
         textAlign={{
           base: "center",
-          md: "end",
+          lg: "end",
         }}
         fontSize={fontSizeSubtitle}
         fontWeight="400"
       >
-        Software Engineer
+        Cross-platform Mobile App Developer
       </Text>
     </VStack>
   );

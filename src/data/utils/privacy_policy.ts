@@ -11,13 +11,13 @@ export default [
       {
         title: "Usage Information",
         description:
-          "Ourolink tracks how our services are engaged and utilized. This encompasses data like your device’s Internet Protocol (IP) address, browser specifics, service pages visited, along with the time and dates of such visits, complemented by additional diagnostic information.",
+          "Our website tracks how our services are engaged and utilized. This encompasses data like your device’s Internet Protocol (IP) address, browser specifics, service pages visited, along with the time and dates of such visits, complemented by additional diagnostic information.",
       },
 
       {
         title: "Cookies and Similar Technologies",
         description:
-          "For activity tracking on our service, Ourolink employs cookies and comparable technologies to maintain and access certain information.",
+          "For activity tracking on our service, our website employs cookies and comparable technologies to maintain and access certain information.",
       },
 
       {
@@ -35,25 +35,25 @@ export default [
       {
         title: "Security of Data",
         description:
-          "Ourolink prioritizes the security of your data. To guard against unauthorized access, unlawful processing, accidental loss, destruction, or damage, we have implemented suitable technical and organizational measures.",
+          "Our website prioritizes the security of your data. To guard against unauthorized access, unlawful processing, accidental loss, destruction, or damage, we have implemented suitable technical and organizational measures.",
       },
 
       {
         title: "Sharing and Disclosure of Data",
         description:
-          "Under certain circumstances, Ourolink might share personal data:To meet legal requirements. To safeguard and defend our rights or property. To prevent or investigate potential misconduct related to our service To ensure the personal safety of our service users and the public. To guard against legal liability",
+          "Under certain circumstances, we might share personal data:To meet legal requirements. To safeguard and defend our rights or property. To prevent or investigate potential misconduct related to our service To ensure the personal safety of our service users and the public. To guard against legal liability",
       },
 
       {
         title: "Your Rights Regarding Data Protection",
         description:
-          "You are entitled to access, modify, or erase the personal information Ourolink holds about you. You can usually alter your Personal Data directly within your account settings.",
+          "You are entitled to access, modify, or erase the personal information that we hold about you. You can usually alter your Personal Data directly within your account settings.",
       },
 
       {
         title: "Policy Updates",
         description:
-          "Ourolink’s Privacy Policy may undergo updates periodically. We will notify you of any changes by publishing the revised policy on this webpage.",
+          "Our website's Privacy Policy may undergo updates periodically. We will notify you of any changes by publishing the revised policy on this webpage.",
       },
 
       {
