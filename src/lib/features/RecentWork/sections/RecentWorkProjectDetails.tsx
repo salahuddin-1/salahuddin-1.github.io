@@ -9,6 +9,7 @@ import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import { SectionSpacing } from "@components/SectionSpacing";
 import MobileProjectCarousel from "../../Work/components/MobileProjectCarousel";
 import PlaystoreButton from "@components/PlaystoreButton";
+import PlaystoreButtonLocked from "@components/PlaystoreButtonLocked";
 
 interface RecentWorkProjectDetailsProps {
   projectDetails: WorkStackProps | undefined;
@@ -106,7 +107,11 @@ const RecentWorkProjectDetails = (props: RecentWorkProjectDetailsProps) => {
       <Box height="50px" />
 
       <AnimateOnLoad delay={animationOnLoadProps.delay()} translateY={50}>
-        <PlaystoreButton />
+        <_ViewOnStoreButton
+          playstoreLink={props.projectDetails?.playstoreLink}
+          isProjectPrivate={props.projectDetails?.isProjectPrivate ?? false}
+        />
+        {/* <PlaystoreButton hrefLink={props.projectDetails?.playstoreLink ?? ""} /> */}
       </AnimateOnLoad>
 
       {/* <PlaystoreButtonLocked /> */}
@@ -119,5 +124,22 @@ const RecentWorkProjectDetails = (props: RecentWorkProjectDetailsProps) => {
     </>
   );
 };
+
+const _ViewOnStoreButton = (props: _ViewOnStoreButtonProps) => {
+  if (props.isProjectPrivate) {
+    return <PlaystoreButtonLocked />;
+  }
+
+  if (!props.playstoreLink) {
+    return <></>;
+  }
+
+  return <PlaystoreButton hrefLink={props.playstoreLink} />;
+};
+
+interface _ViewOnStoreButtonProps {
+  playstoreLink: string | undefined | null;
+  isProjectPrivate: boolean;
+}
 
 export default RecentWorkProjectDetails;
