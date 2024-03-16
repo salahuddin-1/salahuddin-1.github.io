@@ -18,6 +18,7 @@ import { useWorkViewModel } from "src/lib/providers/WorkViewModelProvider";
 import MobileProjectCarousel from "../components/MobileProjectCarousel";
 import PlaystoreButtonLocked from "@components/PlaystoreButtonLocked";
 import PlaystoreButton from "@components/PlaystoreButton";
+import { AppColor } from "src/domain/constants/AppColor";
 
 interface _TechItemProps {
   children: string;
@@ -306,6 +307,11 @@ const _ViewOnStoreButton = (props: _ViewOnStoreButtonProps) => {
     return (
       <Box marginY="50px">
         <PlaystoreButtonLocked />
+        <Box height="20px" />
+        <Text fontSize="11px" color={AppColor.DARK_GRAY}>
+          Please note: This project was created exclusively for private use and
+          is not available for public download or distribution
+        </Text>
       </Box>
     );
   }

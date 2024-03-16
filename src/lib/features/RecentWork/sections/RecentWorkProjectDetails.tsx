@@ -10,6 +10,7 @@ import { SectionSpacing } from "@components/SectionSpacing";
 import MobileProjectCarousel from "../../Work/components/MobileProjectCarousel";
 import PlaystoreButton from "@components/PlaystoreButton";
 import PlaystoreButtonLocked from "@components/PlaystoreButtonLocked";
+import { AppColor } from "src/domain/constants/AppColor";
 
 interface RecentWorkProjectDetailsProps {
   projectDetails: WorkStackProps | undefined;
@@ -124,7 +125,16 @@ const RecentWorkProjectDetails = (props: RecentWorkProjectDetailsProps) => {
 
 const _ViewOnStoreButton = (props: _ViewOnStoreButtonProps) => {
   if (props.isProjectPrivate) {
-    return <PlaystoreButtonLocked />;
+    return (
+      <>
+        <PlaystoreButtonLocked />
+        <Box height="20px" />
+        <Text fontSize="11px" color={AppColor.DARK_GRAY}>
+          Please note: This project was created exclusively for private use and
+          is not available for public download or distribution
+        </Text>
+      </>
+    );
   }
 
   if (!props.playstoreLink) {
