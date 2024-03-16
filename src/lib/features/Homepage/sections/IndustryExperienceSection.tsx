@@ -92,7 +92,7 @@ const _ListItem = ({ industryExp }: _ListItemProps) => {
             lg: "55px", // RESPONSIVE
           }}
           // bg="teal"
-          bg=""
+          bg="black"
           alignItems="end"
           paddingBottom={{
             base: "7px",
@@ -104,7 +104,7 @@ const _ListItem = ({ industryExp }: _ListItemProps) => {
             md: "10px",
             lg: "13px", // RESPONSIVE
           }}
-          borderBottomLeftRadius={4}
+          borderBottomLeftRadius="8px"
         >
           <Text
             lineHeight={1}
@@ -257,7 +257,7 @@ const VerticalDividers = () => {
 const IndustryExperienceSection = () => {
   return (
     <Box>
-      <AppSectionHeading>Our Industry experience</AppSectionHeading>
+      <AppSectionHeading>My Industry Experience</AppSectionHeading>
       <SectionHeadingSpacing />
 
       <Box
