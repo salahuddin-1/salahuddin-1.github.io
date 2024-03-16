@@ -8,7 +8,7 @@ import { RoutePaths } from "src/lib/navigation/route_paths";
 import AnimateOnLoad from "@components/AnimateOnLoad";
 import LottieHeroAnimation from "../components/LottieHeroAnimation";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
-import profilePhotoHero from "@assets/profile_photo_hero.jpeg";
+import profilePhotoHero from "@assets/profile_photo_5.jpeg";
 
 const HeroSection = () => {
   const viewModel = useHomepageViewModel();
