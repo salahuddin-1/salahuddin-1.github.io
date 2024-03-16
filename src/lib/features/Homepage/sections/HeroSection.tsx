@@ -99,6 +99,7 @@ const HeroSection = () => {
         justifyContent="center"
         alignItems="center"
         backgroundColor=""
+        height="100%"
       >
         {/* <AnimateOnLoad duration={1} delay={0.75} translateY={100}> */}
         <Image src={ticTacToeimage}></Image>
@@ -147,6 +148,7 @@ const _ProfileImage = () => {
         md: "35px",
       }}
       position="absolute"
+      bg=""
     >
       <Image
         src={profilePhotoHero}
