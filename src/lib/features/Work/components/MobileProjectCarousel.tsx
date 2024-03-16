@@ -83,7 +83,7 @@ const _Image = (props: _ImageProps) => {
         style={{
           transform: props.current ? "scale(1.0)" : "scale(0.7)",
           transition: props.current ? "transform 300ms" : "transform 300ms",
-          boxShadow: "5px 10px 15px rgba(200, 200, 200, 0.99)",
+          boxShadow: "5px 5px 15px rgba(200, 200, 200, 0.3)",
           borderRadius: borderRadius,
           border: border,
           backgroundColor: "",

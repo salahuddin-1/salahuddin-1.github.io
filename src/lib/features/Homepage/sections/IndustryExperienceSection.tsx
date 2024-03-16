@@ -52,7 +52,7 @@ interface _ListItemProps {
 
 const _ListItem = ({ industryExp }: _ListItemProps) => {
   return (
-    <Box marginBottom="10px" flex={2} bg="" border="">
+    <Box marginBottom="20px" flex={2} bg="" border="">
       <Flex
         position="relative"
         flexDir="column"
