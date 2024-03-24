@@ -1,5 +1,6 @@
 import { Box, useTheme } from "@chakra-ui/react";
 import { CustomTheme } from "../../../theme";
+import { AppColor } from "src/domain/constants/AppColor";
 
 interface Props {
   children: string | JSX.Element;
@@ -22,11 +23,12 @@ const AppMaterialButton = (props: Props) => {
       height={props.height}
       paddingX="25px"
       paddingY="10px"
-      backgroundColor={theme.colors.accent}
+      backgroundColor={theme.colors.secondary}
+      // border={`0.1px solid ${AppColor.LIGHT_GRAY_100}`}
+      borderRadius="10px"
       textColor={theme.colors.primary}
-      borderRadius="6px"
       boxSizing="border-box"
-      fontWeight={500}
+      fontWeight={400}
       fontSize="13px"
       as="button"
       cursor={props.isDisabled ? "not-allowed" : "pointer"}
