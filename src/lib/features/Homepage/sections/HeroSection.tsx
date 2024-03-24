@@ -1,4 +1,12 @@
-import { Box, Image, Text, VStack, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  HStack,
+  Image,
+  Text,
+  VStack,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import AppPageHeading from "../../../ui/components/AppPageHeading";
 import AppMaterialButton from "../../../ui/components/AppMaterialButton";
 import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvider";
@@ -6,9 +14,9 @@ import AppPageSubheading from "src/lib/ui/components/AppPageSubheading";
 import { Link } from "react-router-dom";
 import { RoutePaths } from "src/lib/navigation/route_paths";
 import AnimateOnLoad from "@components/AnimateOnLoad";
-import LottieHeroAnimation from "../components/LottieHeroAnimation";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import profilePhotoHero from "@assets/profile_photo_5.jpeg";
+import { AppColor } from "src/domain/constants/AppColor";
 
 const HeroSection = () => {
   const viewModel = useHomepageViewModel();
@@ -182,6 +190,61 @@ const _ProfileImage = () => {
       >
         Cross-platform Mobile App Developer
       </Text>
+
+      <Box height="20px"></Box>
+
+      <HStack>
+        <HStack
+          paddingX="20px"
+          paddingY="7px"
+          borderRadius="10px"
+          border={`1px solid ${AppColor.LIGHT_GRAY_100}`}
+        >
+          <Box
+            height="10px"
+            width="10px"
+            borderRadius="50%"
+            backgroundColor={AppColor.GREEN}
+          ></Box>
+
+          <Box width="5px"></Box>
+
+          <Text
+            textAlign={{
+              base: "center",
+              lg: "end",
+            }}
+            fontSize="11px"
+            fontWeight="200"
+          >
+            Open to work
+          </Text>
+        </HStack>
+
+        <Box width="20px"></Box>
+
+        <Text
+          textAlign={{
+            base: "center",
+            lg: "end",
+          }}
+          fontSize="14px"
+          fontWeight="200"
+        >
+          Mumbai, India
+        </Text>
+
+        <Text
+          textAlign={{
+            base: "center",
+            lg: "end",
+          }}
+          fontSize="14px"
+          fontWeight="200"
+        >
+          4:30 PM IST
+        </Text>
+      </HStack>
     </VStack>
   );
 };

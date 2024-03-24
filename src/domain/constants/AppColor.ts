@@ -11,4 +11,5 @@ export class AppColor {
   public static ACCENT: string = "#5AC8FA";
   public static BLACK_700: string = "#393939";
   public static BLACK_600: string = "#696969";
+  public static GREEN: string = "#00FF00";
 }
