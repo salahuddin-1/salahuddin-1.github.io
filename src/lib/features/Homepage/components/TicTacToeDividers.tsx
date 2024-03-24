@@ -51,7 +51,7 @@ const TicTacToeDividers = (props: Props) => {
       vDividersList.push(
         <Box
           key={index}
-          width="1px"
+          width="0.1px"
           // bg={theme.colors.tableDivider}
           bg={AppColor.LIGHT_GRAY_100}
           marginTop={topMargin}
@@ -71,7 +71,7 @@ const TicTacToeDividers = (props: Props) => {
       hDividersList.push(
         <Box
           key={index}
-          height="1px"
+          height="0.1px"
           // bg={theme.colors.tableDivider}
           bg={AppColor.LIGHT_GRAY_100}
           marginLeft={leftMargin}

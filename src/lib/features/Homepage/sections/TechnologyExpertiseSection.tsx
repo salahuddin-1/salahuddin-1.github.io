@@ -62,7 +62,7 @@ const _Technology = (props: TechStackLayoutProps) => {
       bg="black"
       // border="1px solid white"
       border="1px solid rgba(250,250,250,0.1)"
-      boxShadow="-2px 10px 40px 0px rgba(250,250,250,0.2)"
+      boxShadow="-2px 10px 40px 0px rgba(250,250,250,0.15)"
       borderRadius="50%"
       padding={props.padding}
       overflow="hidden"

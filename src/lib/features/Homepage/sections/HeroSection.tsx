@@ -52,7 +52,7 @@ const HeroSection = () => {
           delay={animationOnLoadProps.delay()}
           translateY={animationOnLoadProps.translateY}
         >
-          <AppPageSubheading fontSize={17} letterSpacing={0}>
+          {/* <AppPageSubheading fontSize={17} letterSpacing={0}>
             Need a mobile app for Android and iOS? Or a web app for all
             browsers? A custom software system?
           </AppPageSubheading>
@@ -65,9 +65,9 @@ const HeroSection = () => {
             customized mobile apps tailored to their needs.
           </AppPageSubheading>
 
-          <Box height="40px" />
+          <Box height="40px" /> */}
 
-          <AppPageSubheading fontSize={17} letterSpacing={0}>
+          <AppPageSubheading fontSize={15} letterSpacing={0}>
             Let me guide you in developing high-quality, robust, scalable, and
             secure mobile apps with a user-centric design approach, putting the
             end-user first.
