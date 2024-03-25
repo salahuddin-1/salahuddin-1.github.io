@@ -5,6 +5,7 @@ import AppSectionHeading from "@components/AppSectionHeading";
 import { useAboutViewModel } from "src/lib/providers/AboutViewModelProvider";
 import profilePhotoHero from "@assets/profile_photo_5.jpeg";
 import { SectionSpacing } from "@components/SectionSpacing";
+import EmploymentHistorySection from "./EmploymentHistorySection";
 
 const AboutHeroSection = () => {
   const viewModel = useAboutViewModel();
@@ -53,6 +54,7 @@ const AboutHeroSection = () => {
             <Box height="30px" />
 
             <AppSectionHeading>What I do?</AppSectionHeading>
+
             <Box height="10px" />
 
             <Text>
@@ -67,13 +69,19 @@ const AboutHeroSection = () => {
 
         <_StackImage />
       </Box>
+
+      {/* <SectionSpacing /> */}
+
+      {/* <EmploymentHistorySection /> */}
     </Box>
   );
 };
 
 export default AboutHeroSection;
 
-export const _StackImage = () => {
+// ----------------------------------------------- PRIVATE COMPONENTS -------------------------------------------------
+
+const _StackImage = () => {
   return (
     <Box
       height={{
