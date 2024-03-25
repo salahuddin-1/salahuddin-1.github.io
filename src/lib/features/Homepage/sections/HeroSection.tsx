@@ -183,6 +183,8 @@ const _ProfileImage = () => {
         Salahuddin Shaikh
       </Text>
 
+      {/* Cross-platform Mobile App Developer */}
+
       <Text
         textAlign={{
           base: "center",
@@ -191,7 +193,7 @@ const _ProfileImage = () => {
         fontSize={fontSizeSubtitle}
         fontWeight="400"
       >
-        Cross-platform Mobile App Developer
+        Software Engineer
       </Text>
 
       <Box height="20px"></Box>
