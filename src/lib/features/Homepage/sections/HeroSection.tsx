@@ -120,6 +120,8 @@ const HeroSection = () => {
 };
 
 const _ProfileImage = () => {
+  const viewModel = useHomepageViewModel();
+
   const size = useBreakpointValue({
     base: "30%",
     sm: "25%",
@@ -140,30 +142,6 @@ const _ProfileImage = () => {
     lg: "15px",
     "2xl": "20px",
   });
-
-  // Get local time in 12-hour format e.g. "12:00 AM IST"
-  const getLocalTime = () => {
-    const date = new Date();
-
-    // Get hours, minutes, and seconds
-    let hours = date.getHours();
-    const minutes = date.getMinutes();
-
-    // Convert hours to 12-hour format
-    const ampm = hours >= 12 ? "PM" : "AM";
-    hours %= 12;
-    hours = hours || 12; // Convert midnight (0 hours) to 12
-
-    // Get timezone abbreviation
-    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-    // Format time as "hh:mm AM/PM TIMEZONE"
-    const formattedTime = `${hours}:${minutes
-      .toString()
-      .padStart(2, "0")} ${ampm}`;
-
-    return formattedTime;
-  };
 
   return (
     <VStack
@@ -265,7 +243,7 @@ const _ProfileImage = () => {
           fontSize="14px"
           fontWeight="200"
         >
-          {getLocalTime()} IST
+          {viewModel.getLocalTime()} IST
         </Text>
       </HStack>
     </VStack>
