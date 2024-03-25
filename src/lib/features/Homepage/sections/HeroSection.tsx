@@ -198,9 +198,14 @@ const _ProfileImage = () => {
 
       <Box height="20px"></Box>
 
-      <HStack>
+      <Box
+        display="flex"
+        flexDir={{
+          base: "column",
+          sm: "row",
+        }}
+      >
         <HStack
-          // paddingX="20px"
           paddingRight="20px"
           paddingY="3px"
           borderRadius="30px"
@@ -224,30 +229,32 @@ const _ProfileImage = () => {
           </Text>
         </HStack>
 
-        <Box width="20px"></Box>
+        <Box width="20px" height="20px"></Box>
 
-        <Text
-          textAlign={{
-            base: "center",
-            lg: "end",
-          }}
-          fontSize="14px"
-          fontWeight="200"
-        >
-          Mumbai, India
-        </Text>
+        <HStack>
+          <Text
+            textAlign={{
+              base: "center",
+              lg: "end",
+            }}
+            fontSize="14px"
+            fontWeight="200"
+          >
+            Mumbai, India
+          </Text>
 
-        <Text
-          textAlign={{
-            base: "center",
-            lg: "end",
-          }}
-          fontSize="14px"
-          fontWeight="200"
-        >
-          {viewModel.getLocalTime()} IST
-        </Text>
-      </HStack>
+          <Text
+            textAlign={{
+              base: "center",
+              lg: "end",
+            }}
+            fontSize="14px"
+            fontWeight="200"
+          >
+            {viewModel.getLocalTime()} IST
+          </Text>
+        </HStack>
+      </Box>
     </VStack>
   );
 };
