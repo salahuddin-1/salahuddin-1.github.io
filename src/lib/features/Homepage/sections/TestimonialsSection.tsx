@@ -34,7 +34,7 @@ interface TestimonialProps {
 
 const _Testimonial = (props: TestimonialProps) => {
   return (
-    <Box>
+    <Box paddingRight="50px">
       <Image alt="Icon Quote Left" width="20px" src={iconQuoteLeft}></Image>
 
       <Box height="20px" />
@@ -45,6 +45,7 @@ const _Testimonial = (props: TestimonialProps) => {
 
       <Box display={"flex"} justifyContent={"right"} bg={""}>
         <Text
+          paddingRight="5px"
           textAlign="right"
           textColor={AppColor.DARK_GRAY}
           fontSize=""
