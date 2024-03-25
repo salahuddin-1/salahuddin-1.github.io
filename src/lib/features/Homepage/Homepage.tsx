@@ -9,6 +9,7 @@ import TechnologyExpertiseSection from "./sections/TechnologyExpertiseSection";
 import LetsGetInTouch from "src/lib/ui/components/LetsGetInTouch";
 import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvider";
 import { useEffect } from "react";
+import TestimonialsSection from "./sections/TestimonialsSection";
 
 const Homepage = () => {
   const viewmodel = useHomepageViewModel();
@@ -39,6 +40,10 @@ const Homepage = () => {
 
       {/* TECHNOLOGY EXPERTISE SECTION */}
       <TechnologyExpertiseSection />
+      <SectionSpacing />
+
+      {/* TESTIMONIALS SECTION */}
+      <TestimonialsSection />
       <SectionSpacing />
 
       <LetsGetInTouch />
