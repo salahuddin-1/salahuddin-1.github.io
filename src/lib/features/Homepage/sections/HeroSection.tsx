@@ -229,7 +229,7 @@ const _ProfileImage = () => {
           </Text>
         </HStack>
 
-        <Box width="20px" height="20px"></Box>
+        <Box width="40px" height="20px"></Box>
 
         <HStack>
           <Text
