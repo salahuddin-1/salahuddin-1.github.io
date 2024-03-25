@@ -17,6 +17,8 @@ import AnimateOnLoad from "@components/AnimateOnLoad";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import profilePhotoHero from "@assets/profile_photo_5.jpeg";
 import { AppColor } from "src/domain/constants/AppColor";
+import { motion } from "framer-motion";
+import LottieGreenSignal from "../components/LottieGreenSignal";
 
 const HeroSection = () => {
   const viewModel = useHomepageViewModel();
@@ -195,17 +197,15 @@ const _ProfileImage = () => {
 
       <HStack>
         <HStack
-          paddingX="20px"
-          paddingY="7px"
-          borderRadius="10px"
+          // paddingX="20px"
+          paddingRight="20px"
+          paddingY="3px"
+          borderRadius="30px"
           border={`1px solid ${AppColor.LIGHT_GRAY_100}`}
         >
-          <Box
-            height="10px"
-            width="10px"
-            borderRadius="50%"
-            backgroundColor={AppColor.GREEN}
-          ></Box>
+          <Box height="30px" width="30px">
+            <LottieGreenSignal width="40px" />
+          </Box>
 
           <Box width="5px"></Box>
 
