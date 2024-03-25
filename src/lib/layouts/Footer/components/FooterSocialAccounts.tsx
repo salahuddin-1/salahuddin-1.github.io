@@ -1,6 +1,6 @@
 import { Box, Image } from "@chakra-ui/react";
 import { AppConstants } from "src/domain/constants/AppConstants";
-import icon_facebook from "@assets/icon_facebook.png";
+import iconStackOverflow from "@assets/icon_stack_overflow.svg";
 import icon_instagram from "@assets/icon_instagram.svg";
 import iconLinkedIn from "@assets/icon_linkedin.svg";
 import iconGithub from "@assets/icon_github.svg";
@@ -15,8 +15,6 @@ interface SocialAccounts {
 }
 
 const FooterSocialAccounts = () => {
-  const navigate = useNavigate();
-
   const listOfSocialAccounts: SocialAccounts[] = [
     {
       type: "linkedin",
@@ -35,6 +33,14 @@ const FooterSocialAccounts = () => {
     },
 
     {
+      type: "stackoverflow",
+      onClick: () => {},
+      alt: "StackOverflow Icon Alt Text",
+      src: iconStackOverflow,
+      hrefLink: "https://stackoverflow.com/users/12771360/salahuddin-shaikh",
+    },
+
+    {
       type: "instagram",
       onClick: () => {},
       alt: "Instagram Icon Alt Text",
@@ -44,7 +50,15 @@ const FooterSocialAccounts = () => {
   ];
 
   return (
-    <Box justifyContent="space-between" width="120px" bg="" display="flex">
+    <Box
+      justifyContent="space-between"
+      width={{
+        base: "130px",
+        sm: "160px",
+      }}
+      bg=""
+      display="flex"
+    >
       {listOfSocialAccounts.map((item, index) => (
         <Link key={index} to={item.hrefLink} target="_blank">
           <Image
@@ -52,7 +66,10 @@ const FooterSocialAccounts = () => {
             onClick={item.onClick}
             alt={item.alt}
             src={item.src}
-            width="25px"
+            width={{
+              base: "20px",
+              sm: "25px",
+            }}
             color="red"
           />
         </Link>
