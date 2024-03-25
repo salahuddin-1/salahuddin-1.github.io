@@ -14,15 +14,29 @@ const About = () => {
       <AboutHeroSection />
       <SectionSpacing />
 
-      <Box
-        flexDir="row"
-        display="flex"
-        minHeight="500px"
-        // height="500px"
+      {/* <Box bg="gray">
+        <Image paddingX="50px" objectFit="cover" src={profilePhotoHero} />
+      </Box> */}
 
+      <Box
+        flexDir={{
+          base: "column-reverse",
+          md: "row",
+        }}
+        display="flex"
+        minHeight={{
+          md: "300px",
+          lg: "500px",
+        }}
         bg=""
       >
-        <Box flex={5} bg="red" display="flex" alignItems="center">
+        <Box
+          flex={5}
+          bg=""
+          display="flex"
+          alignItems="start"
+          // alignItems="start"
+        >
           <Text>
             Hi, I'm Salahuddin Shaikh, the founder of an agency that helps small
             to medium-sized businesses go online by creating custom Software
@@ -33,6 +47,8 @@ const About = () => {
           </Text>
         </Box>
 
+        <Box height="60px" />
+
         <_StackImage />
       </Box>
     </BasePage>
@@ -42,12 +58,20 @@ const About = () => {
 export const _StackImage = () => {
   return (
     <Box
+      height={{
+        base: "60vw",
+        sm: "80vw",
+        md: "auto",
+      }}
+      // height=""
       justifyContent="center"
       alignItems="center"
       pos="relative"
       display="flex"
-      flex={5}
-      bg="pink"
+      flex={{
+        md: 5,
+      }}
+      bg=""
     >
       <Image
         paddingX="50px"
