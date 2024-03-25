@@ -1,9 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import AnimateOnLoad from "@components/AnimateOnLoad";
 import AppPageHeading from "@components/AppPageHeading";
-import { SectionSpacing } from "@components/SectionSpacing";
 import { useAboutViewModel } from "src/lib/providers/AboutViewModelProvider";
-import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvider";
 
 const AboutHeroSection = () => {
   const viewModel = useAboutViewModel();
@@ -18,7 +16,6 @@ const AboutHeroSection = () => {
       >
         <AppPageHeading>About me</AppPageHeading>
       </AnimateOnLoad>
-      <SectionSpacing />
     </Box>
   );
 };
