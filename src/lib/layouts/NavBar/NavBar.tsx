@@ -90,7 +90,8 @@ const _DesktopSideComponents = () => {
   };
 
   const onClickAboutUs = () => {
-    scrollToEndOfPage();
+    // scrollToEndOfPage();
+    navigate(RoutePaths.ABOUT);
   };
 
   return (

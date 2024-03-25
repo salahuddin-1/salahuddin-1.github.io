@@ -8,6 +8,7 @@ import TermsAndConditionsPage from "../features/TermsAndConditions/TermsAndCondi
 import { useEffect } from "react";
 import RecentWork from "../features/RecentWork/RecentWork";
 import Splash from "../features/Splash/Splash";
+import About from "../features/About/About";
 
 const AppRouter = () => {
   // Here we are using the useLocation hook to get the current location [current page] of the app.
@@ -36,6 +37,8 @@ const AppRouter = () => {
         path={RoutePaths.TERMS_AND_CONDITIONS}
         Component={TermsAndConditionsPage}
       />
+
+      <Route path={RoutePaths.ABOUT} Component={About} />
     </Routes>
   );
 };
