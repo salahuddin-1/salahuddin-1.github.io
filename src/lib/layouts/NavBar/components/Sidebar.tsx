@@ -59,7 +59,7 @@ const SidebarContent = (props: Props) => {
 
   const onClickAboutUs = () => {
     props.onClose();
-    scrollToEndOfPage();
+    navigate(RoutePaths.ABOUT);
   };
 
   const onClickServices = async () => {
