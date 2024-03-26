@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import RecentWork from "../features/RecentWork/RecentWork";
 import Splash from "../features/Splash/Splash";
 import About from "../features/About/About";
+import CaseStudy from "../features/CaseStudy/CaseStudy";
 
 const AppRouter = () => {
   // Here we are using the useLocation hook to get the current location [current page] of the app.
@@ -39,6 +40,7 @@ const AppRouter = () => {
       />
 
       <Route path={RoutePaths.ABOUT} Component={About} />
+      <Route path={RoutePaths.CASE_STUDY} Component={CaseStudy} />
     </Routes>
   );
 };

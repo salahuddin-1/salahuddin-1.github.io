@@ -7,4 +7,5 @@ export class RoutePaths {
   public static TERMS_AND_CONDITIONS: string = "/termsAndConditions";
   public static RECENT_WORK: string = "/recentWork";
   public static ABOUT: string = "/about";
+  public static CASE_STUDY: string = "/caseStudy";
 }

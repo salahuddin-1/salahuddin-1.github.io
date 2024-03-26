@@ -14,6 +14,8 @@ import RecentWorkViewModel from "./lib/features/RecentWork/RecentWorkViewModel";
 import { RecentWorkViewModelProvider } from "./lib/providers/RecentWorkViewModelProvider";
 import { AboutViewModelProvider } from "./lib/providers/AboutViewModelProvider";
 import AboutViewModel from "./lib/features/About/AboutViewModel";
+import CaseStudyViewModel from "./lib/features/CaseStudy/CaseStudyViewModel";
+import { CaseStudyViewModelProvider } from "./lib/providers/CaseStudyProvider";
 
 function App() {
   const homepageViewModel = new HomepageViewModel();
@@ -23,6 +25,7 @@ function App() {
   const termsAndConditionsViewModel = new TermsAndConditionsViewModel();
   const recentWorkViewModel = new RecentWorkViewModel();
   const aboutViewModel = new AboutViewModel();
+  const caseStudyViewModel = new CaseStudyViewModel();
 
   // useEffect(() => {
   //   getCities();
@@ -30,23 +33,25 @@ function App() {
 
   return (
     <HomepageViewModelProvider viewModel={homepageViewModel}>
-      <AboutViewModelProvider viewModel={aboutViewModel}>
-        <RecentWorkViewModelProvider viewModel={recentWorkViewModel}>
-          <WorkViewModelProvider viewModel={workViewModel}>
-            <ContactUsViewModelProvider viewModel={contactUsViewModel}>
-              <PrivacyPolicyViewModelProvider
-                viewModel={privacyPolicyViewModel}
-              >
-                <TermsAndConditionsViewModelProvider
-                  viewModel={termsAndConditionsViewModel}
+      <CaseStudyViewModelProvider viewModel={caseStudyViewModel}>
+        <AboutViewModelProvider viewModel={aboutViewModel}>
+          <RecentWorkViewModelProvider viewModel={recentWorkViewModel}>
+            <WorkViewModelProvider viewModel={workViewModel}>
+              <ContactUsViewModelProvider viewModel={contactUsViewModel}>
+                <PrivacyPolicyViewModelProvider
+                  viewModel={privacyPolicyViewModel}
                 >
-                  <AppRouter />
-                </TermsAndConditionsViewModelProvider>
-              </PrivacyPolicyViewModelProvider>
-            </ContactUsViewModelProvider>
-          </WorkViewModelProvider>
-        </RecentWorkViewModelProvider>
-      </AboutViewModelProvider>
+                  <TermsAndConditionsViewModelProvider
+                    viewModel={termsAndConditionsViewModel}
+                  >
+                    <AppRouter />
+                  </TermsAndConditionsViewModelProvider>
+                </PrivacyPolicyViewModelProvider>
+              </ContactUsViewModelProvider>
+            </WorkViewModelProvider>
+          </RecentWorkViewModelProvider>
+        </AboutViewModelProvider>
+      </CaseStudyViewModelProvider>
     </HomepageViewModelProvider>
   );
 }
