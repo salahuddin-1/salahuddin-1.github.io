@@ -110,10 +110,12 @@ export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
         />
 
         {/* Feature Description */}
-        <_FeatureDescription
-          isOddIndex={props.isOddIndex}
-          caseStudyItemProp={props.caseStudyItemProp}
-        />
+        <Box flex={2} display="flex" flexDirection="column">
+          <_FeatureDescription
+            isOddIndex={props.isOddIndex}
+            caseStudyItemProp={props.caseStudyItemProp}
+          />
+        </Box>
       </Box>
 
       {/* <Box height="50px" /> */}
@@ -201,20 +203,74 @@ interface _FeatureDescriptionProps {
 }
 
 const _FeatureDescription = (props: _FeatureDescriptionProps) => {
-  return (
-    <Text
-      marginLeft={{
-        base: "0px",
-        md: props.isOddIndex ? "0px" : "40px", // on odd index
-      }}
-      marginRight={{
-        base: "0px",
-        md: props.isOddIndex ? "40px" : "0px", // on odd index
-      }}
-      flex={2}
-      bg=""
-    >
-      {props.caseStudyItemProp?.description ?? ""}
-    </Text>
+  return <_SplittedText {...props} />;
+  // return (
+  //   <Text
+  //     marginLeft={{
+  //       base: "0px",
+  //       md: props.isOddIndex ? "0px" : "40px", // on odd index
+  //     }}
+  //     marginRight={{
+  //       base: "0px",
+  //       md: props.isOddIndex ? "40px" : "0px", // on odd index
+  //     }}
+  //     flex={2}
+  //     bg=""
+  //   >
+  //     {props.caseStudyItemProp?.description ?? ""}
+  //   </Text>
+  // );
+};
+
+const _SplittedText = (props: _FeatureDescriptionProps) => {
+  const text = props.caseStudyItemProp?.description ?? "";
+
+  const listOfSplittedText: string[] = text.split("|");
+
+  // If no split is found
+  if (listOfSplittedText.length === 0) {
+    return (
+      <Text
+        marginLeft={{
+          base: "0px",
+          md: props.isOddIndex ? "0px" : "40px", // on odd index
+        }}
+        marginRight={{
+          base: "0px",
+          md: props.isOddIndex ? "40px" : "0px", // on odd index
+        }}
+        bg=""
+      >
+        {text}
+      </Text>
+    );
+  }
+
+  // Capital Bank | Design | Development
+
+  const listOfSeparatedComponents = listOfSplittedText.map(
+    (splittedText, index) => {
+      const isLastIndex = index === listOfSplittedText.length - 1;
+
+      return (
+        <Text
+          marginBottom={isLastIndex ? "0px" : "40px"}
+          marginLeft={{
+            base: "0px",
+            md: props.isOddIndex ? "0px" : "40px", // on odd index
+          }}
+          marginRight={{
+            base: "0px",
+            md: props.isOddIndex ? "40px" : "0px", // on odd index
+          }}
+          flex={2}
+          bg=""
+        >
+          {splittedText.trim()}
+        </Text>
+      );
+    }
   );
+
+  return listOfSeparatedComponents;
 };
