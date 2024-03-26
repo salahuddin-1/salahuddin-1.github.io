@@ -113,18 +113,18 @@ const _ImageComponent = () => {
         alt="profile"
         borderRadius={{
           // RESPONSIVE
-          base: "10px",
-          sm: "15px",
+          base: "30px",
+          sm: "30px",
           md: "20px",
-          lg: "40px",
+          lg: "30px",
           "2xl": "60px",
         }}
         border={{
           // RESPONSIVE
-          base: `3px solid ${AppColor.LIGHT_GRAY_100}`,
-          sm: `4px solid ${AppColor.LIGHT_GRAY_100}`,
+          base: `6px solid ${AppColor.LIGHT_GRAY_100}`,
+          sm: `7px solid ${AppColor.LIGHT_GRAY_100}`,
           md: `7px solid ${AppColor.LIGHT_GRAY_100}`,
-          lg: `10px solid ${AppColor.LIGHT_GRAY_100}`,
+          lg: `9px solid ${AppColor.LIGHT_GRAY_100}`,
           "2xl": `15px solid ${AppColor.LIGHT_GRAY_100}`,
         }}
       />
