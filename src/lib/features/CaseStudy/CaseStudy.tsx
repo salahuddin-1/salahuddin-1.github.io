@@ -21,7 +21,7 @@ const CaseStudy = () => {
   const viewmodel = useCaseStudyViewModel();
 
   // Manage the state of the case study details
-  const [caseStudyDetails, setCaseStudyDetails] = useState<
+  const [caseStudyProp, setCaseStudyDetails] = useState<
     CaseStudyProp | undefined
   >();
 
@@ -43,7 +43,7 @@ const CaseStudy = () => {
 
   return (
     <BasePage>
-      <CaseStudyHeroSection />
+      <CaseStudyHeroSection caseStudyProp={caseStudyProp!} />
 
       <Box height="10px" />
 
@@ -55,7 +55,7 @@ const CaseStudy = () => {
 
       <Box height="100px" />
 
-      <CaseStudyInfoSection />
+      <CaseStudyInfoSection caseStudyProp={caseStudyProp!} />
     </BasePage>
   );
 };

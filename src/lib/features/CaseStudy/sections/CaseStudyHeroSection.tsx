@@ -1,14 +1,21 @@
 import { Box, useTheme, Text } from "@chakra-ui/react";
 import AnimateOnLoad from "@components/AnimateOnLoad";
 import AppPageHeading from "@components/AppPageHeading";
+import { CaseStudyProp } from "@datautils/case_studies";
 import React from "react";
 import { useCaseStudyViewModel } from "src/lib/providers/CaseStudyProvider";
 import { CustomTheme } from "src/theme";
 
-const CaseStudyHeroSection = () => {
+interface CaseStudyHeroSectionProps {
+  caseStudyProp: CaseStudyProp;
+}
+
+const CaseStudyHeroSection = (props: CaseStudyHeroSectionProps) => {
   const viewmodel = useCaseStudyViewModel();
   const theme = useTheme<CustomTheme>();
   const animationOnLoadProps = viewmodel.animationOnLoadProps;
+
+  console.log(props.caseStudyProp);
 
   return (
     <Box>

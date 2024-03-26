@@ -3,8 +3,13 @@ import profilePhotoHero from "@assets/projects/capital_1.png";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import { AppColor } from "src/domain/constants/AppColor";
 import AppDivider from "@components/AppDivider";
+import { CaseStudyProp } from "@datautils/case_studies";
 
-const CaseStudyInfoSection = () => {
+interface CaseStudyInfoSectionProps {
+  caseStudyProp: CaseStudyProp;
+}
+
+const CaseStudyInfoSection = (props: CaseStudyInfoSectionProps) => {
   return (
     <Box>
       <_CaseStudyEntity isOddIndex={false} />
