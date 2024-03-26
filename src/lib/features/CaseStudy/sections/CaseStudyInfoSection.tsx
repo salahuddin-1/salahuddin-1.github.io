@@ -11,6 +11,7 @@ const CaseStudyInfoSection = () => {
       <VStack bg="red" alignItems="start">
         {/* Index */}
         <_IndexComponent />
+
         <Box
           height={{
             base: "30vw",
@@ -29,6 +30,7 @@ const CaseStudyInfoSection = () => {
           flexDirection={{
             base: "column",
             md: "row",
+            // md: "row-reverse", // on odd index
           }}
         >
           {/* Project Image */}
@@ -138,9 +140,11 @@ const _FeatureDescription = () => {
       marginLeft={{
         base: "0px",
         md: "40px",
+        // md: "0px", // on odd index
       }}
       marginRight={{
         base: "0px",
+        // md: "40px", // on odd index
       }}
       flex={2}
       bg="purple"
