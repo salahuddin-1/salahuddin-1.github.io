@@ -1,22 +1,37 @@
 import { Box, Image, VStack, Text, HStack } from "@chakra-ui/react";
-import profilePhotoHero from "@assets/projects/capital_1.png";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import { AppColor } from "src/domain/constants/AppColor";
 import AppDivider from "@components/AppDivider";
-import { CaseStudyProp } from "@datautils/case_studies";
+import { CaseStudyItemProp, CaseStudyProp } from "@datautils/case_studies";
 
 interface CaseStudyInfoSectionProps {
   caseStudyProp: CaseStudyProp;
 }
 
 const CaseStudyInfoSection = (props: CaseStudyInfoSectionProps) => {
-  return (
-    <Box>
-      <_CaseStudyEntity isOddIndex={false} />
-      <_CaseStudyEntity isOddIndex={true} />
-      <_CaseStudyEntity isOddIndex={false} isLastIndex={true} />
-    </Box>
+  const caseStudyEntites = props.caseStudyProp?.caseStudyItems.map(
+    (item, index) => {
+      const isOddIndex: boolean = index % 2 === 0;
+
+      const isLastIndex: boolean =
+        index === props.caseStudyProp?.caseStudyItems.length - 1;
+
+      const serialNumber: number = index + 1;
+
+      const serialNumberToString: string = "0" + serialNumber.toString();
+
+      return (
+        <_CaseStudyEntity
+          isOddIndex={isOddIndex}
+          isLastIndex={isLastIndex}
+          serialNumber={serialNumberToString}
+          caseStudyItemProp={item}
+        />
+      );
+    }
   );
+
+  return <Box>{caseStudyEntites}</Box>;
 };
 
 export default CaseStudyInfoSection;
@@ -26,6 +41,8 @@ export default CaseStudyInfoSection;
 interface _CaseStudyEntityProps {
   isOddIndex: boolean;
   isLastIndex?: boolean;
+  serialNumber: string;
+  caseStudyItemProp: CaseStudyItemProp;
 }
 
 export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
@@ -54,7 +71,7 @@ export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
       {/* <Box height="50px" /> */}
 
       {/* Index */}
-      <_IndexComponent />
+      <_IndexComponent serialNumber={props.serialNumber} />
 
       <Box
         height={{
@@ -78,7 +95,7 @@ export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
         }}
       >
         {/* Project Image */}
-        <_ImageComponent />
+        <_ImageComponent imageSrc={props?.caseStudyItemProp?.src} />
 
         <Box
           height={{
@@ -89,7 +106,10 @@ export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
         />
 
         {/* Feature Description */}
-        <_FeatureDescription isOddIndex={props.isOddIndex} />
+        <_FeatureDescription
+          isOddIndex={props.isOddIndex}
+          caseStudyItemProp={props.caseStudyItemProp}
+        />
       </Box>
 
       {/* <Box height="50px" /> */}
@@ -99,15 +119,15 @@ export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
   );
 };
 
-const _IndexComponent = () => {
+const _IndexComponent = (props: { serialNumber: string }) => {
   return (
     <Text fontSize="35px" bg="">
-      01
+      {props.serialNumber}
     </Text>
   );
 };
 
-const _ImageComponent = () => {
+const _ImageComponent = (props: { imageSrc: string }) => {
   return (
     <Box
       bg=""
@@ -148,8 +168,8 @@ const _ImageComponent = () => {
         }}
         position="absolute"
         objectFit="fill"
-        src={profilePhotoHero}
-        alt="profile"
+        src={props.imageSrc}
+        alt=""
         borderRadius={{
           // RESPONSIVE
           base: "30px",
@@ -171,7 +191,12 @@ const _ImageComponent = () => {
   );
 };
 
-const _FeatureDescription = (props: _CaseStudyEntityProps) => {
+interface _FeatureDescriptionProps {
+  isOddIndex: boolean;
+  caseStudyItemProp: CaseStudyItemProp;
+}
+
+const _FeatureDescription = (props: _FeatureDescriptionProps) => {
   return (
     <Text
       marginLeft={{
@@ -185,14 +210,7 @@ const _FeatureDescription = (props: _CaseStudyEntityProps) => {
       flex={2}
       bg=""
     >
-      Onboarding: One of the most challenging modules I worked on was the
-      onboarding process. It involved intricate decision-making functions and
-      complex logic. I integrated the Microblink SDK to scan Jordanian user IDs,
-      retrieve data, and authenticate users. Additionally, I developed a custom
-      frame and utilized the "camera" plugin to capture users' Live Photos,
-      which were then sent to the backend for verification. The module also
-      included a sophisticated Resumption flow to allow users to resume their
-      journey if interrupted.
+      {props.caseStudyItemProp?.description ?? ""}
     </Text>
   );
 };
