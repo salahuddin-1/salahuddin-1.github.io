@@ -73,7 +73,9 @@ const SingleProjectSkeleton = ({ project }: Props) => {
       slug: project.slug,
     };
 
-    navigate(RoutePaths.RECENT_WORK, { state: params });
+    // navigate(RoutePaths.RECENT_WORK, { state: params });
+    navigate(RoutePaths.CASE_STUDY, { state: params });
+
     // set the selected project
   };
 

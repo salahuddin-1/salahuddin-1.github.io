@@ -1,7 +1,10 @@
-import AppPageHeading from "@components/AppPageHeading";
-import React, { useEffect } from "react";
+import { Box } from "@chakra-ui/react";
+import { useEffect } from "react";
 import BasePage from "src/lib/base/BasePage";
 import { useCaseStudyViewModel } from "src/lib/providers/CaseStudyProvider";
+import CaseStudyHeroSection from "./sections/CaseStudyHeroSection";
+import CaseStudyInfoSection from "./sections/CaseStudyInfoSection";
+import { SectionSpacing } from "@components/SectionSpacing";
 
 const CaseStudy = () => {
   const viewmodel = useCaseStudyViewModel();
@@ -14,7 +17,10 @@ const CaseStudy = () => {
 
   return (
     <BasePage>
-      <AppPageHeading>Capital Bank of Jordan</AppPageHeading>
+      <CaseStudyHeroSection />
+      <SectionSpacing />
+
+      <CaseStudyInfoSection />
     </BasePage>
   );
 };

@@ -5,8 +5,6 @@ import AppSectionHeading from "@components/AppSectionHeading";
 import { useAboutViewModel } from "src/lib/providers/AboutViewModelProvider";
 import profilePhotoHero from "@assets/profile_photo_5.jpeg";
 import { SectionSpacing } from "@components/SectionSpacing";
-import EmploymentHistorySection from "./EmploymentHistorySection";
-import FooterTextButton from "src/lib/layouts/Footer/components/FooterTextButton";
 import { CustomTheme } from "src/theme";
 import AppMaterialButton from "@components/AppMaterialButton";
 import { Link } from "react-router-dom";
