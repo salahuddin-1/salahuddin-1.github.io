@@ -1,10 +1,12 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
 import BasePage from "src/lib/base/BasePage";
 import { useCaseStudyViewModel } from "src/lib/providers/CaseStudyProvider";
 import CaseStudyHeroSection from "./sections/CaseStudyHeroSection";
 import CaseStudyInfoSection from "./sections/CaseStudyInfoSection";
-import { SectionSpacing } from "@components/SectionSpacing";
+
+import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
+import CaseStudyViewOnStoreButtonSection from "./sections/CaseStudyViewOnStoreButtonSection";
 
 const CaseStudy = () => {
   const viewmodel = useCaseStudyViewModel();
@@ -18,7 +20,16 @@ const CaseStudy = () => {
   return (
     <BasePage>
       <CaseStudyHeroSection />
-      <SectionSpacing />
+
+      <Box height="10px" />
+
+      <CaseStudyViewOnStoreButtonSection
+        playstoreLink=""
+        isProjectPrivate={true}
+        deviceType={DeviceTypeEnum.MOBILE}
+      />
+
+      <Box height="100px" />
 
       <CaseStudyInfoSection />
     </BasePage>
