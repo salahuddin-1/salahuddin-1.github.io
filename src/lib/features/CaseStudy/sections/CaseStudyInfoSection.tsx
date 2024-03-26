@@ -3,6 +3,8 @@ import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import { AppColor } from "src/domain/constants/AppColor";
 import AppDivider from "@components/AppDivider";
 import { CaseStudyItemProp, CaseStudyProp } from "@datautils/case_studies";
+import AppSectionHeading from "@components/AppSectionHeading";
+import AppPageSubheading from "@components/AppPageSubheading";
 
 interface CaseStudyInfoSectionProps {
   caseStudyProp: CaseStudyProp;
@@ -245,9 +247,35 @@ interface _SplittedTextComponentProps {
 }
 
 const _SplittedTextComponent = (props: _SplittedTextComponentProps) => {
+  const text = props.text.trim();
+
+  const splittedTextList: string[] = text.split(":");
+
+  // if no heading is found
+  if (splittedTextList.length === 1) {
+    return (
+      <Text
+        marginBottom={props.isLastIndex ? "0px" : "40px"}
+        marginLeft={{
+          base: "0px",
+          md: props.featureDescriptionProps.isOddIndex ? "0px" : "40px", // on odd index
+        }}
+        marginRight={{
+          base: "0px",
+          md: props.featureDescriptionProps.isOddIndex ? "40px" : "0px", // on odd index
+        }}
+        flex={2}
+        bg=""
+      >
+        {props.text.trim()}
+      </Text>
+    );
+  }
+
+  // If a heading is found
   return (
-    <Text
-      marginBottom={props.isLastIndex ? "0px" : "40px"}
+    <Box
+      marginBottom={props.isLastIndex ? "0px" : "50px"}
       marginLeft={{
         base: "0px",
         md: props.featureDescriptionProps.isOddIndex ? "0px" : "40px", // on odd index
@@ -256,10 +284,16 @@ const _SplittedTextComponent = (props: _SplittedTextComponentProps) => {
         base: "0px",
         md: props.featureDescriptionProps.isOddIndex ? "40px" : "0px", // on odd index
       }}
-      flex={2}
-      bg=""
     >
-      {props.text.trim()}
-    </Text>
+      <Text fontWeight="500" fontSize="22px">
+        {splittedTextList[0]?.trim() ?? ""}
+      </Text>
+
+      <Box marginY="20px">
+        <AppDivider color={AppColor.LIGHT_GRAY_100} />
+      </Box>
+
+      <Text>{splittedTextList[1]?.trim() ?? ""}</Text>
+    </Box>
   );
 };
