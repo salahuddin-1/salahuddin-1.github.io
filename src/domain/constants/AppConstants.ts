@@ -21,6 +21,9 @@ export class AppConstants {
 
   public static GITHUB_LINK: string = "https://github.com/salahuddin-1";
 
+  public static CAPITAL_BANK_LINK: string =
+    "https://play.google.com/store/apps/details?id=com.capital.cbt&hl=en&gl=US";
+
   // Firebase Collections
   public static CONTACT_US_COLLECTION: string = "contactUs";
 }

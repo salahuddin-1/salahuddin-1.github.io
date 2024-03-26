@@ -58,6 +58,7 @@ import imageRummozAdmin2 from "@assets/projects/rummoz_admin_2.png";
 import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import React from "react";
 import { AppColor } from "src/domain/constants/AppColor";
+import { AppConstants } from "src/domain/constants/AppConstants";
 
 export default [
   // RUUMOZ KITCHEN
@@ -142,8 +143,7 @@ export default [
         alt: "Capital Bank 3",
       },
     ],
-    playstoreLink:
-      "https://play.google.com/store/apps/details?id=com.capital.cbt&hl=en&gl=US",
+    playstoreLink: AppConstants.CAPITAL_BANK_LINK,
     ref: React.createRef(),
   },
 
