@@ -8,7 +8,8 @@ const CaseStudyInfoSection = () => {
   return (
     <Box>
       <_CaseStudyEntity isOddIndex={false} />
-      <_CaseStudyEntity isOddIndex={true} isLastIndex={true} />
+      <_CaseStudyEntity isOddIndex={true} />
+      <_CaseStudyEntity isOddIndex={false} isLastIndex={true} />
     </Box>
   );
 };
