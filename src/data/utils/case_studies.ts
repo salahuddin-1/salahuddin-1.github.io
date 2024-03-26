@@ -9,7 +9,15 @@ import custom_keyboard from "@assets/case_studies/custom_keyboard.png";
 import weekly_spending from "@assets/case_studies/weekly_spending.jpg";
 import wu from "@assets/case_studies/wu.jpg";
 
+// MANDI MARKET
+import mandi_market_1 from "@assets/case_studies/mandi_market/mandi_market_1.jpg";
+import mandi_market_2 from "@assets/case_studies/mandi_market/mandi_market_2.jpg";
+import mandi_market_3 from "@assets/case_studies/mandi_market/mandi_market_3.jpg";
+import mandi_market_4 from "@assets/case_studies/mandi_market/mandi_market_4.jpg";
+import mandi_market_5 from "@assets/case_studies/mandi_market/mandi_market_5.jpg";
+
 export default [
+  // ---------------------------- CAPITAL BANK ----------------------------
   {
     projectName: "Capital Bank of Jordan",
     slug: "capital-bank-of-jordan",
@@ -63,6 +71,55 @@ export default [
         alt: "Capital Bank of Jordan",
         description:
           "Loyalty SDK: I integrated the Loyalty SDK to track users' steps. If a user exceeded 10,000 steps per day, they could claim loyalty points, which could later be converted into JOD. The step count resets every 24 hours, encouraging users to maintain daily activity.",
+      },
+    ],
+  },
+
+  {
+    projectName: "Mandi Market",
+    slug: "mandi-market",
+    deviceType: DeviceTypeEnum.MOBILE,
+    playstoreLink: null,
+    isProjectPrivate: true,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: mandi_market_1,
+        alt: "Mandi Market 1",
+        description:
+          "Project Goal: The problem that the butchers' dealers faced was the manual process of calculating transactions. Every time they went to the market, they had to jot down calculations manually in their notebooks. Then, upon returning home, they had to redo all the calculations using a calculator, transcribing everything into their notebooks. However, this manual method posed several risks, including the potential for theft, alteration, and damage of their notebooks. Moreover, the tedious task of maintaining and reconciling the records daily added to their workload. Some dealers attempted to use laptops as an alternative solution. However, this approach also had its drawbacks. While laptops offered the convenience of digital storage, there were concerns about data security and integrity. Storing data locally on a laptop made it susceptible to damage or loss, further complicating the dealers' efforts to streamline their record-keeping process.",
+      },
+
+      {
+        id: "2",
+        src: mandi_market_2,
+        alt: "Mandi Market 2",
+        description:
+          "Solution: Mandi Market is a business accounting app designed with user security in mind. Users can register and login securely, without compromising their data. The app is user-friendly and easy to use on mobile devices, making it convenient for users in markets. Firebase, SQLite, and Hive were utilized as databases, with Clean Architecture and MVVM employed as the architectural framework. The app features robust security measures, including biometric authentication, app PIN, and mobile number verification upon device change.",
+      },
+
+      {
+        id: "3",
+        src: mandi_market_3,
+        alt: "Mandi Market 3",
+        description:
+          "Solution: Firebase serves as the backend tool, with Cloud Firestore used as the primary database and Firebase Authentication for phone number verification. The app performs complex calculations and follows various algorithms to support its functionalities.",
+      },
+
+      {
+        id: "4",
+        src: mandi_market_4,
+        alt: "Mandi Market 4",
+        description:
+          "Solution: One significant challenge encountered during development was working with Firebase's date filtering capabilities. To address this, I designed an algorithm to calculate and retrieve specific date ranges from the database. I also shared this solution on Stack Overflow to assist others facing similar issues.",
+      },
+
+      {
+        id: "5",
+        src: mandi_market_5,
+        alt: "Mandi Market 5",
+        description:
+          "Solution: The app executes numerous complex queries related to Firebase, many of which involve transactions and batches. To optimize Firebase read counts and reduce costs, various optimization techniques were employed, including pagination, data caching, data manipulation, and state preservation.",
       },
     ],
   },
