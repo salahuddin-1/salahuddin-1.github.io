@@ -203,26 +203,6 @@ interface _FeatureDescriptionProps {
 }
 
 const _FeatureDescription = (props: _FeatureDescriptionProps) => {
-  return <_SplittedText {...props} />;
-  // return (
-  //   <Text
-  //     marginLeft={{
-  //       base: "0px",
-  //       md: props.isOddIndex ? "0px" : "40px", // on odd index
-  //     }}
-  //     marginRight={{
-  //       base: "0px",
-  //       md: props.isOddIndex ? "40px" : "0px", // on odd index
-  //     }}
-  //     flex={2}
-  //     bg=""
-  //   >
-  //     {props.caseStudyItemProp?.description ?? ""}
-  //   </Text>
-  // );
-};
-
-const _SplittedText = (props: _FeatureDescriptionProps) => {
   const text = props.caseStudyItemProp?.description ?? "";
 
   const listOfSplittedText: string[] = text.split("|");
@@ -230,19 +210,11 @@ const _SplittedText = (props: _FeatureDescriptionProps) => {
   // If no split is found
   if (listOfSplittedText.length === 0) {
     return (
-      <Text
-        marginLeft={{
-          base: "0px",
-          md: props.isOddIndex ? "0px" : "40px", // on odd index
-        }}
-        marginRight={{
-          base: "0px",
-          md: props.isOddIndex ? "40px" : "0px", // on odd index
-        }}
-        bg=""
-      >
-        {text}
-      </Text>
+      <_SplittedTextComponent
+        featureDescriptionProps={props}
+        isLastIndex={true}
+        splittedText={text}
+      />
     );
   }
 
@@ -253,24 +225,41 @@ const _SplittedText = (props: _FeatureDescriptionProps) => {
       const isLastIndex = index === listOfSplittedText.length - 1;
 
       return (
-        <Text
-          marginBottom={isLastIndex ? "0px" : "40px"}
-          marginLeft={{
-            base: "0px",
-            md: props.isOddIndex ? "0px" : "40px", // on odd index
-          }}
-          marginRight={{
-            base: "0px",
-            md: props.isOddIndex ? "40px" : "0px", // on odd index
-          }}
-          flex={2}
-          bg=""
-        >
-          {splittedText.trim()}
-        </Text>
+        <_SplittedTextComponent
+          featureDescriptionProps={props}
+          isLastIndex={isLastIndex}
+          splittedText={splittedText}
+        />
       );
     }
   );
 
   return listOfSeparatedComponents;
+};
+
+interface _SplittedTextComponentProps {
+  featureDescriptionProps: _FeatureDescriptionProps;
+  isLastIndex: boolean;
+  splittedText: string;
+}
+
+const _SplittedTextComponent = (props: _SplittedTextComponentProps) => {
+  // return <_SplittedText {...props} />;
+  return (
+    <Text
+      marginBottom={props.isLastIndex ? "0px" : "40px"}
+      marginLeft={{
+        base: "0px",
+        md: props.featureDescriptionProps.isOddIndex ? "0px" : "40px", // on odd index
+      }}
+      marginRight={{
+        base: "0px",
+        md: props.featureDescriptionProps.isOddIndex ? "40px" : "0px", // on odd index
+      }}
+      flex={2}
+      bg=""
+    >
+      {props.splittedText.trim()}
+    </Text>
+  );
 };
