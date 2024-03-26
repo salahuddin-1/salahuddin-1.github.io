@@ -72,15 +72,6 @@ const AboutHeroSection = () => {
             <Box height="30px" />
 
             <_GetToKnowMeButton />
-
-            {/* <Text
-              cursor="pointer"
-              onClick={() => {}}
-              // fontWeight="500"
-              color={theme.colors.accent}
-            >
-              Get to know me
-            </Text> */}
           </VStack>
         </Box>
 
@@ -89,9 +80,8 @@ const AboutHeroSection = () => {
         <_StackImage />
       </Box>
 
-      {/* <SectionSpacing /> */}
-
-      {/* <EmploymentHistorySection /> */}
+      <SectionSpacing />
+      <EmploymentHistorySection />
     </Box>
   );
 };
