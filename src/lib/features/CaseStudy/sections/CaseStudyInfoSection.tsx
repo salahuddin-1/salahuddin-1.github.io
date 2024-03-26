@@ -8,7 +8,7 @@ import AppDivider from "@components/AppDivider";
 const CaseStudyInfoSection = () => {
   return (
     <Box>
-      <VStack bg="red" alignItems="start">
+      <VStack bg="" alignItems="start">
         {/* Index */}
         <_IndexComponent />
 
@@ -16,7 +16,7 @@ const CaseStudyInfoSection = () => {
           height={{
             base: "30vw",
             sm: "70px",
-            md: "20px",
+            lg: "20px",
           }}
         />
 
@@ -25,11 +25,11 @@ const CaseStudyInfoSection = () => {
           // alignItems="center"
           alignItems={{
             base: "center",
-            md: "start",
+            lg: "start",
           }}
           flexDirection={{
             base: "column",
-            md: "row",
+            lg: "row",
             // md: "row-reverse", // on odd index
           }}
         >
@@ -40,7 +40,7 @@ const CaseStudyInfoSection = () => {
             height={{
               base: "40vw",
               sm: "100px",
-              md: "50px",
+              lg: "50px",
             }}
           />
 
@@ -64,7 +64,7 @@ export default CaseStudyInfoSection;
 
 const _IndexComponent = () => {
   return (
-    <Text fontSize="35px" bg="green">
+    <Text fontSize="35px" bg="">
       01
     </Text>
   );
@@ -73,10 +73,10 @@ const _IndexComponent = () => {
 const _ImageComponent = () => {
   return (
     <Box
-      bg="orange"
+      bg=""
       maxHeight="70vh"
       height={{
-        md: "35vw",
+        // md: "35vw",
         lg: "40vw",
       }}
       flex={1}
@@ -87,12 +87,12 @@ const _ImageComponent = () => {
     >
       {/* Tic Tac Toe Image */}
       <Image
-        bg="blue"
+        bg=""
         objectFit="contain"
         height={{
           base: "100%",
           sm: "450px",
-          md: "100%",
+          lg: "100%",
         }}
         src={ticTacToeimage}
         alt="tic-tac-toe"
@@ -101,13 +101,13 @@ const _ImageComponent = () => {
       {/* UI Design Image */}
       <Image
         marginX={{
-          md: "60px",
+          // md: "60px",
           lg: "0px",
         }}
         height={{
           base: "160%",
           sm: "120%",
-          md: "100%",
+          lg: "100%",
         }}
         position="absolute"
         objectFit="fill"
@@ -118,7 +118,7 @@ const _ImageComponent = () => {
           base: "30px",
           sm: "30px",
           md: "20px",
-          lg: "30px",
+          lg: "25px",
           "2xl": "60px",
         }}
         border={{
@@ -126,7 +126,7 @@ const _ImageComponent = () => {
           base: `6px solid ${AppColor.LIGHT_GRAY_100}`,
           sm: `7px solid ${AppColor.LIGHT_GRAY_100}`,
           md: `7px solid ${AppColor.LIGHT_GRAY_100}`,
-          lg: `9px solid ${AppColor.LIGHT_GRAY_100}`,
+          lg: `7px solid ${AppColor.LIGHT_GRAY_100}`,
           "2xl": `15px solid ${AppColor.LIGHT_GRAY_100}`,
         }}
       />
@@ -147,7 +147,7 @@ const _FeatureDescription = () => {
         // md: "40px", // on odd index
       }}
       flex={2}
-      bg="purple"
+      bg=""
     >
       Onboarding: One of the most challenging modules I worked on was the
       onboarding process. It involved intricate decision-making functions and
