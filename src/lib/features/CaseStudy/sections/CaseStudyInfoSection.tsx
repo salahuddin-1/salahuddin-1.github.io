@@ -2,6 +2,7 @@ import { Box, Image, VStack, Text, HStack } from "@chakra-ui/react";
 import profilePhotoHero from "@assets/projects/capital_1.png";
 import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
+import { AppColor } from "src/domain/constants/AppColor";
 
 const CaseStudyInfoSection = () => {
   return (
@@ -9,8 +10,13 @@ const CaseStudyInfoSection = () => {
       <VStack bg="red" alignItems="start">
         {/* Index */}
         <_IndexComponent />
+        <Box height="20px" />
 
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Box
+          display="flex"
+          // alignItems="center"
+          alignItems="start"
+        >
           {/* Project Image */}
           <_ImageComponent />
 
@@ -27,7 +33,11 @@ export default CaseStudyInfoSection;
 // ----------------------------------------------- PRIVATE COMPONENTS -------------------------------------------------
 
 const _IndexComponent = () => {
-  return <Text bg="green">01</Text>;
+  return (
+    <Text fontSize="35px" bg="green">
+      01
+    </Text>
+  );
 };
 
 const _ImageComponent = () => {
@@ -36,7 +46,7 @@ const _ImageComponent = () => {
       bg="orange"
       maxHeight="70vh"
       height={{
-        md: "60vw",
+        md: "35vw",
         lg: "40vw",
       }}
       flex={1}
@@ -45,30 +55,41 @@ const _ImageComponent = () => {
       justifyContent="center"
       alignItems="center"
     >
+      {/* Tic Tac Toe Image */}
       <Image
         objectFit="contain"
         height="100%"
         src={ticTacToeimage}
         alt="tic-tac-toe"
       />
+
+      {/* UI Design Image */}
       <Image
-        paddingX={{
-          md: "30px",
+        marginX={{
+          md: "60px",
           lg: "0px",
         }}
-        // height="100px"
-        // width="100px"
         height="100%"
         position="absolute"
-        // maxHeight="70vh"
-        // height={{
-        //   md: "60vw",
-        //   lg: "40vw",
-        // }}
-        objectFit="contain"
-        // flex={1}
+        objectFit="fill"
         src={profilePhotoHero}
         alt="profile"
+        borderRadius={{
+          // RESPONSIVE
+          base: "10px",
+          sm: "15px",
+          md: "20px",
+          lg: "40px",
+          "2xl": "60px",
+        }}
+        border={{
+          // RESPONSIVE
+          base: `3px solid ${AppColor.LIGHT_GRAY_100}`,
+          sm: `4px solid ${AppColor.LIGHT_GRAY_100}`,
+          md: `7px solid ${AppColor.LIGHT_GRAY_100}`,
+          lg: `10px solid ${AppColor.LIGHT_GRAY_100}`,
+          "2xl": `15px solid ${AppColor.LIGHT_GRAY_100}`,
+        }}
       />
     </Box>
   );
@@ -76,7 +97,7 @@ const _ImageComponent = () => {
 
 const _FeatureDescription = () => {
   return (
-    <Text flex={2} bg="purple">
+    <Text marginLeft="40px" flex={2} bg="purple">
       Onboarding: One of the most challenging modules I worked on was the
       onboarding process. It involved intricate decision-making functions and
       complex logic. I integrated the Microblink SDK to scan Jordanian user IDs,
