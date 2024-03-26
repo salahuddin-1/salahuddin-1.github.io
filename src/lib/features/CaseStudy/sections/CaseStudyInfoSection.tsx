@@ -1,6 +1,5 @@
 import { Box, Image, VStack, Text, HStack } from "@chakra-ui/react";
 import profilePhotoHero from "@assets/projects/capital_1.png";
-import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import { AppColor } from "src/domain/constants/AppColor";
 import AppDivider from "@components/AppDivider";
@@ -8,52 +7,8 @@ import AppDivider from "@components/AppDivider";
 const CaseStudyInfoSection = () => {
   return (
     <Box>
-      <VStack bg="" alignItems="start">
-        {/* Index */}
-        <_IndexComponent />
-
-        <Box
-          height={{
-            base: "30vw",
-            sm: "70px",
-            lg: "20px",
-          }}
-        />
-
-        <Box
-          display="flex"
-          // alignItems="center"
-          alignItems={{
-            base: "center",
-            lg: "start",
-          }}
-          flexDirection={{
-            base: "column",
-            lg: "row",
-            // md: "row-reverse", // on odd index
-          }}
-        >
-          {/* Project Image */}
-          <_ImageComponent />
-
-          <Box
-            height={{
-              base: "40vw",
-              sm: "100px",
-              lg: "50px",
-            }}
-          />
-
-          {/* Feature Description */}
-          <_FeatureDescription />
-        </Box>
-
-        <Box height="50px" />
-
-        <AppDivider
-        // color={AppColor.LIGHT_GRAY_100}
-        />
-      </VStack>
+      <_CaseStudyEntity isOddIndex={false} />
+      <_CaseStudyEntity isOddIndex={true} isLastIndex={true} />
     </Box>
   );
 };
@@ -61,6 +16,82 @@ const CaseStudyInfoSection = () => {
 export default CaseStudyInfoSection;
 
 // ----------------------------------------------- PRIVATE COMPONENTS -------------------------------------------------
+
+interface _CaseStudyEntityProps {
+  isOddIndex: boolean;
+  isLastIndex?: boolean;
+}
+
+export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
+  const getSeparationDivider = () => {
+    if (props.isLastIndex) {
+      return <></>;
+    }
+
+    return (
+      <Box
+        width="100%"
+        marginY={{
+          base: "70px",
+          lg: "100px",
+        }}
+      >
+        <AppDivider
+        // color={AppColor.LIGHT_GRAY_100}
+        />
+      </Box>
+    );
+  };
+
+  return (
+    <VStack bg="" alignItems="start">
+      {/* <Box height="50px" /> */}
+
+      {/* Index */}
+      <_IndexComponent />
+
+      <Box
+        height={{
+          base: "30vw",
+          sm: "70px",
+          lg: "20px",
+        }}
+      />
+
+      <Box
+        display="flex"
+        // alignItems="center"
+        alignItems={{
+          base: "center",
+          lg: "start",
+        }}
+        flexDirection={{
+          base: "column",
+          // on odd index
+          lg: props.isOddIndex ? "row-reverse" : "row",
+        }}
+      >
+        {/* Project Image */}
+        <_ImageComponent />
+
+        <Box
+          height={{
+            base: "40vw",
+            sm: "100px",
+            lg: "50px",
+          }}
+        />
+
+        {/* Feature Description */}
+        <_FeatureDescription isOddIndex={props.isOddIndex} />
+      </Box>
+
+      {/* <Box height="50px" /> */}
+
+      {getSeparationDivider()}
+    </VStack>
+  );
+};
 
 const _IndexComponent = () => {
   return (
@@ -134,17 +165,16 @@ const _ImageComponent = () => {
   );
 };
 
-const _FeatureDescription = () => {
+const _FeatureDescription = (props: _CaseStudyEntityProps) => {
   return (
     <Text
       marginLeft={{
         base: "0px",
-        md: "40px",
-        // md: "0px", // on odd index
+        md: props.isOddIndex ? "0px" : "40px", // on odd index
       }}
       marginRight={{
         base: "0px",
-        // md: "40px", // on odd index
+        md: props.isOddIndex ? "40px" : "0px", // on odd index
       }}
       flex={2}
       bg=""
