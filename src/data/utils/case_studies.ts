@@ -21,6 +21,12 @@ import rummoz_kitchen_1 from "@assets/case_studies/rummoz_kitchen/rummoz_kitchen
 import rummoz_kitchen_2 from "@assets/case_studies/rummoz_kitchen/rummoz_kitchen_2.jpg";
 import rummoz_kitchen_3 from "@assets/case_studies/rummoz_kitchen/rummoz_kitchen_3.jpg";
 
+// GOCHI
+import gochi_1 from "@assets/case_studies/gochi/gochi_1.jpg";
+import gochi_2 from "@assets/case_studies/gochi/gochi_2.jpg";
+import gochi_3 from "@assets/case_studies/gochi/gochi_3.jpg";
+import gochi_4 from "@assets/case_studies/gochi/gochi_4.jpg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -161,6 +167,49 @@ export default [
         alt: "Rummo'z Kitchen 3",
         description:
           "It also consists of an Admin Portal to manage the end user application. Features like - See Registered Users - Manage Users (Restrict/Freeze/Cancel/Pause) - Add New Dish - Set Coupon - Send a notification - Set Offers - Manage Dropdowns - Set Meal Charges - Manage Orders - Kill Switch Settings",
+      },
+    ],
+  },
+
+  // ---------------------------- GOCHI ----------------------------
+
+  {
+    projectName: "GoChi",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "gochi",
+    playstoreLink: AppConstants.GOCHI_LINK,
+    isProjectPrivate: false,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: gochi_1,
+        alt: "GoChi 1",
+        description:
+          "Goal: The goal was to develop an E-commerce system allowing end users to purchase fresh and halal meat, including goat, chicken, and eggs, through mobile applications. This system comprised three software components - | An Android app for end users, an iOS app for end users, and an Android/iOS Admin Portal. The Admin Portal empowered the client to manage all aspects of the products, including pricing, availability, coupons, notifications, and messages, providing comprehensive control through a convenient Android application interface.",
+      },
+
+      {
+        id: "2",
+        src: gochi_2,
+        alt: "GoChi 2",
+        description:
+          "Role: My contribution encompassed several key responsibilities. I designed the user experience and user interface, developed the frontend and backend utilizing Firebase, conducted thorough testing, and independently deployed the applications to the Play Store.",
+      },
+
+      {
+        id: "3",
+        src: gochi_3,
+        alt: "GoChi 3",
+        description:
+          "Success of the Project: The project garnered widespread acclaim for its simplicity and ease of use. Users praised its straightforward navigation, streamlined checkout processes, and minimal registration/login requirements. Leveraging Google Sign-In simplified access for users, aligning with contemporary expectations. | Moreover, the published E-commerce app facilitated online purchases of chicken, mutton, and eggs from a local distributor in Mumbai. Additionally, aspiring distributors could register through the app to sell these products. Firebase served as the backend tool, with Cloud Firestore managing the app's database and Firebase Authentication verifying users' phone numbers. The implementation of FCM and Cloud Functions enabled efficient push notifications.",
+      },
+
+      {
+        id: "4",
+        src: gochi_4,
+        alt: "GoChi 4",
+        description:
+          " Success of the Project: The app provided a dynamic platform for distributors, offering an admin portal for managing products, adjusting prices, creating coupons, and launching promotional offers. Customers could leave product reviews directly within the app, contributing to a robust feedback loop.",
       },
     ],
   },

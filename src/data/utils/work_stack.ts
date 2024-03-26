@@ -293,8 +293,7 @@ export default [
         alt: "GoChi 3",
       },
     ],
-    playstoreLink:
-      "https://play.google.com/store/apps/details?id=com.gochi.salahuddinshaikh",
+    playstoreLink: AppConstants.GOCHI_LINK,
     ref: React.createRef(),
   },
 
