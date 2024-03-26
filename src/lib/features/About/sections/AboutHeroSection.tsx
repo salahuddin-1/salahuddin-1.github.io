@@ -79,9 +79,6 @@ const AboutHeroSection = () => {
 
         <_StackImage />
       </Box>
-
-      <SectionSpacing />
-      <EmploymentHistorySection />
     </Box>
   );
 };
