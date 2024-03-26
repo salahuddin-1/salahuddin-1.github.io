@@ -9,6 +9,18 @@ export class AppConstants {
   public static CONTACT_US_PHONE: string = "+91 8898911744";
   public static CONTACT_US_EMAIL: string = "salahuddinshaikh16@gmail.com";
 
+  // Links
+  public static INSTGRAM_LINK: string =
+    "https://www.instagram.com/salahuddin_1/";
+
+  public static LINKEDIN_LINK: string =
+    "https://linkedin.com/in/salahuddin-shaikh-640469196";
+
+  public static STACKOVERFLOW_LINK: string =
+    "https://stackoverflow.com/users/12771360/salahuddin-shaikh";
+
+  public static GITHUB_LINK: string = "https://github.com/salahuddin-1";
+
   // Firebase Collections
   public static CONTACT_US_COLLECTION: string = "contactUs";
 }

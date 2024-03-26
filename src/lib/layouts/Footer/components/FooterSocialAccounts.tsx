@@ -21,7 +21,7 @@ const FooterSocialAccounts = () => {
       onClick: () => {},
       alt: AppConstants.LINKEDIN_ALT_TEXT,
       src: iconLinkedIn,
-      hrefLink: "https://linkedin.com/in/salahuddin-shaikh-640469196",
+      hrefLink: AppConstants.LINKEDIN_LINK,
     },
 
     {
@@ -29,7 +29,7 @@ const FooterSocialAccounts = () => {
       onClick: () => {},
       alt: "Github Icon Alt Text",
       src: iconGithub,
-      hrefLink: "https://github.com/salahuddin-1",
+      hrefLink: AppConstants.GITHUB_LINK,
     },
 
     {
@@ -37,7 +37,7 @@ const FooterSocialAccounts = () => {
       onClick: () => {},
       alt: "StackOverflow Icon Alt Text",
       src: iconStackOverflow,
-      hrefLink: "https://stackoverflow.com/users/12771360/salahuddin-shaikh",
+      hrefLink: AppConstants.STACKOVERFLOW_LINK,
     },
 
     {
@@ -45,7 +45,7 @@ const FooterSocialAccounts = () => {
       onClick: () => {},
       alt: "Instagram Icon Alt Text",
       src: icon_instagram,
-      hrefLink: "https://www.instagram.com/salahuddin_1/",
+      hrefLink: AppConstants.INSTGRAM_LINK,
     },
   ];
 

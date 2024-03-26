@@ -4,14 +4,12 @@ import { CustomTheme } from "src/theme";
 export interface FooterTextButtonProps {
   children?: string;
   onClick: () => void;
-  label?: string;
   fontSize?: number | string;
 }
 
 const FooterTextButton = ({
   children,
   onClick,
-  label,
   fontSize = 12,
 }: FooterTextButtonProps) => {
   const theme = useTheme<CustomTheme>();
@@ -22,8 +20,6 @@ const FooterTextButton = ({
       onClick={() => {
         onClick();
       }}
-      // fontWeight="500"
-      // color={theme.colors.footerText}
       color={theme.colors.accent}
       letterSpacing={1}
       fontSize={fontSize}
