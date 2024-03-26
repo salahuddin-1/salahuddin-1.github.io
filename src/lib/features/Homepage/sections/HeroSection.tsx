@@ -111,7 +111,7 @@ const HeroSection = () => {
         height="100%"
       >
         {/* <AnimateOnLoad duration={1} delay={0.75} translateY={100}> */}
-        <Image src={ticTacToeimage}></Image>
+        <Image alt="Tic Tac Toe Divider Image" src={ticTacToeimage}></Image>
         <_ProfileImage />
         {/* </AnimateOnLoad> */}
       </Box>
