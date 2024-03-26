@@ -91,8 +91,7 @@ export default [
         alt: "Rummo'z Kitchen 3",
       },
     ],
-    playstoreLink:
-      "https://play.google.com/store/apps/details?id=com.business.rummozkitchen&pcampaignid=web_share",
+    playstoreLink: AppConstants.RUMMOZ_KITCHEN_LINK,
     ref: React.createRef(),
   },
 

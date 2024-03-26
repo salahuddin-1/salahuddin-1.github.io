@@ -24,6 +24,9 @@ export class AppConstants {
   public static CAPITAL_BANK_LINK: string =
     "https://play.google.com/store/apps/details?id=com.capital.cbt&hl=en&gl=US";
 
+  public static RUMMOZ_KITCHEN_LINK: string =
+    "https://play.google.com/store/apps/details?id=com.business.rummozkitchen&pcampaignid=web_share";
+
   // Firebase Collections
   public static CONTACT_US_COLLECTION: string = "contactUs";
 }

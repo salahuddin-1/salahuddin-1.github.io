@@ -16,6 +16,11 @@ import mandi_market_3 from "@assets/case_studies/mandi_market/mandi_market_3.jpg
 import mandi_market_4 from "@assets/case_studies/mandi_market/mandi_market_4.jpg";
 import mandi_market_5 from "@assets/case_studies/mandi_market/mandi_market_5.jpg";
 
+// RUMMOZ KITCHEN
+import rummoz_kitchen_1 from "@assets/case_studies/rummoz_kitchen/rummoz_kitchen_1.jpg";
+import rummoz_kitchen_2 from "@assets/case_studies/rummoz_kitchen/rummoz_kitchen_2.jpg";
+import rummoz_kitchen_3 from "@assets/case_studies/rummoz_kitchen/rummoz_kitchen_3.jpg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -75,6 +80,7 @@ export default [
     ],
   },
 
+  // ---------------------------- MANDI MARKET ----------------------------
   {
     projectName: "Mandi Market",
     slug: "mandi-market",
@@ -120,6 +126,41 @@ export default [
         alt: "Mandi Market 5",
         description:
           "Solution: The app executes numerous complex queries related to Firebase, many of which involve transactions and batches. To optimize Firebase read counts and reduce costs, various optimization techniques were employed, including pagination, data caching, data manipulation, and state preservation.",
+      },
+    ],
+  },
+
+  // ---------------------------- RUMMOZ KITCHEN ----------------------------
+
+  {
+    projectName: "Rummo'z Kitchen",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "rummoz-kitchen",
+    playstoreLink: AppConstants.RUMMOZ_KITCHEN_LINK,
+    isProjectPrivate: false,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: rummoz_kitchen_2,
+        alt: "Rummo'z Kitchen 1",
+        description:
+          "Introducing our groundbreaking cloud kitchen app, designed to transform the way you experience food delivery. This innovative platform offers the ultimate in dining convenience, featuring both on-demand orders and subscription-based services. With no physical dine-in space, we focus exclusively on fulfilling your online orders, bringing a rich variety of meals right to your doorstep. Whether you’re craving an instant culinary delight or prefer the ease of scheduled meal deliveries, our app caters to your every need. Our subscription service is perfect for those who value consistency and convenience, providing regular, hassle-free meal deliveries.",
+      },
+
+      {
+        id: "2",
+        src: rummoz_kitchen_3,
+        alt: "Rummo'z Kitchen 2",
+        description:
+          "Each dish is prepared in our specialized cloud kitchens, ensuring that every order is fresh, delicious, and promptly delivered. Our user-friendly app is designed with your lifestyle in mind, offering personalized choices and a seamless ordering experience. Embrace the future of dining with us, where quality, variety, and convenience meet at the touch of a button.",
+      },
+
+      {
+        id: "3",
+        src: rummoz_kitchen_1,
+        alt: "Rummo'z Kitchen 3",
+        description:
+          "It also consists of an Admin Portal to manage the end user application. Features like - See Registered Users - Manage Users (Restrict/Freeze/Cancel/Pause) - Add New Dish - Set Coupon - Send a notification - Set Offers - Manage Dropdowns - Set Meal Charges - Manage Orders - Kill Switch Settings",
       },
     ],
   },
