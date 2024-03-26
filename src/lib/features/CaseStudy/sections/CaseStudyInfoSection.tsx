@@ -1,4 +1,11 @@
-import { Box, Image, VStack, Text, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  VStack,
+  Text,
+  HStack,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import { AppColor } from "src/domain/constants/AppColor";
 import AppDivider from "@components/AppDivider";
@@ -215,6 +222,7 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
       <_SplittedTextComponent
         featureDescriptionProps={props}
         isLastIndex={true}
+        isFirstIndex={false}
         text={text}
       />
     );
@@ -224,11 +232,13 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
   const listOfSeparatedComponents = listOfSplittedText.map(
     (splittedText, index) => {
       const isLastIndex = index === listOfSplittedText.length - 1;
+      const isFirstIndex = index === 0;
 
       return (
         <_SplittedTextComponent
           featureDescriptionProps={props}
           isLastIndex={isLastIndex}
+          isFirstIndex={isFirstIndex}
           text={splittedText}
         />
       );
@@ -243,6 +253,7 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
 interface _SplittedTextComponentProps {
   featureDescriptionProps: _FeatureDescriptionProps;
   isLastIndex: boolean;
+  isFirstIndex: boolean;
   text: string;
 }
 
@@ -272,6 +283,10 @@ const _SplittedTextComponent = (props: _SplittedTextComponentProps) => {
     );
   }
 
+  const isDesktop = useBreakpointValue({
+    lg: true,
+  });
+
   // If a heading is found
   return (
     <Box
@@ -285,12 +300,14 @@ const _SplittedTextComponent = (props: _SplittedTextComponentProps) => {
         md: props.featureDescriptionProps.isOddIndex ? "40px" : "0px", // on odd index
       }}
     >
+      {!props.isFirstIndex && <Box height="20px" />}
+
       <Text fontWeight="500" fontSize="22px">
         {splittedTextList[0]?.trim() ?? ""}
       </Text>
 
       <Box marginY="20px">
-        <AppDivider color={AppColor.LIGHT_GRAY_100} />
+        {isDesktop && <AppDivider color={AppColor.LIGHT_GRAY_100} />}
       </Box>
 
       <Text>{splittedTextList[1]?.trim() ?? ""}</Text>
