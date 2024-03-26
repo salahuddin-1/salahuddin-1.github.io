@@ -11,12 +11,21 @@ const CaseStudyInfoSection = () => {
       <VStack bg="red" alignItems="start">
         {/* Index */}
         <_IndexComponent />
-        <Box height="20px" />
+        <Box
+          height={{
+            base: "30vw",
+            sm: "70px",
+            md: "20px",
+          }}
+        />
 
         <Box
           display="flex"
           // alignItems="center"
-          alignItems="start"
+          alignItems={{
+            base: "center",
+            md: "start",
+          }}
           flexDirection={{
             base: "column",
             md: "row",
@@ -25,7 +34,13 @@ const CaseStudyInfoSection = () => {
           {/* Project Image */}
           <_ImageComponent />
 
-          <Box height="50px" />
+          <Box
+            height={{
+              base: "40vw",
+              sm: "100px",
+              md: "50px",
+            }}
+          />
 
           {/* Feature Description */}
           <_FeatureDescription />
@@ -70,8 +85,13 @@ const _ImageComponent = () => {
     >
       {/* Tic Tac Toe Image */}
       <Image
+        bg="blue"
         objectFit="contain"
-        height="100%"
+        height={{
+          base: "100%",
+          sm: "450px",
+          md: "100%",
+        }}
         src={ticTacToeimage}
         alt="tic-tac-toe"
       />
@@ -82,7 +102,11 @@ const _ImageComponent = () => {
           md: "60px",
           lg: "0px",
         }}
-        height="100%"
+        height={{
+          base: "160%",
+          sm: "120%",
+          md: "100%",
+        }}
         position="absolute"
         objectFit="fill"
         src={profilePhotoHero}
