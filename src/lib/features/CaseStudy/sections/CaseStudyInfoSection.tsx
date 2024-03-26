@@ -3,6 +3,7 @@ import profilePhotoHero from "@assets/projects/capital_1.png";
 import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import { AppColor } from "src/domain/constants/AppColor";
+import AppDivider from "@components/AppDivider";
 
 const CaseStudyInfoSection = () => {
   return (
@@ -23,6 +24,12 @@ const CaseStudyInfoSection = () => {
           {/* Feature Description */}
           <_FeatureDescription />
         </Box>
+
+        <Box height="50px" />
+
+        <AppDivider
+        // color={AppColor.LIGHT_GRAY_100}
+        />
       </VStack>
     </Box>
   );
