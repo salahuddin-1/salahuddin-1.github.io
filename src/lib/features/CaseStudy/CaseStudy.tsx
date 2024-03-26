@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import BasePage from "src/lib/base/BasePage";
 import { useCaseStudyViewModel } from "src/lib/providers/CaseStudyProvider";
@@ -48,9 +48,10 @@ const CaseStudy = () => {
       <Box height="10px" />
 
       <CaseStudyViewOnStoreButtonSection
-        playstoreLink=""
-        isProjectPrivate={true}
-        deviceType={DeviceTypeEnum.MOBILE}
+        playstoreLink={caseStudyProp?.playstoreLink}
+        isProjectPrivate={caseStudyProp?.isProjectPrivate!}
+        deviceType={caseStudyProp?.deviceType!}
+        caseStudyProp={caseStudyProp!}
       />
 
       <Box height="100px" />

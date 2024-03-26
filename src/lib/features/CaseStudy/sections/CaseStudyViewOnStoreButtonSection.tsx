@@ -3,6 +3,7 @@ import PlaystoreButton from "@components/PlaystoreButton";
 import { AppColor } from "src/domain/constants/AppColor";
 import { Box, Text } from "@chakra-ui/react";
 import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
+import { CaseStudyProp } from "@datautils/case_studies";
 
 const CaseStudyViewOnStoreButtonSection = (props: _ViewOnStoreButtonProps) => {
   if (props.isProjectPrivate) {
@@ -41,4 +42,5 @@ interface _ViewOnStoreButtonProps {
   playstoreLink: string | undefined | null;
   isProjectPrivate: boolean;
   deviceType: DeviceTypeEnum;
+  caseStudyProp: CaseStudyProp;
 }
