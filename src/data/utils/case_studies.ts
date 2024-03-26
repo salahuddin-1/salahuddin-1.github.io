@@ -43,7 +43,23 @@ export default [
         src: capital3,
         alt: "Capital Bank of Jordan",
         description:
-          "Dashboard: I developed a dynamic dashboard featuring various products such as Accounts, Cards, Term Deposits, Loans, and Investments. Each product had dynamic sub-pages with unique details and transaction histories. | Weekly Spending: I developed a bar graph algorithm using Flutter to calculate average weekly spending and visualize data. | Capital Invest Portfolio: I engineered custom bar graphs and line graphs using Flutter, displaying data using coordinate geometry equations. This involved developing algorithms for manipulating data and handling mathematical challenges, such as dividing by zero. | Custom Keyboard: I created a custom keyboard for user input, enhancing security and functionality compared to OS-provided keyboards.",
+          "Dashboard: I developed a dynamic dashboard featuring various products such as Accounts, Cards, Term Deposits, Loans, and Investments. Each product had dynamic sub-pages with unique details and transaction histories. | Weekly Spending: I developed a bar graph algorithm using Flutter to calculate average weekly spending and visualize data.",
+      },
+
+      {
+        id: "5",
+        src: capital3,
+        alt: "Capital Bank of Jordan",
+        description:
+          "Capital Invest Portfolio: I engineered custom bar graphs and line graphs using Flutter, displaying data using coordinate geometry equations. This involved developing algorithms for manipulating data and handling mathematical challenges, such as dividing by zero.",
+      },
+
+      {
+        id: "6",
+        src: capital3,
+        alt: "Capital Bank of Jordan",
+        description:
+          "Custom Keyboard: I created a custom keyboard for user input, enhancing security and functionality compared to OS-provided keyboards.",
       },
     ],
   },
