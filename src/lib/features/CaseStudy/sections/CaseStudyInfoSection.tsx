@@ -95,7 +95,10 @@ export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
         }}
       >
         {/* Project Image */}
-        <_ImageComponent imageSrc={props?.caseStudyItemProp?.src} />
+        <_ImageComponent
+          imageSrc={props?.caseStudyItemProp?.src}
+          alt={props?.caseStudyItemProp?.alt}
+        />
 
         <Box
           height={{
@@ -127,7 +130,7 @@ const _IndexComponent = (props: { serialNumber: string }) => {
   );
 };
 
-const _ImageComponent = (props: { imageSrc: string }) => {
+const _ImageComponent = (props: { imageSrc: string; alt: string }) => {
   return (
     <Box
       bg=""
@@ -169,7 +172,7 @@ const _ImageComponent = (props: { imageSrc: string }) => {
         position="absolute"
         objectFit="fill"
         src={props.imageSrc}
-        alt=""
+        alt={props.alt}
         borderRadius={{
           // RESPONSIVE
           base: "30px",
