@@ -236,6 +236,7 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
 
       return (
         <_SplittedTextComponent
+          key={index}
           featureDescriptionProps={props}
           isLastIndex={isLastIndex}
           isFirstIndex={isFirstIndex}
