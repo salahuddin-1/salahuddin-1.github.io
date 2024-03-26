@@ -19,6 +19,7 @@ import MobileProjectCarousel from "../components/MobileProjectCarousel";
 import PlaystoreButtonLocked from "@components/PlaystoreButtonLocked";
 import PlaystoreButton from "@components/PlaystoreButton";
 import { AppColor } from "src/domain/constants/AppColor";
+import FooterTextButton from "src/lib/layouts/Footer/components/FooterTextButton";
 
 interface _TechItemProps {
   children: string;
@@ -287,7 +288,16 @@ const ProjectsSection: React.FC = () => {
           <Text>{item.description}</Text>
         </AnimateOnLoad>
 
+        {/* FULL CASE STUDY BUTTON */}
         <AnimateOnLoad delay={0.5} translateY={animationOnLoadProps.translateY}>
+          <Box marginTop="20px">
+            <FooterTextButton onClick={() => {}}>
+              View Full Case Study
+            </FooterTextButton>
+          </Box>
+        </AnimateOnLoad>
+
+        <AnimateOnLoad delay={0.7} translateY={animationOnLoadProps.translateY}>
           <_ViewOnStoreButton
             playstoreLink={item.playstoreLink}
             isProjectPrivate={item.isProjectPrivate ?? false}
