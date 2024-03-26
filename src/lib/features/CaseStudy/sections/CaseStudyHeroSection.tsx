@@ -11,7 +11,6 @@ interface CaseStudyHeroSectionProps {
 
 const CaseStudyHeroSection = (props: CaseStudyHeroSectionProps) => {
   const viewmodel = useCaseStudyViewModel();
-  const theme = useTheme<CustomTheme>();
   const animationOnLoadProps = viewmodel.animationOnLoadProps;
 
   console.log(props.caseStudyProp?.projectName ?? "");

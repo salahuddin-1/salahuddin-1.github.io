@@ -5,10 +5,10 @@ import { useCaseStudyViewModel } from "src/lib/providers/CaseStudyProvider";
 import CaseStudyHeroSection from "./sections/CaseStudyHeroSection";
 import CaseStudyInfoSection from "./sections/CaseStudyInfoSection";
 
-import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 import CaseStudyViewOnStoreButtonSection from "./sections/CaseStudyViewOnStoreButtonSection";
 import { CaseStudyProp } from "@datautils/case_studies";
 import { useLocation } from "react-router-dom";
+import AnimateOnLoad from "@components/AnimateOnLoad";
 
 export type CaseStudyNavParams = {
   slug: string;
@@ -19,6 +19,8 @@ const CaseStudy = () => {
 
   // ViewModel
   const viewmodel = useCaseStudyViewModel();
+
+  const animationOnLoadProps = viewmodel.animationOnLoadProps;
 
   // Manage the state of the case study details
   const [caseStudyProp, setCaseStudyDetails] = useState<
@@ -47,16 +49,20 @@ const CaseStudy = () => {
 
       <Box height="10px" />
 
-      <CaseStudyViewOnStoreButtonSection
-        playstoreLink={caseStudyProp?.playstoreLink}
-        isProjectPrivate={caseStudyProp?.isProjectPrivate!}
-        deviceType={caseStudyProp?.deviceType!}
-        caseStudyProp={caseStudyProp!}
-      />
+      <AnimateOnLoad delay={0.5} translateY={animationOnLoadProps.translateY}>
+        <CaseStudyViewOnStoreButtonSection
+          playstoreLink={caseStudyProp?.playstoreLink}
+          isProjectPrivate={caseStudyProp?.isProjectPrivate!}
+          deviceType={caseStudyProp?.deviceType!}
+          caseStudyProp={caseStudyProp!}
+        />
+      </AnimateOnLoad>
 
       <Box height="100px" />
 
-      <CaseStudyInfoSection caseStudyProp={caseStudyProp!} />
+      <AnimateOnLoad delay={0.7} translateY={animationOnLoadProps.translateY}>
+        <CaseStudyInfoSection caseStudyProp={caseStudyProp!} />
+      </AnimateOnLoad>
     </BasePage>
   );
 };

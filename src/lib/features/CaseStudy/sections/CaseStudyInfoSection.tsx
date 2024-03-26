@@ -22,6 +22,7 @@ const CaseStudyInfoSection = (props: CaseStudyInfoSectionProps) => {
 
       return (
         <_CaseStudyEntity
+          key={index}
           isOddIndex={isOddIndex}
           isLastIndex={isLastIndex}
           serialNumber={serialNumberToString}
