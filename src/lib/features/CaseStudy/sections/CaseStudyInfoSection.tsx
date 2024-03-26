@@ -17,9 +17,15 @@ const CaseStudyInfoSection = () => {
           display="flex"
           // alignItems="center"
           alignItems="start"
+          flexDirection={{
+            base: "column",
+            md: "row",
+          }}
         >
           {/* Project Image */}
           <_ImageComponent />
+
+          <Box height="50px" />
 
           {/* Feature Description */}
           <_FeatureDescription />
@@ -104,7 +110,17 @@ const _ImageComponent = () => {
 
 const _FeatureDescription = () => {
   return (
-    <Text marginLeft="40px" flex={2} bg="purple">
+    <Text
+      marginLeft={{
+        base: "0px",
+        md: "40px",
+      }}
+      marginRight={{
+        base: "0px",
+      }}
+      flex={2}
+      bg="purple"
+    >
       Onboarding: One of the most challenging modules I worked on was the
       onboarding process. It involved intricate decision-making functions and
       complex logic. I integrated the Microblink SDK to scan Jordanian user IDs,
