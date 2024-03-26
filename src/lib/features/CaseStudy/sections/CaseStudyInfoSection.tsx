@@ -213,13 +213,12 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
       <_SplittedTextComponent
         featureDescriptionProps={props}
         isLastIndex={true}
-        splittedText={text}
+        text={text}
       />
     );
   }
 
-  // Capital Bank | Design | Development
-
+  // Iterate through the splitted text and display them
   const listOfSeparatedComponents = listOfSplittedText.map(
     (splittedText, index) => {
       const isLastIndex = index === listOfSplittedText.length - 1;
@@ -228,7 +227,7 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
         <_SplittedTextComponent
           featureDescriptionProps={props}
           isLastIndex={isLastIndex}
-          splittedText={splittedText}
+          text={splittedText}
         />
       );
     }
@@ -237,14 +236,15 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
   return listOfSeparatedComponents;
 };
 
+// This is the reusable method that will be used to display the splitted text
+
 interface _SplittedTextComponentProps {
   featureDescriptionProps: _FeatureDescriptionProps;
   isLastIndex: boolean;
-  splittedText: string;
+  text: string;
 }
 
 const _SplittedTextComponent = (props: _SplittedTextComponentProps) => {
-  // return <_SplittedText {...props} />;
   return (
     <Text
       marginBottom={props.isLastIndex ? "0px" : "40px"}
@@ -259,7 +259,7 @@ const _SplittedTextComponent = (props: _SplittedTextComponentProps) => {
       flex={2}
       bg=""
     >
-      {props.splittedText.trim()}
+      {props.text.trim()}
     </Text>
   );
 };
