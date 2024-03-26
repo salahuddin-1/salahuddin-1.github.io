@@ -20,6 +20,9 @@ import PlaystoreButtonLocked from "@components/PlaystoreButtonLocked";
 import PlaystoreButton from "@components/PlaystoreButton";
 import { AppColor } from "src/domain/constants/AppColor";
 import FooterTextButton from "src/lib/layouts/Footer/components/FooterTextButton";
+import { CaseStudyNavParams } from "../../CaseStudy/CaseStudy";
+import { useNavigate } from "react-router-dom";
+import { RoutePaths } from "src/lib/navigation/route_paths";
 
 interface _TechItemProps {
   children: string;
@@ -185,7 +188,10 @@ const ProjectsSection: React.FC = () => {
   };
 
   const projects: JSX.Element[] = workStack.map((item, index) => {
+    const navigate = useNavigate();
+
     const homePageVM = useHomepageViewModel();
+
     // Margin bottom between projects
     // The last project should not have a margin bottom
 
@@ -259,6 +265,15 @@ const ProjectsSection: React.FC = () => {
       );
     };
 
+    // NAVIGATE TO FULL CASE STUDY
+    const onClickViewFullCaseStudy = () => {
+      const params: CaseStudyNavParams = {
+        slug: item.slug,
+      };
+
+      navigate(RoutePaths.CASE_STUDY, { state: params });
+    };
+
     return (
       <Flex marginBottom={getMarginBottom()} key={index} flexDir="column">
         {/* PROJECT NAME */}
@@ -291,7 +306,11 @@ const ProjectsSection: React.FC = () => {
         {/* FULL CASE STUDY BUTTON */}
         <AnimateOnLoad delay={0.5} translateY={animationOnLoadProps.translateY}>
           <Box marginTop="20px">
-            <FooterTextButton onClick={() => {}}>
+            <FooterTextButton
+              onClick={() => {
+                onClickViewFullCaseStudy();
+              }}
+            >
               View Full Case Study
             </FooterTextButton>
           </Box>

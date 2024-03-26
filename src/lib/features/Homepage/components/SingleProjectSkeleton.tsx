@@ -7,6 +7,7 @@ import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvide
 import { RecentWorkNavParams } from "../../RecentWork/RecentWork";
 import { CustomTheme } from "src/theme";
 import { AppColor } from "src/domain/constants/AppColor";
+import { CaseStudyNavParams } from "../../CaseStudy/CaseStudy";
 
 export interface SingleProject {
   projectName: string;
@@ -69,7 +70,7 @@ const SingleProjectSkeleton = ({ project }: Props) => {
   const onClickWork = () => {
     homepageVM.setCurrentProjectIndexOnWorkPage(project.currentIndexOnWorkPage);
 
-    const params: RecentWorkNavParams = {
+    const params: CaseStudyNavParams = {
       slug: project.slug,
     };
 
