@@ -4,6 +4,7 @@ import { AppColor } from "src/domain/constants/AppColor";
 import AppDivider from "@components/AppDivider";
 import { CaseStudyItemProp, CaseStudyProp } from "@datautils/case_studies";
 import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
+import { ReactElement } from "react";
 
 interface CaseStudyInfoSectionProps {
   caseStudyProp: CaseStudyProp;
@@ -236,7 +237,7 @@ interface _FeatureDescriptionProps {
   caseStudyItemProp: CaseStudyItemProp;
 }
 
-const _FeatureDescription = (props: _FeatureDescriptionProps) => {
+const _FeatureDescription = (props: _FeatureDescriptionProps): ReactElement => {
   const text = props.caseStudyItemProp?.description ?? "";
 
   const listOfSplittedText: string[] = text.split("|");
@@ -271,7 +272,7 @@ const _FeatureDescription = (props: _FeatureDescriptionProps) => {
     }
   );
 
-  return listOfSeparatedComponents;
+  return <>{listOfSeparatedComponents}</>;
 };
 
 // This is the reusable method that will be used to display the splitted text
