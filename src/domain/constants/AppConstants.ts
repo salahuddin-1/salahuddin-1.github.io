@@ -33,6 +33,8 @@ export class AppConstants {
   public static PRABODHAM_LINK: string =
     "https://play.google.com/store/apps/details?id=com.app.prabodham";
 
+  public static GAME_HUB_MOSH: string = "https://game-hub-mosh-lac.vercel.app/";
+
   // Firebase Collections
   public static CONTACT_US_COLLECTION: string = "contactUs";
 }

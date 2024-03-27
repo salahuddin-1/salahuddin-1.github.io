@@ -51,6 +51,10 @@ import bet_all_week_2 from "@assets/case_studies/betallweek/betallweek_2.jpg";
 import knight_nine_1 from "@assets/case_studies/knight9/knight_nine_1.jpg";
 import knight_nine_2 from "@assets/case_studies/knight9/knight_nine_2.jpg";
 
+// Game Hub
+import gamehub_1 from "@assets/case_studies/game_hub/gamehub_1.png";
+import gamehub_2 from "@assets/case_studies/game_hub/gamehub_2.png";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -401,6 +405,33 @@ export default [
         alt: "Knight Nine 2",
         description:
           "Success of the Project: The project was a success, with users thoroughly enjoying the game.",
+      },
+    ],
+  },
+
+  // ---------------------------- GAME HUB ----------------------------
+
+  {
+    projectName: "Game Hub",
+    deviceType: DeviceTypeEnum.WEB,
+    slug: "game-hub",
+    playstoreLink: AppConstants.GAME_HUB_MOSH,
+    isProjectPrivate: false,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: gamehub_1,
+        alt: "Game Hub 1",
+        description:
+          "I had the privilege of developing the GameHub website as a project for a client during their third year of Computer Science. Built using React and TypeScript, GameHub is a dynamic platform tailored for gaming enthusiasts.| Key Features: GameHub seamlessly integrates APIs from RAWG, providing users with access to a vast database of gaming information. One of the standout features of GameHub is its dual theme functionality, offering users the choice between light and dark themes for optimal viewing comfort.",
+      },
+
+      {
+        id: "2",
+        src: gamehub_2,
+        alt: "Game Hub 2",
+        description:
+          "Enhanced User Experience: With GameHub, users can easily search for games and filter them by type and platforms. Additionally, the website allows users to order games by various criteria such as relevance, date, genre, and name, ensuring a personalized and intuitive browsing experience for every gamer.",
       },
     ],
   },

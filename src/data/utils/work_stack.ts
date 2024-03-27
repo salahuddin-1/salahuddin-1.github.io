@@ -192,7 +192,7 @@ export default [
         alt: "Game Hub 2",
       },
     ],
-    playstoreLink: "https://game-hub-mosh-lac.vercel.app/",
+    playstoreLink: AppConstants.GAME_HUB_MOSH,
     ref: React.createRef(),
   },
 
