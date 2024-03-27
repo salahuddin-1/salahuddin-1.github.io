@@ -61,7 +61,7 @@
      d="m 26.89694,1.0634102 c 1.634986,-2.05918508 4.950125,-0.93090008 4.989521,1.698149 L 32.138899,41.214003 H 6.607076 c -4.6832501,0 -7.29518376,-5.409032 -4.3830007,-9.07673 z"
      id="path6"
      inkscape:connector-curvature="0"
-     style="fill:#3ecf8e;stroke-width:0.57177335" />
+     style="fill:#ffffff;stroke-width:0.57177335" />
   <defs
      id="defs18">
     <linearGradient
@@ -73,11 +73,11 @@
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.57177306,0,0,0.57177334,0.98590077,-0.12074988)">
       <stop
-         stop-color="#249361"
+         stop-color="#5D5D5D"
          id="stop8" />
       <stop
          offset="1"
-         stop-color="#3ECF8E"
+         stop-color="#ffffff"
          id="stop10" />
     </linearGradient>
     <linearGradient
