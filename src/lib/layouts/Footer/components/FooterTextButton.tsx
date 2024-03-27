@@ -5,6 +5,7 @@ export interface FooterTextButtonProps {
   children?: string;
   onClick: () => void;
   fontSize?: number | string;
+  label?: string;
 }
 
 const FooterTextButton = ({
