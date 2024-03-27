@@ -61,6 +61,10 @@ import gochi_admin_portal_2 from "@assets/case_studies/gochi_admin_portal/gochi_
 import gochi_admin_portal_3 from "@assets/case_studies/gochi_admin_portal/gochi_admin_portal_3.jpg";
 import gochi_admin_portal_4 from "@assets/case_studies/gochi_admin_portal/gochi_admin_portal_4.jpeg";
 
+// Rummoz Kitchen Admin Portal
+import rummoz_kitchen_admin_portal_1 from "@assets/case_studies/rummoz_kitchen_admin_portal/rummoz_kitchen_admin_portal_1.png";
+import rummoz_kitchen_admin_portal_2 from "@assets/case_studies/rummoz_kitchen_admin_portal/rummoz_kitchen_admin_portal_2.png";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -481,6 +485,33 @@ export default [
         alt: "GoChi Admin Portal 3",
         description:
           " Success of the Project: The app provided a dynamic platform for distributors, offering an admin portal for managing products, adjusting prices, creating coupons, and launching promotional offers. Customers could leave product reviews directly within the app, contributing to a robust feedback loop.",
+      },
+    ],
+  },
+
+  // ---------------------------- RUMMOZ KITCHEN ADMIN PORTAL ----------------------------
+
+  {
+    projectName: "Rummo'z Kitchen's Admin Portal",
+    deviceType: DeviceTypeEnum.DESKTOP,
+    slug: "rummoz-kitchen-admin-portal",
+    playstoreLink: null,
+    isProjectPrivate: true,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: rummoz_kitchen_admin_portal_1,
+        alt: "Rummo'z Kitchen Admin Portal 1",
+        description:
+          "This admin panel is used for managing Rummo’z kitchen application, right from updating menu to getting insights of the user. The owner will have the different options like | 1. Add Discount Coupon | 2. Set Offers | 3. Manage Subscription",
+      },
+
+      {
+        id: "2",
+        src: rummoz_kitchen_admin_portal_2,
+        alt: "Rummo'z Kitchen Admin Portal 2",
+        description:
+          "Role: In this project, I undertook the task of designing the UI/UX and developing the UI using Flutter. Furthermore, I implemented Firebase as the backend solution.",
       },
     ],
   },
