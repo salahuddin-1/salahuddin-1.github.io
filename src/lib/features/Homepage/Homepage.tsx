@@ -34,16 +34,16 @@ const Homepage = () => {
       <OurWorkSection />
       <SectionSpacing />
 
-      {/* INDUSTRY EXPERIENCE SECTION */}
-      <IndustryExperienceSection />
+      {/* TESTIMONIALS SECTION */}
+      <TestimonialsSection />
       <SectionSpacing />
 
       {/* TECHNOLOGY EXPERTISE SECTION */}
       <TechnologyExpertiseSection />
       <SectionSpacing />
 
-      {/* TESTIMONIALS SECTION */}
-      <TestimonialsSection />
+      {/* INDUSTRY EXPERIENCE SECTION */}
+      <IndustryExperienceSection />
       <SectionSpacing />
 
       <LetsGetInTouch />
