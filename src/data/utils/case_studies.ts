@@ -27,6 +27,13 @@ import gochi_2 from "@assets/case_studies/gochi/gochi_2.jpg";
 import gochi_3 from "@assets/case_studies/gochi/gochi_3.jpg";
 import gochi_4 from "@assets/case_studies/gochi/gochi_4.jpg";
 
+// FEED
+import feed_1 from "@assets/case_studies/feed/feed_1.jpg";
+import feed_2 from "@assets/case_studies/feed/feed_2.jpg";
+import feed_3 from "@assets/case_studies/feed/feed_3.jpg";
+import feed_4 from "@assets/case_studies/feed/feed_4.jpeg";
+import feed_5 from "@assets/case_studies/feed/feed_5.jpeg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -210,6 +217,57 @@ export default [
         alt: "GoChi 4",
         description:
           " Success of the Project: The app provided a dynamic platform for distributors, offering an admin portal for managing products, adjusting prices, creating coupons, and launching promotional offers. Customers could leave product reviews directly within the app, contributing to a robust feedback loop.",
+      },
+    ],
+  },
+
+  // ---------------------------- FEED ----------------------------
+
+  {
+    projectName: "Feed",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "feed",
+    playstoreLink: null,
+    isProjectPrivate: false,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: feed_1,
+        alt: "Feed 1",
+        description:
+          "Project goal : During my time as a student at Shree L.R Tiwari college of Engineering, I observed several challenges related to social and professional interaction within our college community | Lack of Communication - There was a noticeable lack of communication and connectivity among students and faculty members, hindering opportunities for collaboration and networking. | Administrative Burdens - Teachers often struggled with managing administrative tasks such as attendance tracking and class scheduling, which increased their workload and stress levels. | Disconnect in Social Networking - Many students and faculty members were unfamiliar with each other's interests and backgrounds beyond their immediate circles, resulting in a lack of meaningful connections within the college community.",
+      },
+
+      {
+        id: "2",
+        src: feed_2,
+        alt: "Feed 2",
+        description:
+          "Furthermore, the absence of a centralized platform for disseminating common notices about events and activities further exacerbated the communication challenges within the college community. This lack of streamlined communication channels often led to missed opportunities for engagement and participation in various college events and initiatives. | Role: As the Team Lead, I oversaw both the UI/UX design and development.",
+      },
+
+      {
+        id: "3",
+        src: feed_3,
+        alt: "Feed 3",
+        description:
+          "Solution: This mobile application, developed as my final year project, was created using Flutter. Its primary focus was on user authentication and verification using an innovative algorithm called the `Banker's Algorithm.` The goal was to ensure that only authorized users, including students, teachers, and college staff, could access the app, effectively keeping out unwanted users from outside our college community. | The application itself functioned as a privatized social networking platform, encompassing three distinct domains. The first domain resembled popular social networking apps like Instagram, allowing users to share educational posts, personal photos, and stories. Within this domain, users had the ability to interact by liking, commenting, and reacting to posts.",
+      },
+
+      {
+        id: "4",
+        src: feed_4,
+        alt: "Feed 4",
+        description:
+          "The profile section was divided into two parts - the social profile and the professional profile. The social profile contained information such as the user's username, name, bio, and profile photo. On the other hand, the professional profile showcased the user's skills, hobbies, projects, and generated a visually appealing resume in PDF format based on this information. | Additionally, the application featured an explore section, enabling users to discover and connect with other students, professors, and individuals on campus who shared similar interests. The second domain of the app was a chat feature that allowed users to send and receive messages, facilitating communication within the college community. | Lastly, the third domain focused on college-related functionalities, including tracking attendance, accessing students' mark sheets, sharing important notices, and providing links to relevant topics.",
+      },
+
+      {
+        id: "5",
+        src: feed_5,
+        alt: "Feed 5",
+        description:
+          "Overall, this mobile application served as a comprehensive solution, combining social networking, communication, and college-specific features to enhance the overall experience for students, teachers, and college staff. ",
       },
     ],
   },
