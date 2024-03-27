@@ -137,7 +137,7 @@ export default [
         src: mandi_market_1,
         alt: "Mandi Market 1",
         description:
-          "Project Goal: The problem that the butchers' dealers faced was the manual process of calculating transactions. Every time they went to the market, they had to jot down calculations manually in their notebooks. Then, upon returning home, they had to redo all the calculations using a calculator, transcribing everything into their notebooks. However, this manual method posed several risks, including the potential for theft, alteration, and damage of their notebooks. Moreover, the tedious task of maintaining and reconciling the records daily added to their workload. Some dealers attempted to use laptops as an alternative solution. However, this approach also had its drawbacks. While laptops offered the convenience of digital storage, there were concerns about data security and integrity. Storing data locally on a laptop made it susceptible to damage or loss, further complicating the dealers' efforts to streamline their record-keeping process.",
+          "Project Goal: The problem that the butchers' dealers faced was the manual process of calculating transactions. Every time they went to the market, they had to jot down calculations manually in their notebooks. Then, upon returning home, they had to redo all the calculations using a calculator, transcribing everything into their notebooks. | However, this manual method posed several risks, including the potential for theft, alteration, and damage of their notebooks. Moreover, the tedious task of maintaining and reconciling the records daily added to their workload. | Some dealers attempted to use laptops as an alternative solution. However, this approach also had its drawbacks. While laptops offered the convenience of digital storage, there were concerns about data security and integrity. Storing data locally on a laptop made it susceptible to damage or loss, further complicating the dealers' efforts to streamline their record-keeping process.",
       },
 
       {
@@ -145,7 +145,7 @@ export default [
         src: mandi_market_2,
         alt: "Mandi Market 2",
         description:
-          "Solution: Mandi Market is a business accounting app designed with user security in mind. Users can register and login securely, without compromising their data. The app is user-friendly and easy to use on mobile devices, making it convenient for users in markets. Firebase, SQLite, and Hive were utilized as databases, with Clean Architecture and MVVM employed as the architectural framework. The app features robust security measures, including biometric authentication, app PIN, and mobile number verification upon device change.",
+          "Solution: Mandi Market is a business accounting app designed with user security in mind. Users can register and login securely, without compromising their data. The app is user-friendly and easy to use on mobile devices, making it convenient for users in markets. Firebase, SQLite, and Hive were utilized as databases, with Clean Architecture and MVVM employed as the architectural framework. | The app features robust security measures, including biometric authentication, app PIN, and mobile number verification upon device change.",
       },
 
       {
@@ -188,7 +188,7 @@ export default [
         src: rummoz_kitchen_2,
         alt: "Rummo'z Kitchen 1",
         description:
-          "Introducing our groundbreaking cloud kitchen app, designed to transform the way you experience food delivery. This innovative platform offers the ultimate in dining convenience, featuring both on-demand orders and subscription-based services. With no physical dine-in space, we focus exclusively on fulfilling your online orders, bringing a rich variety of meals right to your doorstep. Whether you’re craving an instant culinary delight or prefer the ease of scheduled meal deliveries, our app caters to your every need. Our subscription service is perfect for those who value consistency and convenience, providing regular, hassle-free meal deliveries.",
+          "Introducing our groundbreaking cloud kitchen app, designed to transform the way you experience food delivery. This innovative platform offers the ultimate in dining convenience, featuring both on-demand orders and subscription-based services. | With no physical dine-in space, we focus exclusively on fulfilling your online orders, bringing a rich variety of meals right to your doorstep. Whether you’re craving an instant culinary delight or prefer the ease of scheduled meal deliveries, our app caters to your every need. Our subscription service is perfect for those who value consistency and convenience, providing regular, hassle-free meal deliveries.",
       },
 
       {
@@ -239,7 +239,7 @@ export default [
         src: gochi_3,
         alt: "GoChi 3",
         description:
-          "Success of the Project: The project garnered widespread acclaim for its simplicity and ease of use. Users praised its straightforward navigation, streamlined checkout processes, and minimal registration/login requirements. Leveraging Google Sign-In simplified access for users, aligning with contemporary expectations. | Moreover, the published E-commerce app facilitated online purchases of chicken, mutton, and eggs from a local distributor in Mumbai. Additionally, aspiring distributors could register through the app to sell these products. Firebase served as the backend tool, with Cloud Firestore managing the app's database and Firebase Authentication verifying users' phone numbers. The implementation of FCM and Cloud Functions enabled efficient push notifications.",
+          "Success of the Project: The project garnered widespread acclaim for its simplicity and ease of use. Users praised its straightforward navigation, streamlined checkout processes, and minimal registration/login requirements. Leveraging Google Sign-In simplified access for users, aligning with contemporary expectations. | Moreover, the published E-commerce app facilitated online purchases of chicken, mutton, and eggs from a local distributor in Mumbai. Additionally, aspiring distributors could register through the app to sell these products. | Firebase served as the backend tool, with Cloud Firestore managing the app's database and Firebase Authentication verifying users' phone numbers. The implementation of FCM and Cloud Functions enabled efficient push notifications.",
       },
 
       {
@@ -247,7 +247,7 @@ export default [
         src: gochi_4,
         alt: "GoChi 4",
         description:
-          " Success of the Project: The app provided a dynamic platform for distributors, offering an admin portal for managing products, adjusting prices, creating coupons, and launching promotional offers. Customers could leave product reviews directly within the app, contributing to a robust feedback loop.",
+          "The app provided a dynamic platform for distributors, offering an admin portal for managing products, adjusting prices, creating coupons, and launching promotional offers. Customers could leave product reviews directly within the app, contributing to a robust feedback loop.",
       },
     ],
   },
