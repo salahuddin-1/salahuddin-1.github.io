@@ -24,7 +24,7 @@ const CaseStudyHeroSection = (props: CaseStudyHeroSectionProps) => {
         <Text
           // textColor={theme.colors.workTech}
           fontSize={12}
-          fontWeight="600"
+          fontWeight="300"
         >
           Case study
         </Text>

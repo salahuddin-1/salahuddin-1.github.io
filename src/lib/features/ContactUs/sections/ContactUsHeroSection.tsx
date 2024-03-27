@@ -18,7 +18,7 @@ const ContactUsHeroSection = () => {
         delay={animationOnLoadProps.delay()}
         translateY={animationOnLoadProps.translateY}
       >
-        <Text textColor={theme.colors.workTech} fontSize={12} fontWeight="600">
+        <Text fontSize={12} fontWeight="300">
           Get in touch
         </Text>
       </AnimateOnLoad>
