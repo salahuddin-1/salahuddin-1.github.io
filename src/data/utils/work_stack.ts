@@ -61,64 +61,6 @@ import { AppColor } from "src/domain/constants/AppColor";
 import { AppConstants } from "src/domain/constants/AppConstants";
 
 export default [
-  // RUUMOZ KITCHEN
-  {
-    projectName: "Rummo'z Kitchen",
-    deviceType: DeviceTypeEnum.MOBILE,
-    slug: "rummoz-kitchen",
-    backgroundColor: AppColor.BLACK_900,
-    description:
-      "Introducing an application that can automate a cloud kitchen process, from order management to delivery, Rummo’z Kitchen is a perfect software solution for Independent Cloud kitchen owners. It provides a subscription based ecosystem where the User subscribes for food delivery at door step for monthly basis.",
-    techStack: [
-      "flutter",
-      "cloud firestore",
-      "firebase authentication",
-      "firebase storage",
-      "firebase cloud messaging",
-      "firebase push notifications",
-    ],
-    images: [
-      {
-        src: imageRummoz1,
-        alt: "Rummo'z Kitchen 1",
-      },
-      {
-        src: imageRummoz2,
-        alt: "Rummo'z Kitchen 2",
-      },
-      {
-        src: imageRummoz3,
-        alt: "Rummo'z Kitchen 3",
-      },
-    ],
-    playstoreLink: AppConstants.RUMMOZ_KITCHEN_LINK,
-    ref: React.createRef(),
-  },
-
-  // RUMMOZ KITCHEN ADMIN PORTAL
-  {
-    projectName: "Rummo'z Kitchen's Admin Portal",
-    deviceType: DeviceTypeEnum.DESKTOP,
-    slug: "rummoz-kitchen-admin-portal",
-    backgroundColor: AppColor.BLACK_900,
-    description:
-      "This admin panel is used for managing Rummo’z kitchen application, right from updating menu to getting insights of the user. The owner will have the different options like 1. Add Discount Coupon 2. Set Offers 3. Manage Subscription",
-    techStack: [],
-    images: [
-      {
-        src: imageRummozAdmin1,
-        alt: "Rummo'z Kitchen Admin Portal 1",
-      },
-      {
-        src: imageRummozAdmin2,
-        alt: "Rummo'z Kitchen Admin Portal 2",
-      },
-    ],
-    playstoreLink: null,
-    isProjectPrivate: true,
-    ref: React.createRef(),
-  },
-
   // CAPITAL BANK
   {
     projectName: "Capital Bank of Jordan",
@@ -143,88 +85,6 @@ export default [
       },
     ],
     playstoreLink: AppConstants.CAPITAL_BANK_LINK,
-    ref: React.createRef(),
-  },
-
-  // PRABODHAM
-  {
-    projectName: "Prabodham",
-    deviceType: DeviceTypeEnum.MOBILE,
-    slug: "prabodham",
-    backgroundColor: "#FFFFFF",
-    description:
-      "The goal was to develop an E-commerce Direct-to-Consumer (D2C) cross-platform app for Android and iOS, enabling end users to purchase skincare products from the client, Prabodham. In this project, I took on the role of UI/UX designer and developer, utilizing Flutter to create the app's user interface. Additionally, I served as the team lead, overseeing a team of two members. Together, we successfully developed an MVP for the client, encompassing all essential modules and features.",
-    techStack: ["flutter"],
-    images: [
-      {
-        src: prabodham1,
-        alt: "Prabodham 1",
-      },
-      {
-        src: prabodham2,
-        alt: "Prabodham 2",
-      },
-      {
-        src: prabodham3,
-        alt: "Prabodham 3",
-      },
-    ],
-    playstoreLink: AppConstants.PRABODHAM_LINK,
-    ref: React.createRef(),
-  },
-
-  // GAME HUB
-  {
-    projectName: "Game Hub",
-    deviceType: DeviceTypeEnum.WEB,
-    slug: "game-hub",
-    backgroundColor: AppColor.BLACK_900,
-    description:
-      "I had the privilege of developing the GameHub website as a project for a client during their third year of Computer Science. Built using React and TypeScript, GameHub is a dynamic platform tailored for gaming enthusiasts.",
-    techStack: ["react", "typescript"],
-    images: [
-      {
-        src: gamehub1,
-        alt: "Game Hub 1",
-      },
-      {
-        src: gamehub2,
-        alt: "Game Hub 2",
-      },
-    ],
-    playstoreLink: AppConstants.GAME_HUB_MOSH,
-    ref: React.createRef(),
-  },
-
-  // BET ALL WEEK
-  {
-    projectName: "Bet All Week",
-    deviceType: DeviceTypeEnum.MOBILE,
-    slug: "bet-all-week",
-    backgroundColor: "#4A148C",
-    description:
-      "The goal was to develop a secure betting application with login and registration functionalities. Additionally, the application needed to display the latest news from various sports categories such as Soccer, Basketball, Baseball, Tennis, etc. The aim was to optimize the betting process and manage cash flow effectively.",
-    techStack: [
-      "flutter",
-      "cloud firestore",
-      "firebase authentication",
-      "firebase storage",
-    ],
-    images: [
-      {
-        src: betAllWeek1,
-        alt: "Bet All Week 1",
-      },
-      {
-        src: betAllWeek2,
-        alt: "Bet All Week 2",
-      },
-      {
-        src: betAllWeek3,
-        alt: "Bet All Week 3",
-      },
-    ],
-    playstoreLink: null,
     ref: React.createRef(),
   },
 
@@ -328,6 +188,146 @@ export default [
     ],
     playstoreLink: null,
     isProjectPrivate: true,
+    ref: React.createRef(),
+  },
+
+  // RUUMOZ KITCHEN
+  {
+    projectName: "Rummo'z Kitchen",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "rummoz-kitchen",
+    backgroundColor: AppColor.BLACK_900,
+    description:
+      "Introducing an application that can automate a cloud kitchen process, from order management to delivery, Rummo’z Kitchen is a perfect software solution for Independent Cloud kitchen owners. It provides a subscription based ecosystem where the User subscribes for food delivery at door step for monthly basis.",
+    techStack: [
+      "flutter",
+      "cloud firestore",
+      "firebase authentication",
+      "firebase storage",
+      "firebase cloud messaging",
+      "firebase push notifications",
+    ],
+    images: [
+      {
+        src: imageRummoz1,
+        alt: "Rummo'z Kitchen 1",
+      },
+      {
+        src: imageRummoz2,
+        alt: "Rummo'z Kitchen 2",
+      },
+      {
+        src: imageRummoz3,
+        alt: "Rummo'z Kitchen 3",
+      },
+    ],
+    playstoreLink: AppConstants.RUMMOZ_KITCHEN_LINK,
+    ref: React.createRef(),
+  },
+
+  // RUMMOZ KITCHEN ADMIN PORTAL
+  {
+    projectName: "Rummo'z Kitchen's Admin Portal",
+    deviceType: DeviceTypeEnum.DESKTOP,
+    slug: "rummoz-kitchen-admin-portal",
+    backgroundColor: AppColor.BLACK_900,
+    description:
+      "This admin panel is used for managing Rummo’z kitchen application, right from updating menu to getting insights of the user. The owner will have the different options like 1. Add Discount Coupon 2. Set Offers 3. Manage Subscription",
+    techStack: [],
+    images: [
+      {
+        src: imageRummozAdmin1,
+        alt: "Rummo'z Kitchen Admin Portal 1",
+      },
+      {
+        src: imageRummozAdmin2,
+        alt: "Rummo'z Kitchen Admin Portal 2",
+      },
+    ],
+    playstoreLink: null,
+    isProjectPrivate: true,
+    ref: React.createRef(),
+  },
+
+  // GAME HUB
+  {
+    projectName: "Game Hub",
+    deviceType: DeviceTypeEnum.WEB,
+    slug: "game-hub",
+    backgroundColor: AppColor.BLACK_900,
+    description:
+      "I had the privilege of developing the GameHub website as a project for a client during their third year of Computer Science. Built using React and TypeScript, GameHub is a dynamic platform tailored for gaming enthusiasts.",
+    techStack: ["react", "typescript"],
+    images: [
+      {
+        src: gamehub1,
+        alt: "Game Hub 1",
+      },
+      {
+        src: gamehub2,
+        alt: "Game Hub 2",
+      },
+    ],
+    playstoreLink: AppConstants.GAME_HUB_MOSH,
+    ref: React.createRef(),
+  },
+
+  // PRABODHAM
+  {
+    projectName: "Prabodham",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "prabodham",
+    backgroundColor: "#FFFFFF",
+    description:
+      "The goal was to develop an E-commerce Direct-to-Consumer (D2C) cross-platform app for Android and iOS, enabling end users to purchase skincare products from the client, Prabodham. In this project, I took on the role of UI/UX designer and developer, utilizing Flutter to create the app's user interface. Additionally, I served as the team lead, overseeing a team of two members. Together, we successfully developed an MVP for the client, encompassing all essential modules and features.",
+    techStack: ["flutter"],
+    images: [
+      {
+        src: prabodham1,
+        alt: "Prabodham 1",
+      },
+      {
+        src: prabodham2,
+        alt: "Prabodham 2",
+      },
+      {
+        src: prabodham3,
+        alt: "Prabodham 3",
+      },
+    ],
+    playstoreLink: AppConstants.PRABODHAM_LINK,
+    ref: React.createRef(),
+  },
+
+  // BET ALL WEEK
+  {
+    projectName: "Bet All Week",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "bet-all-week",
+    backgroundColor: "#4A148C",
+    description:
+      "The goal was to develop a secure betting application with login and registration functionalities. Additionally, the application needed to display the latest news from various sports categories such as Soccer, Basketball, Baseball, Tennis, etc. The aim was to optimize the betting process and manage cash flow effectively.",
+    techStack: [
+      "flutter",
+      "cloud firestore",
+      "firebase authentication",
+      "firebase storage",
+    ],
+    images: [
+      {
+        src: betAllWeek1,
+        alt: "Bet All Week 1",
+      },
+      {
+        src: betAllWeek2,
+        alt: "Bet All Week 2",
+      },
+      {
+        src: betAllWeek3,
+        alt: "Bet All Week 3",
+      },
+    ],
+    playstoreLink: null,
     ref: React.createRef(),
   },
 
