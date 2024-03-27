@@ -17,8 +17,7 @@ const WorkHeroSection = () => {
 
       <AnimateOnLoad delay={animationOnLoadProps.delay()} translateY={50}>
         <AppPageSubheading>
-          I create visually appealing and user-friendly mobile apps that satisfy
-          clients.
+          I create visually appealing and user-friendly mobile apps.
         </AppPageSubheading>
       </AnimateOnLoad>
     </Flex>
