@@ -39,6 +39,10 @@ import hanzaib_1 from "@assets/case_studies/hanzaib_collection/hanzaib_1.jpg";
 import hanzaib_2 from "@assets/case_studies/hanzaib_collection/hanzaib_2.jpg";
 import hanzaib_3 from "@assets/case_studies/hanzaib_collection/hanzaib_3.jpg";
 
+// PRABODHAM
+import prabodham_1 from "@assets/case_studies/prabodham/prabodham_1.jpg";
+import prabodham_2 from "@assets/case_studies/prabodham/prabodham_2.jpg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -308,6 +312,33 @@ export default [
         alt: "HanZaib Collection 3",
         description:
           "Success of the Project: The project proved to be a resounding success, greatly benefiting the client by significantly reducing the manual workload associated with address documentation and branding. The client expressed immense satisfaction with the app, as it saved numerous hours previously spent on manual address entry and logo attachment, ultimately streamlining the logistics process.",
+      },
+    ],
+  },
+
+  // ---------------------------- PRABODHAM ----------------------------
+
+  {
+    projectName: "Prabodham",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "prabodham",
+    playstoreLink: AppConstants.PRABODHAM_LINK,
+    isProjectPrivate: false,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: prabodham_1,
+        alt: "Prabodham 1",
+        description:
+          "Goal: The goal was to develop an E-commerce Direct-to-Consumer (D2C) cross-platform app for Android and iOS, enabling end users to purchase skincare products from the client, Prabodham.",
+      },
+
+      {
+        id: "2",
+        src: prabodham_2,
+        alt: "Prabodham 2",
+        description:
+          "Role: In this project, I took on the role of UI/UX designer and developer, utilizing Flutter to create the app's user interface. Additionally, I served as the team lead, overseeing a team of two members. Together, we successfully developed an MVP for the client, encompassing all essential modules and features.",
       },
     ],
   },

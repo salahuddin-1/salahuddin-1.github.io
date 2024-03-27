@@ -169,8 +169,7 @@ export default [
         alt: "Prabodham 3",
       },
     ],
-    playstoreLink:
-      "https://play.google.com/store/apps/details?id=com.app.prabodham",
+    playstoreLink: AppConstants.PRABODHAM_LINK,
     ref: React.createRef(),
   },
 

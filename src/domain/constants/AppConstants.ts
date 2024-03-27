@@ -30,6 +30,9 @@ export class AppConstants {
   public static GOCHI_LINK: string =
     "https://play.google.com/store/apps/details?id=com.gochi.salahuddinshaikh";
 
+  public static PRABODHAM_LINK: string =
+    "https://play.google.com/store/apps/details?id=com.app.prabodham";
+
   // Firebase Collections
   public static CONTACT_US_COLLECTION: string = "contactUs";
 }
