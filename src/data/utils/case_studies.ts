@@ -34,6 +34,11 @@ import feed_3 from "@assets/case_studies/feed/feed_3.jpg";
 import feed_4 from "@assets/case_studies/feed/feed_4.jpeg";
 import feed_5 from "@assets/case_studies/feed/feed_5.jpeg";
 
+// HANZAIB COLLECTION
+import hanzaib_1 from "@assets/case_studies/hanzaib_collection/hanzaib_1.jpg";
+import hanzaib_2 from "@assets/case_studies/hanzaib_collection/hanzaib_2.jpg";
+import hanzaib_3 from "@assets/case_studies/hanzaib_collection/hanzaib_3.jpg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -268,6 +273,41 @@ export default [
         alt: "Feed 5",
         description:
           "Overall, this mobile application served as a comprehensive solution, combining social networking, communication, and college-specific features to enhance the overall experience for students, teachers, and college staff. ",
+      },
+    ],
+  },
+
+  // ---------------------------- HANZAIB COLLECTION ----------------------------
+
+  {
+    projectName: "Hanzaib Collection",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "hanzaib-collection",
+    playstoreLink: null,
+    isProjectPrivate: true,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: hanzaib_2,
+        alt: "HanZaib Collection 1",
+        description:
+          "Goal: The goal was to develop a logistics app wherein the client could input both the origin and destination addresses. Initially, the from address was fixed but could be modified as needed. Utilizing this data, the app would generate a visually appealing PDF document incorporating the addresses alongside the company's logo, facilitating easy printing for shipment purposes. Additionally, the app featured a history review function to track all previous shipments. Firebase served as the backend for storing the data.",
+      },
+
+      {
+        id: "2",
+        src: hanzaib_1,
+        alt: "HanZaib Collection 2",
+        description:
+          "Role: In this project, I undertook the task of designing the UI/UX and developing the UI using Flutter. Furthermore, I implemented Firebase as the backend solution.",
+      },
+
+      {
+        id: "3",
+        src: hanzaib_3,
+        alt: "HanZaib Collection 3",
+        description:
+          "Success of the Project: The project proved to be a resounding success, greatly benefiting the client by significantly reducing the manual workload associated with address documentation and branding. The client expressed immense satisfaction with the app, as it saved numerous hours previously spent on manual address entry and logo attachment, ultimately streamlining the logistics process.",
       },
     ],
   },
