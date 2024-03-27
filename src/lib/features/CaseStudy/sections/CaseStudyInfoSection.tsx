@@ -212,9 +212,9 @@ const _ImageComponent = (props: {
         alt={props.alt}
         borderRadius={{
           // RESPONSIVE
-          base: "30px",
-          sm: "30px",
-          md: "20px",
+          base: "22px",
+          sm: "26px",
+          md: "22px",
           lg: "25px",
           "2xl": "60px",
         }}
