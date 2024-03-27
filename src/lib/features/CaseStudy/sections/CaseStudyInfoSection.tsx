@@ -1,17 +1,9 @@
-import {
-  Box,
-  Image,
-  VStack,
-  Text,
-  HStack,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, Image, VStack, Text, useBreakpointValue } from "@chakra-ui/react";
 import ticTacToeimage from "@assets/tic_tac_toe_table.png";
 import { AppColor } from "src/domain/constants/AppColor";
 import AppDivider from "@components/AppDivider";
 import { CaseStudyItemProp, CaseStudyProp } from "@datautils/case_studies";
-import AppSectionHeading from "@components/AppSectionHeading";
-import AppPageSubheading from "@components/AppPageSubheading";
+import { DeviceTypeEnum } from "src/domain/enums/device_type_enum";
 
 interface CaseStudyInfoSectionProps {
   caseStudyProp: CaseStudyProp;
@@ -36,6 +28,7 @@ const CaseStudyInfoSection = (props: CaseStudyInfoSectionProps) => {
           isLastIndex={isLastIndex}
           serialNumber={serialNumberToString}
           caseStudyItemProp={item}
+          deviceType={props.caseStudyProp.deviceType}
         />
       );
     }
@@ -53,6 +46,7 @@ interface _CaseStudyEntityProps {
   isLastIndex?: boolean;
   serialNumber: string;
   caseStudyItemProp: CaseStudyItemProp;
+  deviceType: DeviceTypeEnum;
 }
 
 export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
@@ -108,6 +102,7 @@ export const _CaseStudyEntity = (props: _CaseStudyEntityProps) => {
         <_ImageComponent
           imageSrc={props?.caseStudyItemProp?.src}
           alt={props?.caseStudyItemProp?.alt}
+          deviceType={props.deviceType}
         />
 
         <Box
@@ -142,7 +137,40 @@ const _IndexComponent = (props: { serialNumber: string }) => {
   );
 };
 
-const _ImageComponent = (props: { imageSrc: string; alt: string }) => {
+const _ImageComponent = (props: {
+  imageSrc: string;
+  alt: string;
+  deviceType: DeviceTypeEnum;
+}) => {
+  // GET HEIGHT FOR MOBILE DEVICES
+  const _getHeightForMobileDevices = () => {
+    const _heightForMobileDevices = useBreakpointValue({
+      base: "160%",
+      sm: "120%",
+      lg: "100%",
+    });
+
+    const _heightForDesktopDevices = "auto";
+
+    if (props.deviceType === DeviceTypeEnum.MOBILE) {
+      return _heightForMobileDevices;
+    }
+
+    return _heightForDesktopDevices;
+  };
+
+  // GET WIDTH FOR MOBILE DEVICES
+  const _getWidthForMobileDevices = () => {
+    const _widthForMobileDevices = "auto";
+    const _widthForDesktopDevices = "80%";
+
+    if (props.deviceType === DeviceTypeEnum.MOBILE) {
+      return _widthForMobileDevices;
+    }
+
+    return _widthForDesktopDevices;
+  };
+
   return (
     <Box
       bg=""
@@ -176,11 +204,8 @@ const _ImageComponent = (props: { imageSrc: string; alt: string }) => {
           // md: "60px",
           lg: "0px",
         }}
-        height={{
-          base: "160%",
-          sm: "120%",
-          lg: "100%",
-        }}
+        height={_getHeightForMobileDevices()}
+        width={_getWidthForMobileDevices()}
         position="absolute"
         objectFit="fill"
         src={props.imageSrc}
