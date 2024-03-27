@@ -55,6 +55,12 @@ import knight_nine_2 from "@assets/case_studies/knight9/knight_nine_2.jpg";
 import gamehub_1 from "@assets/case_studies/game_hub/gamehub_1.png";
 import gamehub_2 from "@assets/case_studies/game_hub/gamehub_2.png";
 
+// Gochi Admin Portal
+import gochi_admin_portal_1 from "@assets/case_studies/gochi_admin_portal/gochi_admin_portal_1.jpeg";
+import gochi_admin_portal_2 from "@assets/case_studies/gochi_admin_portal/gochi_admin_portal_2.jpeg";
+import gochi_admin_portal_3 from "@assets/case_studies/gochi_admin_portal/gochi_admin_portal_3.jpg";
+import gochi_admin_portal_4 from "@assets/case_studies/gochi_admin_portal/gochi_admin_portal_4.jpeg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -432,6 +438,49 @@ export default [
         alt: "Game Hub 2",
         description:
           "Enhanced User Experience: With GameHub, users can easily search for games and filter them by type and platforms. Additionally, the website allows users to order games by various criteria such as relevance, date, genre, and name, ensuring a personalized and intuitive browsing experience for every gamer.",
+      },
+    ],
+  },
+
+  // ---------------------------- GOCHI ADMIN PORTAL ----------------------------
+
+  {
+    projectName: "GoChi's Admin Portal",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "gochi-admin-portal",
+    playstoreLink: null,
+    isProjectPrivate: true,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: gochi_admin_portal_4,
+        alt: "GoChi Admin Portal 4",
+        description:
+          "Goal: The goal was to develop an admin portal for the GoChi E-commerce app. The portal would allow the client to manage all aspects of the products, including pricing, availability, coupons, notifications, and messages, providing comprehensive control through a convenient Android application interface.",
+      },
+
+      {
+        id: "2",
+        src: gochi_admin_portal_2,
+        alt: "GoChi Admin Portal 2",
+        description:
+          "Role: In this project, I undertook the task of designing the UI/UX and developing the UI using Flutter. Furthermore, I implemented Firebase as the backend solution.",
+      },
+
+      {
+        id: "3",
+        src: gochi_admin_portal_1,
+        alt: "GoChi Admin Portal 1",
+        description:
+          "Success of the Project: The project proved to be a resounding success, greatly benefiting the client by significantly reducing the manual workload associated with address documentation and branding. The client expressed immense satisfaction with the app, as it saved numerous hours previously spent on manual address entry and logo attachment, ultimately streamlining the logistics process.",
+      },
+
+      {
+        id: "4",
+        src: gochi_admin_portal_3,
+        alt: "GoChi Admin Portal 3",
+        description:
+          " Success of the Project: The app provided a dynamic platform for distributors, offering an admin portal for managing products, adjusting prices, creating coupons, and launching promotional offers. Customers could leave product reviews directly within the app, contributing to a robust feedback loop.",
       },
     ],
   },
