@@ -47,6 +47,10 @@ import prabodham_2 from "@assets/case_studies/prabodham/prabodham_2.jpg";
 import bet_all_week_1 from "@assets/case_studies/betallweek/betallweek_1.jpg";
 import bet_all_week_2 from "@assets/case_studies/betallweek/betallweek_2.jpg";
 
+// Knight 9
+import knight_nine_1 from "@assets/case_studies/knight9/knight_nine_1.jpg";
+import knight_nine_2 from "@assets/case_studies/knight9/knight_nine_2.jpg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -370,6 +374,33 @@ export default [
         alt: "Bet All Week 2",
         description:
           "Role: In this project, I designed the UI/UX and developed the user interface using Flutter. I implemented all the required components and integrated a news fetching API to display up-to-date news. | Furthermore, I utilized Cloud Firestore and Firebase Authentication to ensure secure login and logout functionalities.",
+      },
+    ],
+  },
+
+  // ---------------------------- KNIGHT NINE ----------------------------
+
+  {
+    projectName: "Knight 9",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "knight-9",
+    playstoreLink: null,
+    isProjectPrivate: false,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: knight_nine_1,
+        alt: "Knight Nine 1",
+        description:
+          "Goal: The goal was to develop a simple gamification app where users can register, log in, and play a small game of multiple-choice questions (MCQ) to win prizes. The questions would cover various subjects such as English, History, Geography, Civics, etc. The winning user would receive a cash prize. | Role: I was responsible for designing the UI/UX and developing the UI using Flutter. Additionally, I utilized Firebase as the backend for the project.",
+      },
+
+      {
+        id: "2",
+        src: knight_nine_2,
+        alt: "Knight Nine 2",
+        description:
+          "Success of the Project: The project was a success, with users thoroughly enjoying the game.",
       },
     ],
   },
