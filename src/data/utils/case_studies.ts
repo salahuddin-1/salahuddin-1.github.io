@@ -43,6 +43,10 @@ import hanzaib_3 from "@assets/case_studies/hanzaib_collection/hanzaib_3.jpg";
 import prabodham_1 from "@assets/case_studies/prabodham/prabodham_1.jpg";
 import prabodham_2 from "@assets/case_studies/prabodham/prabodham_2.jpg";
 
+// BET ALL WEEK
+import bet_all_week_1 from "@assets/case_studies/betallweek/betallweek_1.jpg";
+import bet_all_week_2 from "@assets/case_studies/betallweek/betallweek_2.jpg";
+
 export default [
   // ---------------------------- CAPITAL BANK ----------------------------
   {
@@ -339,6 +343,33 @@ export default [
         alt: "Prabodham 2",
         description:
           "Role: In this project, I took on the role of UI/UX designer and developer, utilizing Flutter to create the app's user interface. Additionally, I served as the team lead, overseeing a team of two members. Together, we successfully developed an MVP for the client, encompassing all essential modules and features.",
+      },
+    ],
+  },
+
+  // ---------------------------- BET ALL WEEK ----------------------------
+
+  {
+    projectName: "Bet All Week",
+    deviceType: DeviceTypeEnum.MOBILE,
+    slug: "bet-all-week",
+    playstoreLink: null,
+    isProjectPrivate: false,
+    caseStudyItems: [
+      {
+        id: "1",
+        src: bet_all_week_2,
+        alt: "Bet All Week 1",
+        description:
+          "Goal: The goal was to develop a secure betting application with login and registration functionalities. Additionally, the application needed to display the latest news from various sports categories such as Soccer, Basketball, Baseball, Tennis, etc. | The aim was to optimize the betting process and manage cash flow effectively.",
+      },
+
+      {
+        id: "2",
+        src: bet_all_week_1,
+        alt: "Bet All Week 2",
+        description:
+          "Role: In this project, I designed the UI/UX and developed the user interface using Flutter. I implemented all the required components and integrated a news fetching API to display up-to-date news. | Furthermore, I utilized Cloud Firestore and Firebase Authentication to ensure secure login and logout functionalities.",
       },
     ],
   },
