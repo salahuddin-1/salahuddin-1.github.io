@@ -14,7 +14,7 @@ export class AppConstants {
     "https://www.instagram.com/salahuddin_1/";
 
   public static LINKEDIN_LINK: string =
-    "https://linkedin.com/in/salahuddin-shaikh-640469196";
+    "https://www.linkedin.com/in/salahuddinshaikh1";
 
   public static STACKOVERFLOW_LINK: string =
     "https://stackoverflow.com/users/12771360/salahuddin-shaikh";
@@ -31,7 +31,7 @@ export class AppConstants {
     "https://play.google.com/store/apps/details?id=com.gochi.salahuddinshaikh";
 
   public static PRABODHAM_LINK: string =
-    "https://play.google.com/store/apps/details?id=com.app.prabodham";
+    "https://play.google.com/store/apps/details?id=com.business.prabodham";
 
   public static GAME_HUB_MOSH: string = "https://game-hub-mosh-lac.vercel.app/";
 
