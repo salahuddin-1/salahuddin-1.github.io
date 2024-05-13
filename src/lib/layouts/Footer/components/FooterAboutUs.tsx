@@ -10,13 +10,14 @@ const FooterAboutUs = () => {
       <FooterVSpace />
 
       <FooterText>
-        Hi, I'm Salahuddin Shaikh, the founder of an agency that helps small to
-        medium-sized businesses go online by creating custom Software Systems
-        using the latest technologies. I have 5 years of experience in
-        developing cross-platform mobile applications with Flutter. I help
-        people solve their business problems with software. I assist traditional
-        offline businesses in transitioning online by developing customized
-        Software Systems tailored to their needs.
+        Hi, I'm Salahuddin Shaikh, I have 5 years of experience in Cross
+        Platform Mobile Application Development using Flutter and have helped
+        many businesses by providing them a good quality software with great
+        User Experience. I have 3 years of corporate experience working on
+        Enterprise Banking applications and on complex algorithms and complex
+        problems. Throughout my career, I've successfully developed 13 working
+        applications, showcasing my expertise in the field. You're invited to
+        explore all of them in my portfolio.
       </FooterText>
     </>
   );
