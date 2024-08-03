@@ -4,7 +4,6 @@ import icon_north_east from "@assets/icon_north_east.png";
 import { useNavigate } from "react-router-dom";
 import { RoutePaths } from "src/lib/navigation/route_paths";
 import { useHomepageViewModel } from "src/lib/providers/HomepageViewModelProvider";
-import { RecentWorkNavParams } from "../../RecentWork/RecentWork";
 import { CustomTheme } from "src/theme";
 import { AppColor } from "src/domain/constants/AppColor";
 import { CaseStudyNavParams } from "../../CaseStudy/CaseStudy";
@@ -14,7 +13,6 @@ export interface SingleProject {
   category: string;
   imageURL: string;
   slug: string;
-  currentIndexOnWorkPage: number;
 }
 
 interface Props {
@@ -68,8 +66,6 @@ const SingleProjectSkeleton = ({ project }: Props) => {
   // let selectedProject =
 
   const onClickWork = () => {
-    homepageVM.setCurrentProjectIndexOnWorkPage(project.currentIndexOnWorkPage);
-
     const params: CaseStudyNavParams = {
       slug: project.slug,
     };

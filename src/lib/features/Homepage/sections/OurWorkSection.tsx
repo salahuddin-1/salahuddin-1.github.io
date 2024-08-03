@@ -19,7 +19,6 @@ const OurWorkSection = () => {
       category: "Accounting",
       imageURL: mandi_market_carousel,
       slug: "mandi-market",
-      currentIndexOnWorkPage: 3,
     },
 
     {
@@ -27,7 +26,6 @@ const OurWorkSection = () => {
       category: "Food Tech",
       imageURL: rummoz_kitchen_carousel,
       slug: "rummoz-kitchen",
-      currentIndexOnWorkPage: 0,
     },
 
     {
@@ -35,7 +33,6 @@ const OurWorkSection = () => {
       category: "Social Networking",
       imageURL: feed_carousel,
       slug: "feed",
-      currentIndexOnWorkPage: 2,
     },
 
     // {
@@ -43,7 +40,6 @@ const OurWorkSection = () => {
     //   category: "Banking & Finance",
     //   imageURL: capital_carousel,
     //   slug: "capital-bank-of-jordan",
-    //   currentIndexOnWorkPage: 2,
     // },
 
     {
@@ -51,7 +47,6 @@ const OurWorkSection = () => {
       category: "E-commerce",
       imageURL: gochi_carousel,
       slug: "gochi",
-      currentIndexOnWorkPage: 4,
     },
   ];
 

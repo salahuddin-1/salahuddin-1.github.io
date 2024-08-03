@@ -219,8 +219,6 @@ const ProjectsSection: React.FC = () => {
     //   };
     // }, [selectedProjectIndex]);
 
-    // selectedProjectIndex = homePageVM.currentProjectIndexOnWorkPage;
-
     const contactUsVM = useWorkViewModel();
     const animationOnLoadProps = contactUsVM.animationOnLoadProps;
 

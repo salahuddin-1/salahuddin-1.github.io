@@ -43,16 +43,6 @@ class HomepageViewModel {
     this._engineeringServicesRefObj = ref;
   }
 
-  private _currentProjectIndexOnWorkPage: number = 0;
-
-  get currentProjectIndexOnWorkPage(): number {
-    return this._currentProjectIndexOnWorkPage;
-  }
-
-  setCurrentProjectIndexOnWorkPage(index: number): void {
-    this._currentProjectIndexOnWorkPage = index;
-  }
-
   public animationOnLoadProps = new AnimationOnLoadProperties();
 
   dispose(): void {
