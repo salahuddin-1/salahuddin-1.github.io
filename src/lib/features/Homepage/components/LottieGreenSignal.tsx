@@ -1,5 +1,5 @@
 import Lottie, { Options } from "react-lottie";
-import greenSignal from "@assets/lotties/green_signal.json";
+import greenSignal from "@assets/lotties/working.json";
 
 interface LottieGreenSignalProps {
   width: string;

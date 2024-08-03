@@ -211,11 +211,10 @@ const _ProfileImage = () => {
           borderRadius="30px"
           border={`1px solid ${AppColor.LIGHT_GRAY_100}`}
         >
+          <Box width="1px"></Box>
           <Box height="30px" width="30px">
-            <LottieGreenSignal width="40px" />
+            <LottieGreenSignal width="30px" />
           </Box>
-
-          <Box width="5px"></Box>
 
           <Text
             textAlign={{
@@ -225,7 +224,7 @@ const _ProfileImage = () => {
             fontSize="11px"
             fontWeight="200"
           >
-            Open to work
+            Currently Employed
           </Text>
         </HStack>
 
