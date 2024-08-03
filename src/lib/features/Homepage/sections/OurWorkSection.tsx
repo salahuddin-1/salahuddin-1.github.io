@@ -4,7 +4,7 @@ import SingleProjectSkeleton, {
   SingleProject,
 } from "../components/SingleProjectSkeleton";
 import gochi_carousel from "../../../../assets/gochi_carousel.jpg";
-import capital_carousel from "../../../../assets/capital_bank_carousel.jpg";
+import feed_carousel from "../../../../assets/feed_carousel.jpg";
 import rummoz_kitchen_carousel from "../../../../assets/rummoz_kitchen_carousel.jpg";
 import mandi_market_carousel from "@assets/mandi_market_carousel.jpg";
 import AppMaterialButton from "../../../ui/components/AppMaterialButton";
@@ -14,14 +14,6 @@ import { RoutePaths } from "src/lib/navigation/route_paths";
 
 const OurWorkSection = () => {
   const projects: SingleProject[] = [
-    {
-      projectName: "Capital Bank of Jordan",
-      category: "Banking & Finance",
-      imageURL: capital_carousel,
-      slug: "capital-bank-of-jordan",
-      currentIndexOnWorkPage: 2,
-    },
-
     {
       projectName: "Mandi Market",
       category: "Accounting",
@@ -37,6 +29,22 @@ const OurWorkSection = () => {
       slug: "rummoz-kitchen",
       currentIndexOnWorkPage: 0,
     },
+
+    {
+      projectName: "Feed",
+      category: "Social Networking",
+      imageURL: feed_carousel,
+      slug: "feed",
+      currentIndexOnWorkPage: 2,
+    },
+
+    // {
+    //   projectName: "Capital Bank of Jordan",
+    //   category: "Banking & Finance",
+    //   imageURL: capital_carousel,
+    //   slug: "capital-bank-of-jordan",
+    //   currentIndexOnWorkPage: 2,
+    // },
 
     {
       projectName: "GoChi",

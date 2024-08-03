@@ -62,31 +62,31 @@ import { AppConstants } from "src/domain/constants/AppConstants";
 
 export default [
   // CAPITAL BANK
-  {
-    projectName: "Capital Bank of Jordan",
-    deviceType: DeviceTypeEnum.MOBILE,
-    slug: "capital-bank-of-jordan",
-    backgroundColor: "#27323E",
-    description:
-      "I worked on the 'Capital Bank of Jordan' application on the Mobile App side, utilizing Flutter and employing Clean Architecture + MVVM as the project's framework. I laid the foundation for the app and developed various key features. My contribution to Capital Bank of Jordan focused solely on the frontend, accounting for approximately 70% of the app's widgets. I established the foundation for the app, designing and customizing every button, text field, and color for reusability.",
-    techStack: ["flutter"],
-    images: [
-      {
-        src: capital1,
-        alt: "Capital Bank 1",
-      },
-      {
-        src: capital2,
-        alt: "Capital Bank 2",
-      },
-      {
-        src: capital3,
-        alt: "Capital Bank 3",
-      },
-    ],
-    playstoreLink: AppConstants.CAPITAL_BANK_LINK,
-    ref: React.createRef(),
-  },
+  // {
+  //   projectName: "Capital Bank of Jordan",
+  //   deviceType: DeviceTypeEnum.MOBILE,
+  //   slug: "capital-bank-of-jordan",
+  //   backgroundColor: "#27323E",
+  //   description:
+  //     "I worked on the 'Capital Bank of Jordan' application on the Mobile App side, utilizing Flutter and employing Clean Architecture + MVVM as the project's framework. I laid the foundation for the app and developed various key features. My contribution to Capital Bank of Jordan focused solely on the frontend, accounting for approximately 70% of the app's widgets. I established the foundation for the app, designing and customizing every button, text field, and color for reusability.",
+  //   techStack: ["flutter"],
+  //   images: [
+  //     {
+  //       src: capital1,
+  //       alt: "Capital Bank 1",
+  //     },
+  //     {
+  //       src: capital2,
+  //       alt: "Capital Bank 2",
+  //     },
+  //     {
+  //       src: capital3,
+  //       alt: "Capital Bank 3",
+  //     },
+  //   ],
+  //   playstoreLink: AppConstants.CAPITAL_BANK_LINK,
+  //   ref: React.createRef(),
+  // },
 
   // FEED
   {
